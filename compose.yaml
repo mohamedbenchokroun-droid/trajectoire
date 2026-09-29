@@ -1,0 +1,30 @@
+services:
+  trajectoire:
+    build: .
+    image: trajectoire:local
+    restart: unless-stopped
+    read_only: true
+    pids_limit: 100
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      TRAJECTOIRE_HOST: 0.0.0.0
+      TRAJECTOIRE_PORT: 8096
+      TRAJECTOIRE_DATA_DIR: /data
+      TRAJECTOIRE_USERNAME: ${TRAJECTOIRE_USERNAME:?missing username}
+      TRAJECTOIRE_PASSWORD: ${TRAJECTOIRE_PASSWORD:?missing password}
+    volumes:
+      - ./runtime-data:/data
+    networks:
+      - easypanel
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://127.0.0.1:8096/', r => process.exit(r.statusCode === 401 ? 0 : 1)).on('error', () => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  easypanel:
+    external: true

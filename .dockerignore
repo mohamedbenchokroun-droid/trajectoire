@@ -1,0 +1,9 @@
+.git
+.env
+runtime-data
+cv-generator
+data
+automation
+README.md
+AGENTS.md
+CLAUDE.md

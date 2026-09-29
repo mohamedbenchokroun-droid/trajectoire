@@ -10,7 +10,7 @@ Système de recherche d'emploi de Mohamed Benchokroun (Rabat – Témara) : rep�
 
 | Dossier | Rôle |
 |---|---|
-| `cockpit/trajectoire.html` | Le tableau de bord « Trajectoire » (artifact Claude avec base de données partagée) : actions du jour, candidatures, fiches de poste, réseau, CV. |
+| `cockpit/trajectoire.html` | Le tableau de bord « Trajectoire » : actions du jour, candidatures, fiches de poste, réseau, CV. Version autonome avec `cockpit/db-adapter.js` et `server/server.js`. |
 | `cv-generator/` | Génération des 4 CV (Sales, Communication, Transformation digitale, Anglais) dans le design Word d'origine, sans toucher à la mise en page. |
 | `data/seed.js` | Données initiales : offres qualifiées, organisations cibles, tâches, mot du coach. |
 | `automation/suivi-recherche-emploi.md` | Consignes du suivi automatique quotidien (jours ouvrés, 7 h 30). |
@@ -27,6 +27,14 @@ powershell -File pack.ps1   # .docx + export PDF page 1
 ```
 
 Les textes de chaque version sont dans `versions.js`.
+
+## Déploiement autonome sur Hetzner
+
+Le cockpit ne dépend plus de la base propre à Claude : `server/server.js` sert l'interface et conserve les modifications dans un dossier JSON persistant. `compose.yaml` lance le service sans port public ; le proxy HTTPS du VPS y accède sur le réseau Docker `easypanel`. Une authentification est obligatoire. Les fichiers de `data/export/` servent à initialiser `runtime-data/` **une seule fois** : ne jamais les recopier sur des données de production déjà modifiées.
+
+L'export actuel contient les offres et les cibles, mais pas les tâches quotidiennes, le profil ni les CV PDF de la base Claude. Ces éléments ne sont donc pas synchronisés automatiquement avec l'artifact. Le déploiement du cockpit ne lance aucune recherche d'offres, candidature ou relance automatique.
+
+Les identifiants restent dans `.env` sur le serveur et les données dans `runtime-data/` ; ces deux chemins sont ignorés par Git. Le script `deploy/install.sh` crée un secret d'accès lors du premier démarrage sans le remplacer ensuite. Le routage HTTPS utilisé sur le VPS figure dans `deploy/trajectoire-traefik.yaml`.
 
 ## Règles du projet
 

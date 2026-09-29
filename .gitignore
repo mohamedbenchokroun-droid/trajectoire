@@ -8,3 +8,5 @@ dbdump/
 *.pdf
 *.png
 chk.js
+.env
+runtime-data/

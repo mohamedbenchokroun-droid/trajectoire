@@ -1,0 +1,23 @@
+http:
+  routers:
+    trajectoire-http:
+      rule: "Host(`trajectoire.65-109-143-147.sslip.io`)"
+      entryPoints: [http]
+      middlewares: [trajectoire-https]
+      service: trajectoire
+    trajectoire:
+      rule: "Host(`trajectoire.65-109-143-147.sslip.io`)"
+      entryPoints: [https]
+      service: trajectoire
+      tls:
+        certResolver: letsencrypt
+  middlewares:
+    trajectoire-https:
+      redirectScheme:
+        scheme: https
+        permanent: true
+  services:
+    trajectoire:
+      loadBalancer:
+        servers:
+          - url: "http://trajectoire:8096"

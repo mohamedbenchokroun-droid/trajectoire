@@ -671,11 +671,13 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 <div class="scrim" id="scrim" hidden></div>
 <aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true"></aside>
 
+<script src="/db-adapter.js"></script>
 <script>
 (function () {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const safeHref = value => { try { const u = new URL(String(value)); return ["http:", "https:"].includes(u.protocol) ? esc(u.href) : ""; } catch { return ""; } };
   const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
   const fmt = d => new Intl.DateTimeFormat("fr-CA", { timeZone: "Africa/Casablanca", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
   const today = fmt(new Date());
@@ -722,22 +724,22 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const s = x.statut || "a_postuler";
     if (x.appel && !x.appel.fait) return { qui: "vous", t: "Appeler : " + (x.appel.motif || "faire avancer"), d: x.appel.date || today };
     if (s === "entretien") return { qui: "vous", t: x.entretien?.date ? "Entretien le " + jolie(x.entretien.date) : "Noter la date de l'entretien", d: x.entretien?.date || today };
-    if (s === "pret") return { qui: "vous", t: "Dire « ok » à Claude pour l'envoi", d: today };
+    if (s === "pret") return { qui: "vous", t: "Valider l'envoi de la candidature", d: today };
     if ((s === "postule" || s === "relance") && x.derniere_action) {
       const n = x.nb_relances || 0;
-      if (n === 0) return { qui: "claude", t: "Relance par Claude", d: addDays(x.derniere_action, 5) };
+      if (n === 0) return { qui: "vous", t: "Préparer la relance", d: addDays(x.derniere_action, 5) };
       if (n === 1) return { qui: "vous", t: "Appel de relance", d: addDays(x.derniere_action, 5) };
-      return { qui: "claude", t: "Sans réponse : on classe", d: addDays(x.derniere_action, 10) };
+      return { qui: "vous", t: "Sans réponse : décider du classement", d: addDays(x.derniere_action, 10) };
     }
-    if (s === "a_postuler") return { qui: "claude", t: "Claude prépare la candidature", d: x.action_date || today };
+    if (s === "a_postuler") return { qui: "vous", t: "Préparer la candidature", d: x.action_date || today };
     return null;
   }
   function phrase(x) {
     const st = stage(x), n = next(x);
     if (x.statut === "pret") return "Prête : attend votre « ok »";
     if (x.statut === "veille") return "En veille";
-    if (st === "prep") return "En préparation par Claude";
-    if (st === "sent" || st === "relance") { const j = diffJ(x.date_postule || x.derniere_action || today); return "Envoyée il y a " + j + " jour" + (j > 1 ? "s" : "") + (n ? " · " + (n.qui === "vous" ? "à vous" : "Claude") + " le " + jolie(n.d) : ""); }
+    if (st === "prep") return "En préparation";
+    if (st === "sent" || st === "relance") { const j = diffJ(x.date_postule || x.derniere_action || today); return "Envoyée il y a " + j + " jour" + (j > 1 ? "s" : "") + (n ? " · prochaine étape le " + jolie(n.d) : ""); }
     if (st === "itw") return "Entretien" + (x.entretien?.date ? " le " + jolie(x.entretien.date) : "");
     return { offre: "Offre reçue", refus: "Refus", abandon: "Classée" }[x.statut] || "Terminée";
   }
@@ -753,7 +755,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
       if (call) a.push({ k: "call", ic: "phone", t: "Appeler " + coName(x.entreprise), d: (call.motif || "") + (call.script ? "\n" + call.script : ""), tel: call.tel, id: x.id, b: "J'ai appelé" });
     });
     const pret = offres.filter(x => x.statut === "pret");
-    if (pret.length) a.push({ k: "send", ic: "send", t: pret.length + (pret.length > 1 ? " candidatures prêtes à partir" : " candidature prête à partir"), d: pret.map(x => coName(x.entreprise)).join(" · ") + "\nDites simplement « ok » à Claude dans la conversation.", ids: pret.map(x => x.id), b: pret.length > 1 ? "Voir les " + pret.length : "Voir la candidature" });
+    if (pret.length) a.push({ k: "send", ic: "send", t: pret.length + (pret.length > 1 ? " candidatures prêtes à partir" : " candidature prête à partir"), d: pret.map(x => coName(x.entreprise)).join(" · ") + "\nValidez le lot avant tout envoi.", ids: pret.map(x => x.id), b: pret.length > 1 ? "Voir les " + pret.length : "Voir la candidature" });
     const tk = Object.keys(taches).sort().filter(k => k <= today).pop();
     (taches[tk]?.items || []).forEach((it, i) => a.push({ k: "task", ic: "check", t: it.texte, d: it.detail || "", fait: it.fait, tkey: tk, ti: i, b: it.fait ? "↺ Pas fait" : "C'est fait" }));
     const ord = { itw: 0, call: 1, send: 2, task: 3 };
@@ -781,13 +783,13 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     $("#oSent").textContent = sent.length; $("#oWeek").innerHTML = wk + '<span style="font-size:.5em;color:var(--muted)">/10</span>'; $("#oItw").textContent = itw.length;
     const nCall = open.filter(a => a.k === "call").length, nItw = open.filter(a => a.k === "itw").length;
     $("#coach").textContent = open.length
-      ? "Aujourd'hui, " + open.length + (open.length > 1 ? " choses pour vous" : " chose pour vous") + (nCall || nItw ? " dont " + [nCall ? nCall + " appel" + (nCall > 1 ? "s" : "") : "", nItw ? nItw + " entretien" + (nItw > 1 ? "s" : "") : ""].filter(Boolean).join(" et ") : "") + ". Claude s'occupe de tout le reste."
-      : "Rien d'urgent aujourd'hui. Claude envoie, relance et vous prévient dès qu'il faut appeler.";
+      ? "Aujourd'hui, " + open.length + (open.length > 1 ? " choses pour vous" : " chose pour vous") + (nCall || nItw ? " dont " + [nCall ? nCall + " appel" + (nCall > 1 ? "s" : "") : "", nItw ? nItw + " entretien" + (nItw > 1 ? "s" : "") : ""].filter(Boolean).join(" et ") : "") + "."
+      : "Rien d'urgent aujourd'hui. Consultez vos candidatures et votre réseau.";
 
     // Projecteur : la prochaine action la plus importante
     const top = open[0];
     $("#spot").innerHTML = top
-      ? `<div class="ic">${ico(top.ic)}</div><div><span class="label">Prochaine action</span><h2>${esc(top.t)}</h2><p>${esc((top.d || "").split("\n")[0])}</p></div>${top.b ? `<button class="go-btn" id="spotGo">${esc(top.b)} ${ico("arrow")}</button>` : `<span class="pill C">Répondez « ok » à Claude</span>`}`
+      ? `<div class="ic">${ico(top.ic)}</div><div><span class="label">Prochaine action</span><h2>${esc(top.t)}</h2><p>${esc((top.d || "").split("\n")[0])}</p></div>${top.b ? `<button class="go-btn" id="spotGo">${esc(top.b)} ${ico("arrow")}</button>` : `<span class="pill C">À valider</span>`}`
       : `<div class="ic">${ico("spark")}</div><div><span class="label">Prochaine action</span><h2>Tout est à jour</h2><p>Profitez-en pour préparer un entretien ou écrire à un ancien contact.</p></div><button class="go-btn" data-tab="reseau">Réseau ${ico("arrow")}</button>`;
     const spot = $("#spot");
     spot.onclick = top && top.b ? (e => { if (!e.target.closest("[data-tab]")) doAct(top); }) : null;
@@ -795,7 +797,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 
     // Parcours
     const cnt = k => offres.filter(x => stage(x) === k).length;
-    const ST = [["prep", "À envoyer", "Claude prépare"], ["sent", "Envoyées", "en attente"], ["relance", "Relancées", "suivi actif"], ["itw", "Entretiens", "à préparer"], ["offre", "Offres", "le but"]];
+    const ST = [["prep", "À envoyer", "à préparer"], ["sent", "Envoyées", "en attente"], ["relance", "Relancées", "suivi actif"], ["itw", "Entretiens", "à préparer"], ["offre", "Offres", "le but"]];
     const hot = ST.map(s => cnt(s[0])).reduce((m, v, i, arr) => (v > 0 ? i : m), 0);
     $("#flow").innerHTML = ST.map(([k, l, s], i) => `<button class="stage ${i === hot ? "hot" : ""}" data-stage="${k}"><span class="dot">${cnt(k)}</span><span>${l}</span><small>${s}</small></button>`).join("");
     $("#flowNote").textContent = offres.length + " pistes suivies";
@@ -808,7 +810,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
         <div class="ai">${ico(a.ic)}</div>
         <div><div class="t">${esc(a.t)}</div>${a.d ? `<div class="d">${esc(a.d)}</div>` : ""}${a.tel ? `<div class="tel">${esc(a.tel)}</div>` : ""}</div>
         ${a.b ? `<button class="b ${a.fait ? "undo-b" : ""}" data-a="${i}">${esc(a.b)}</button>` : ""}
-      </li>`).join("") : `<li class="empty">Rien pour vous aujourd'hui. Claude travaille en arrière-plan.</li>`;
+      </li>`).join("") : `<li class="empty">Rien pour vous aujourd'hui.</li>`;
     document.querySelectorAll("#acts [data-a]").forEach(b => b.addEventListener("click", () => doAct(acts[+b.dataset.a])));
 
     // Objectif
@@ -859,7 +861,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
         <div class="top"><span class="mono">${esc(initials(coName(x.entreprise)))}</span><div><div class="co">${esc(coName(x.entreprise))}</div><div class="po">${esc(x.poste)}</div></div></div>
         <div class="steps5">${[1, 2, 3, 4, 5].map(k => `<i class="${k < si ? "ok" : k === si ? "cur" : ""}"></i>`).join("")}</div>
         <div class="st">${esc(phrase(x))}</div>
-        <div class="foot"><span class="pill ${esc(x.priorite || "C")}">Priorité ${esc(x.priorite || "C")}</span>${due ? `<span class="pill due">À vous aujourd'hui</span>` : `<span class="label">${x.match || 0}% match</span>`}</div>
+        <div class="foot"><span class="pill ${esc(x.priorite || "C")}">Priorité ${esc(x.priorite || "C")}</span>${due ? `<span class="pill due">À vous aujourd'hui</span>` : `<span class="label">${esc(x.match || 0)}% match</span>`}</div>
       </button>`;
     }).join("") : `<div class="empty">Rien dans cette étape pour l'instant.</div>`;
   }
@@ -882,7 +884,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   const STATUT = { a_postuler: "En préparation", pret: "Prête à partir", postule: "Envoyée", relance: "Relancée", entretien: "Entretien", offre: "Offre reçue", refus: "Refus", abandon: "Classée", veille: "En veille" };
   function renderDrawer() {
     const x = offres.find(o => o.id === openId); if (!x) { closeDrawer(); return; }
-    const n = next(x), m = x.match || 0;
+    const n = next(x), m = Math.max(0, Math.min(100, Number(x.match) || 0));
     const L = { postule: "Candidature envoyée", relance: "Relance", appel: "Appel", entretien: "Entretien obtenu", offre: "Offre", refus: "Refus", abandon: "Classée", envoye: "Envoi" };
     const hist = [...(x.historique || [])].sort((a, b) => String(a.le).localeCompare(String(b.le)));
     const cvUrl = profil.cv_liens && profil.cv_liens[x.cv];
@@ -897,8 +899,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const cur = Math.max(0, FR.findIndex(f => f[0] === st));
     // ce qui se passe maintenant
     let nowIcon = "spark", nowTitle = "", nowText = "", nowTone = "claude";
-    if (x.statut === "pret") { nowIcon = "send"; nowTitle = "Prête à partir"; nowText = "Dites « ok » à Claude dans la conversation : il postule avec le CV " + cvName + " et vous confirme l'envoi."; nowTone = "you"; }
-    else if (n) { nowIcon = n.qui === "vous" ? "phone" : "spark"; nowTitle = n.qui === "vous" ? "À vous de jouer" : "Claude s'en occupe"; nowText = n.t + (n.d ? " · " + jolie(n.d) : ""); nowTone = n.qui === "vous" ? "you" : "claude"; }
+    if (x.statut === "pret") { nowIcon = "send"; nowTitle = "Prête à partir"; nowText = "Cette candidature attend votre validation avant l'envoi avec le CV " + cvName + "."; nowTone = "you"; }
+    else if (n) { nowIcon = n.qui === "vous" ? "phone" : "spark"; nowTitle = n.qui === "vous" ? "À vous de jouer" : "À suivre"; nowText = n.t + (n.d ? " · " + jolie(n.d) : ""); nowTone = n.qui === "vous" ? "you" : "claude"; }
     else { nowTitle = STATUT[x.statut] || "Terminée"; nowText = "Aucune action prévue."; }
     const last = hist[hist.length - 1];
 
@@ -918,7 +920,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
           </div>
           <div class="fx-chips">
             <span class="fx-chip big"><i>${ico("brief")}</i><span><small>Salaire estimé</small><b>${esc(sal)}</b><em>net / mois</em></span></span>
-            <span class="fx-chip"><i>${ico("home")}</i><span><small>Lieu</small><b>${esc(lieu)}</b>${x.km ? `<em>~${x.km} km de Témara</em>` : ""}</span></span>
+            <span class="fx-chip"><i>${ico("home")}</i><span><small>Lieu</small><b>${esc(lieu)}</b>${x.km ? `<em>~${esc(x.km)} km de Témara</em>` : ""}</span></span>
             <span class="fx-chip"><i>${ico("doc")}</i><span><small>CV utilisé</small><b>${esc(cvName)}</b></span></span>
             <span class="fx-chip"><i>${ico("spark")}</i><span><small>Priorité</small><b>${esc(x.priorite || "C")}</b></span></span>
           </div>
@@ -957,8 +959,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
             ${hist.length ? `<section class="fx-hist"><small>Historique</small><ul>${hist.slice(-5).reverse().map(h => `<li><time>${esc(jolie(h.le))}</time><span>${esc(L[h.action] || h.action)}${h.notes ? `<em>${esc(h.notes)}</em>` : ""}</span></li>`).join("")}</ul></section>` : ""}
 
             <div class="fx-links">
-              ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${ico("brief")} Voir l'offre</a>` : ""}
-              ${cvUrl ? `<a href="${esc(cvUrl)}" target="_blank" rel="noopener">${ico("doc")} CV ${esc(cvName)}</a>` : ""}
+              ${safeHref(x.url) ? `<a href="${safeHref(x.url)}" target="_blank" rel="noopener">${ico("brief")} Voir l'offre</a>` : ""}
+              ${safeHref(cvUrl) ? `<a href="${safeHref(cvUrl)}" target="_blank" rel="noopener">${ico("doc")} CV ${esc(cvName)}</a>` : ""}
             </div>
           </aside>
         </div>
@@ -999,7 +1001,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const LBL = { appel: "Appel noté", entretien: "Entretien noté", refus: "Refus noté", abandon: "Candidature classée" };
     try {
       await db.doc("offres/" + x.id).update(patch);
-      m.className = "saved"; m.textContent = "Noté. Claude prépare la suite.";
+      m.className = "saved"; m.textContent = "Enregistré dans le suivi.";
       toast(LBL[act] + " · " + coName(x.entreprise), async () => {
         const undo = {}; Object.keys(prev).forEach(k => undo[k] = prev[k]);
         try { await db.doc("offres/" + x.id).update(undo); toast("Annulé", null); } catch (e) { toast("Annulation impossible, réessayez", null); }
@@ -1034,7 +1036,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   function renderCV() {
     const L = profil.cv_liens || {};
     $("#cvs").innerHTML = [["sales", "Sales", "Business development B2B"], ["com", "Communication", "Communication corporate & digitale"], ["digital", "Digital", "Transformation digitale"], ["en", "English", "Business & communications"]]
-      .map(([k, tag, t]) => `<div class="glass cv"><div class="band"><small>${tag.toUpperCase()}</small><b>${esc(t)}</b></div><div class="bd">${L[k] ? `<a class="btn" href="${esc(L[k])}" target="_blank" rel="noopener">Ouvrir le PDF ${ico("arrow")}</a>` : `<span style="color:var(--muted)">Lien à venir</span>`}</div></div>`).join("");
+      .map(([k, tag, t]) => `<div class="glass cv"><div class="band"><small>${tag.toUpperCase()}</small><b>${esc(t)}</b></div><div class="bd">${safeHref(L[k]) ? `<a class="btn" href="${safeHref(L[k])}" target="_blank" rel="noopener">Ouvrir le PDF ${ico("arrow")}</a>` : `<span style="color:var(--muted)">Lien à venir</span>`}</div></div>`).join("");
   }
   const PF = ["ca_corpotex", "clients_corpotex", "equipe", "crm", "budget_events", "participants", "salaire_preavis", "linkedin", "autres"];
   let pfLoaded = false;
@@ -1065,9 +1067,9 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   all();
 
   (async () => {
-    try { db = await window.claude?.use?.("db"); } catch (e) { db = null; }
-    if (!db) { setLive("Hors ligne : ouvrez depuis claude.ai", true); return; }
-    setLive("Synchronisé en direct");
+    try { db = await window.trajectoireDB?.use?.(); } catch (e) { db = null; }
+    if (!db) { setLive("Connexion aux données indisponible", true); return; }
+    setLive("Synchronisé avec ce serveur");
     const err = () => setLive("Connexion interrompue", true);
     db.collection("offres").onSnapshot(s => { offres = s.docs.map(d => ({ id: d.id, ...d.data() })); all(); }, err);
     db.collection("cibles").onSnapshot(s => { cibles = s.docs.map(d => ({ id: d.id, ...d.data() })); all(); }, err);
