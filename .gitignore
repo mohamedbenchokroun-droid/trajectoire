@@ -1,0 +1,10 @@
+node_modules/
+orig/
+out/
+send/
+mails/
+dbdump/
+*.docx
+*.pdf
+*.png
+chk.js
