@@ -1,0 +1,46 @@
+{
+  "action": "En veille : CDD, offre d’un mois. Pas de relance tant qu’on n’a pas de contact.",
+  "action_date": "2026-10-13",
+  "comment": "LinkedIn Easy Apply, CV anglais.",
+  "couloir": "sales",
+  "cv": "en",
+  "derniere_action": "2026-09-29",
+  "entreprise": "LONGi (leader mondial du solaire photovoltaïque)",
+  "entreprise_info": "Premier fabricant mondial de modules solaires (Chine). Contrat, pas forcément CDI : à vérifier.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "LinkedIn affiche « Candidature envoyée il y a 1 mois » sur ce compte (avant le 26/09, donc pas envoyée par Claude). Mohamed ne s’en souvient pas.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat-Salé-Kénitra",
+  "maj": "2026-09-29T13:00:00Z",
+  "match": 55,
+  "message": "Hello,\n\nI have applied for the Channel Sales Manager position. I know Morocco's solar ecosystem from the inside: I have worked with the Moroccan renewable energy cluster (Cluster EnR) and delivered the Solar Rooftop 500 programme events and the Nexans Climate Summit, which put me in contact with installers, EPC contractors and public stakeholders. Add 14 years of B2B key account development and channel negotiation.\n\nI would be glad to discuss how I can grow LONGi's channel in Morocco.\n\nBest regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Gérer les comptes clés : énergéticiens, EPC, autorités",
+    "Négocier des accords-cadres annuels",
+    "Développer le réseau de distributeurs",
+    "Veille marché et concurrence"
+  ],
+  "nb_relances": 0,
+  "poste": "Channel Sales Manager",
+  "pourquoi": "Vous connaissez l'écosystème solaire marocain de l'intérieur : Cluster EnR, Solar Rooftop 500, Nexans Climate Summit. Vous savez qui sont les installateurs, les EPC et les institutions.",
+  "priorite": "basse",
+  "publie": "publiée début sept., 200+ candidats",
+  "qui": "claude",
+  "relance": {
+    "canal": "Invitation LinkedIn au recruteur ou au responsable commercial LONGi Maroc (Claude trouve le contact)",
+    "prevue": "2026-09-30",
+    "statut": "non envoyée : quota de notes LinkedIn gardé pour des cibles prioritaires",
+    "texte": "Hello, I applied for the Channel Sales Manager role in Morocco. 14 years of B2B key account and partner development, and hands-on knowledge of the Moroccan solar ecosystem (installers, EPCs, public stakeholders). I’d be glad to discuss how to grow LONGi’s channel. Mohamed Benchokroun"
+  },
+  "risques": "3 ans de vente dans le photovoltaïque demandés : vous avez l'écosystème, pas encore la vente produit. Type de contrat à clarifier.",
+  "salaire": "est. 20–30 k DH net (contrat)",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/channel-sales-manager-at-longi-solar-4435292755"
+}

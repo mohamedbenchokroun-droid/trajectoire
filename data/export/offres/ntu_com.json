@@ -1,0 +1,62 @@
+{
+  "action": "",
+  "action_date": "2026-09-29",
+  "comment": "Un seul email pour les deux postes NTU (Communication & Visibility, Knowledge Management), CV anglais en pièce jointe. Envoyer mardi 29 entre 8 h 30 et 10 h.",
+  "contacts": [
+    {
+      "email": "recruitment@ntu.eu",
+      "nom": "Recrutement NTU",
+      "role": "Email"
+    }
+  ],
+  "couloir": "com",
+  "cv": "en",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "NTU International (projets financés par l'Union européenne)",
+  "entreprise_info": "Bureau d'études danois qui met en œuvre des programmes de l'UE. Postes d'experts « non-key » : missions ponctuelles, pas un CDI. Excellent pour le réseau UE et un revenu d'appoint, à combiner avec la recherche d'un poste fixe.",
+  "gmail_message_id": "1a0ea58565d11fe5",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T00:27:00Z",
+      "notes": "Email envoyé par Claude à recruitment@ntu.eu (2 postes).",
+      "par": "claude"
+    },
+    {
+      "action": "envoye",
+      "le": "2026-09-29T01:05:00Z",
+      "notes": "Complément envoyé par Claude : CV anglais en pièce jointe PDF.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat (missions)",
+  "maj": "2026-09-26T23:20:25.809Z",
+  "match": 74,
+  "message": "Dear Recruitment Team,\n\nI would like to apply for the Senior Non-Key Expert – Communication & Visibility position, and to be considered as well for the Communication & Knowledge Management Expert role, both based in Rabat.\n\nSince 2021 I have designed and delivered communication and visibility for donor-funded and institutional programmes in Morocco, for the European Investment Bank, IFC, GIZ and the Moroccan renewable energy cluster. This includes end-to-end investor and institutional events (Guelmim Investor Day, two editions; Essaouira Investor Day; Solar Rooftop 500; the EIB's 20th anniversary in Morocco), success stories, publications, video and motion content, and online presence.\n\nI work in Arabic, French and English, produce content myself (Adobe CC, video, motion design) and use generative AI and no-code tools to speed up production and dissemination. I start an Executive Master in Leading Digital Transformation at the International University of Rabat in February 2027.\n\nPlease find my CV attached. I am available for assignments in Rabat and across Morocco.\n\nKind regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Plans et actions de communication et visibilité de programmes UE",
+    "Rédaction de réussites, rapports d'événements, supports de diffusion",
+    "Gestion des connaissances et diffusion sur plateformes numériques",
+    "Respect des règles de visibilité de l'UE"
+  ],
+  "nb_relances": 0,
+  "objet": "Application – Senior Non-Key Expert, Communication & Visibility / Communication & Knowledge Management (Rabat)",
+  "poste": "Senior Non-Key Expert – Communication & Visibility",
+  "pourquoi": "Communication et visibilité de programmes financés par des bailleurs : c'est votre quotidien depuis 2021 avec la BEI, l'IFC et la GIZ (événements, supports, réussites, présence en ligne).",
+  "priorite": "A",
+  "publie": "publiée le 25 sept.",
+  "qui": "toi",
+  "retour": {
+    "action": "postule",
+    "le": "2026-09-29T01:05:00Z",
+    "notes": "Candidature + CV PDF envoyés par Claude.",
+    "par": "claude"
+  },
+  "risques": "Master exigé et arabe + anglais niveau C1. Couverture : l'Executive Master et votre expérience directe avec la BEI. C'est une mission, pas un emploi fixe : on y va pour le réseau et le revenu, sans arrêter la recherche.",
+  "salaire": "Honoraires par jour de mission (est. 2 500–4 000 DH/jour)",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/communication-visibility-expert-at-ntu-international-a-s-4471449336"
+}

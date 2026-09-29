@@ -1,0 +1,45 @@
+{
+  "action": "Rien à faire. Relance automatique le 5 octobre.",
+  "action_date": "2026-10-05",
+  "comment": "LinkedIn Easy Apply, CV Transformation digitale, puis invitation à Hajar Najem.",
+  "contacts": [
+    {
+      "nom": "Hajar Najem",
+      "role": "Recruteuse DXC (LinkedIn)"
+    }
+  ],
+  "couloir": "digital",
+  "cv": "digital",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "DXC Technology Maroc",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV Transformation digitale.",
+      "par": "claude"
+    }
+  ],
+  "km": 28,
+  "lieu": "Rabat (Technopolis)",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 55,
+  "message": "Bonjour Madame Najem,\n\nJe viens de postuler au poste de Lead Power Apps Adoption. J'ai conçu et fait adopter par des équipes commerciales et opérationnelles un CRM no-code et des workflows automatisés : je connais les résistances et ce qui fait qu'un outil est réellement utilisé. Je démarre en février 2027 l'Executive Master « Leading Digital Transformation » de l'UIR.\n\nJe serais heureux d'en discuter avec vous.\n\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Coordonner les équipes de développement Power Platform",
+    "Accompagner les clients dans la définition des besoins et la gouvernance",
+    "Suivre qualité, budget et délais"
+  ],
+  "nb_relances": 0,
+  "poste": "Lead Power Apps Adoption",
+  "pourquoi": "Faire adopter des applications low-code par des clients : vous avez construit et fait adopter vos propres outils no-code. Seulement 38 candidats : bonnes chances d'être lu.",
+  "priorite": "B",
+  "publie": "publiée le 25 sept.",
+  "qui": "claude",
+  "risques": "Pas d'expérience Power Apps en production. Si vous avez un peu de temps, suivez le parcours gratuit Microsoft Learn « Power Platform Fundamentals (PL-900) » et mentionnez-le.",
+  "salaire": "est. 15–20 k DH net",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/lead-power-apps-adoption-at-dxc-technology-morocco-4471444239"
+}

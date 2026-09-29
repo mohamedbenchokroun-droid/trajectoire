@@ -1,0 +1,45 @@
+{
+  "action": "",
+  "action_date": "2026-09-29",
+  "comment": "LinkedIn, puis invitation à Aya Amal avec le message ci-dessous. Ce même contact porte le poste RSE : un seul échange pour les deux.",
+  "contacts": [
+    {
+      "nom": "Aya Amal",
+      "role": "Talent Acquisition, DIORH (LinkedIn)"
+    }
+  ],
+  "couloir": "com",
+  "cv": "com",
+  "derniere_action": "2026-09-29",
+  "entreprise": "DIORH pour un grand établissement semi-public (grands projets nationaux)",
+  "entreprise_info": "Le client n'est pas nommé : établissement semi-public de grande envergure qui pilote des programmes nationaux (transport, hébergement, accueil des visiteurs). Le profil fait fortement penser aux grands événements à venir. DIORH est un cabinet de recrutement de Rabat.",
+  "historique": [
+    {
+      "action": "abandon",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Offre clôturée sur LinkedIn : les candidatures ne sont plus acceptées.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 62,
+  "message": "Bonjour Madame Amal,\n\nJe viens de postuler au poste de Responsable Senior Expérience Client & Parcours Usagers, et je suis aussi intéressé par le poste de Directeur du Pôle RSE, Impact et Engagement Citoyen que vous portez.\n\nDepuis 2021, je conçois et dirige de bout en bout des événements institutionnels et investisseurs pour les régions et des bailleurs (BEI, IFC, GIZ) : parcours des invités, accueil, scénographie, coordination d'acteurs publics et privés, présence en ligne. Je démarre en février 2027 l'Executive Master « Leading Digital Transformation » de l'UIR.\n\nSeriez-vous disponible pour un échange de 15 minutes ?\n\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Concevoir la stratégie de parcours visiteurs et la mettre en œuvre",
+    "Coordonner les comités techniques (infrastructures, transport, hébergement)",
+    "Fédérer les initiatives régionales",
+    "Construire les tableaux de bord et indicateurs de satisfaction"
+  ],
+  "poste": "Responsable Senior Expérience Client & Parcours Usagers – Grands Projets",
+  "pourquoi": "Accueil, parcours des visiteurs, coordination d'acteurs publics et privés, cohérence entre régions : c'est ce que vous faites à l'échelle d'un événement (Investor Days, sommets), à porter à l'échelle nationale.",
+  "priorite": "A",
+  "publie": "publiée vers le 19 sept.",
+  "qui": "",
+  "risques": "Bac+5 et 8 à 10 ans de gestion de projets complexes, idéalement dans le tourisme ou les flux de visiteurs. Couverture : Executive Master, et la dimension terrain de vos événements (accueil, scénographie, logistique, flux).",
+  "salaire": "est. 25–35 k DH net",
+  "source": "LinkedIn",
+  "statut": "abandon",
+  "url": "https://ma.linkedin.com/jobs/view/responsable-senior-exp%C3%A9rience-client-parcours-usagers-%E2%80%93-grands-projets-h-f-at-diorh-4467189716"
+}

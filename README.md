@@ -4,6 +4,8 @@ Système de recherche d'emploi de Mohamed Benchokroun (Rabat – Témara) : rep�
 
 > Dépôt **privé** : il contient des données personnelles (coordonnées, textes de candidature, entreprises visées). Ne pas le rendre public.
 
+> **Reprise par un autre agent : lire `AGENTS.md` en premier.**
+
 ## Contenu
 
 | Dossier | Rôle |

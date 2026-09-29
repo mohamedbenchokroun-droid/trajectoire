@@ -1,0 +1,48 @@
+{
+  "action": "Rien à faire. Relance automatique le 5 octobre.",
+  "action_date": "2026-10-05",
+  "comment": "LinkedIn Easy Apply, CV anglais.",
+  "contacts": [
+    {
+      "nom": "Talent Acquisition Glovo Maroc",
+      "role": "Sur LinkedIn : « Glovo Talent Acquisition Morocco »."
+    }
+  ],
+  "couloir": "sales",
+  "cv": "en",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "Glovo (groupe Delivery Hero)",
+  "entreprise_info": "Plateforme de livraison, filiale du groupe allemand Delivery Hero (65 pays). Avantages cités : assurance santé, 650 DH/mois de repas, retraite, aide crèche.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV EN, disponibilité < 15 jours. En entretien : demander si des partenaires vendent de l’alcool.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat (zone nord : 10 villes dont Tanger)",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 66,
+  "message": "Hello,\n\nI have applied for the Regional Manager – North position. I have spent 14 years developing B2B portfolios and leading sales and operations teams in Morocco: key account negotiation, structuring the sales process, building the reporting that lets a team hit its numbers (I designed our own CRM and conversion dashboards). I am used to negotiating with large groups and institutions and to travelling across regions.\n\nI would be glad to discuss how I can grow the North region with your partners.\n\nBest regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Diriger l'équipe qui gère les partenaires (restaurants, commerces) de 10 villes",
+    "Définir avec la direction la stratégie de croissance régionale",
+    "Négocier avec les grandes chaînes",
+    "Construire le reporting et piloter le compte de résultat régional",
+    "Déplacements quelques jours par mois"
+  ],
+  "nb_relances": 0,
+  "poste": "Regional Manager – North",
+  "pourquoi": "Poste de management régional : développement commercial, négociation avec les grandes enseignes, pilotage d'une équipe d'account managers et du compte de résultat. Vous avez animé des équipes commerciales, négocié des comptes stratégiques et structuré des process.",
+  "priorite": "A",
+  "publie": "publiée vers le 21 sept.",
+  "qui": "claude",
+  "risques": "Deux points. 1) Vérifiez en entretien que la région ne vous fait pas gérer de partenaires vendant de l'alcool ; si c'est le cas, on abandonne. 2) Univers start-up rapide : mettez en avant votre goût pour les process et la donnée. Anglais courant exigé.",
+  "salaire": "est. 20–28 k DH net + avantages",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/regional-manager-north-at-glovo-4467607763"
+}

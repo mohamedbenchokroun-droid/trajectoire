@@ -1,0 +1,56 @@
+{
+  "action": "",
+  "action_date": "2026-09-29",
+  "canal": "site",
+  "comment": "LinkedIn, bouton Postuler (Easy Apply). Joindre le CV Transformation digitale. Coller le message ci-dessous dans le champ de motivation s'il existe, sinon l'envoyer au recruteur trouvé.",
+  "consigne": "Envoyée le 29 sept. sur l'espace candidat VINCI (réf. 2026-132411) avec le CV Communication et une lettre dédiée. Relance J+5 : message au recruteur SOGEA sur LinkedIn, en mentionnant les deux candidatures (communication et digital).",
+  "contacts": [
+    {
+      "nom": "Service RH SOGEA Maroc",
+      "role": "Cherchez sur LinkedIn « SOGEA Maroc RH » ou « Talent Acquisition VINCI Maroc » et envoyez une invitation avec le message de relance."
+    }
+  ],
+  "couloir": "digital",
+  "cv": "com",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "SOGEA Maroc (groupe VINCI Construction)",
+  "entreprise_info": "Filiale marocaine de VINCI Construction, leader mondial du BTP. Organisation très structurée, procédures groupe, mobilité interne possible dans le groupe VINCI.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T08:40:00Z",
+      "notes": "Envoyée par Claude sur l'espace candidat VINCI, CV Communication + lettre de motivation dédiée. Confirmation du site reçue.",
+      "par": "claude"
+    }
+  ],
+  "km": 12,
+  "lieu": "Skhirat-Témara",
+  "maj": "2026-09-29T08:40:00Z",
+  "match": 70,
+  "message": "Bonjour,\n\nJe postule au poste de Responsable digital et transformation. Chez Corpotex, j'ai conçu et fait adopter par les équipes commerciales et opérationnelles un CRM no-code avec workflows automatisés, des tableaux de bord de pilotage et l'usage quotidien de l'IA générative. Ce que j'en retiens : dans une entreprise de terrain, un projet digital réussit par l'adoption, pas par l'outil.\n\nJ'apporte aussi 14 ans de gestion de projets multi-acteurs auprès d'organisations internationales et d'institutions publiques, et je suis actuellement l'Executive Master « Leading Digital Transformation » de l'UIR. J'habite à Témara.\n\nJe serais heureux d'en parler avec vous.\n\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Définir et piloter la feuille de route digitale avec la direction",
+    "Prioriser et coordonner les projets digitaux des métiers",
+    "Encadrer l'équipe Power Platform, Microsoft 365 et data",
+    "Gouvernance Microsoft 365, SharePoint, Power Platform, Copilot",
+    "Faire adopter les outils digitaux et l'IA générative, suivre les indicateurs de valeur"
+  ],
+  "nb_relances": 0,
+  "poste": "Responsable digital et transformation",
+  "pourquoi": "Poste de transformation digitale à 12 km de chez vous, dans un groupe mondial. Vous avez conçu un CRM no-code et des workflows automatisés, vous utilisez l'IA générative au quotidien et vous avez fait adopter ces outils par des équipes terrain : c'est exactement l'enjeu « adoption des pratiques digitales et de l'IA » de l'offre.",
+  "priorite": "A",
+  "publie": "publiée vers le 19 sept., 200+ candidats",
+  "qui": "moi",
+  "retour": {
+    "action": "postule",
+    "le": "2026-09-29T08:40:00Z",
+    "notes": "Envoyée par Claude sur l'espace candidat VINCI.",
+    "par": "claude"
+  },
+  "risques": "Ils demandent un Bac+5 en SI ou data et une maîtrise de Microsoft 365 / Power Platform. Couverture : l'Executive Master UIR, et dans le message, insister sur l'adoption et le changement (le vrai problème d'une entreprise BTP) plutôt que sur la technique. Si vous avez déjà utilisé Power Automate ou SharePoint, dites-le.",
+  "salaire": "est. 22–30 k DH net",
+  "source": "Site VINCI Construction (via LinkedIn)",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/responsable-digital-et-transformation-at-sogea-maroc-4466906684"
+}

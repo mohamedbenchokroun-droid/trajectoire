@@ -1,0 +1,57 @@
+{
+  "action": "Rien à faire. Si elle accepte, Claude envoie un court message. Sinon, relance le 6 octobre.",
+  "action_date": "2026-10-06",
+  "comment": "LinkedIn, CV Sales, puis message à Yousra Ragouby.",
+  "contacts": [
+    {
+      "nom": "Yousra Ragouby",
+      "role": "Responsable recrutement, Ciments du Maroc (LinkedIn)"
+    }
+  ],
+  "couloir": "sales",
+  "cv": "sales",
+  "derniere_action": "2026-09-29",
+  "entreprise": "Ciments du Maroc (Heidelberg Materials)",
+  "entreprise_info": "Filiale du groupe allemand Heidelberg Materials, coté en bourse, très structuré. À côté de chez vous.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "LinkedIn affiche une candidature envoyée il y a 1 semaine sur ce compte (avant le 26/09).",
+      "par": "claude"
+    },
+    {
+      "action": "relance",
+      "le": "2026-09-29T13:00:00Z",
+      "notes": "Invitation LinkedIn + note envoyée à Yousra Ragouby (Responsable recrutement Ciments du Maroc).",
+      "par": "claude"
+    }
+  ],
+  "km": 3,
+  "lieu": "Témara",
+  "maj": "2026-09-29T13:00:00Z",
+  "match": 55,
+  "missions": [
+    "Déployer la stratégie commerciale sur le secteur",
+    "Développer les clients, négocier prix et marges",
+    "Suivre les encours et la concurrence"
+  ],
+  "nb_relances": 1,
+  "poste": "Chef de Secteur Commercial",
+  "pourquoi": "Poste commercial terrain dans un grand groupe à 3 km de chez vous. Vente B2B, négociation, recouvrement : maîtrisé.",
+  "priorite": "B",
+  "publie": "publiée vers le 12 sept., 200+ candidats",
+  "qui": "claude",
+  "relance": {
+    "canal": "Invitation LinkedIn avec note",
+    "prevue": "2026-09-30",
+    "statut": "envoyée le 29/09",
+    "texte": "Bonjour Madame Ragouby, j’ai postulé au poste de Chef de Secteur Commercial à Témara, où j’habite. 14 ans de développement commercial B2B et d’animation de réseaux de partenaires. Je serais ravi d’échanger avec vous. Mohamed Benchokroun, 06 97 95 32 61"
+  },
+  "risques": "Poste de niveau 3 à 5 ans : salaire probablement juste au plancher. Intéressant pour le groupe, à négocier.",
+  "salaire": "est. 14–18 k DH net + voiture",
+  "salaire_sous_seuil": true,
+  "source": "LinkedIn",
+  "statut": "relance",
+  "url": "https://ma.linkedin.com/jobs/view/chef-de-secteur-commercial-at-ciments-du-maroc-4466307819"
+}

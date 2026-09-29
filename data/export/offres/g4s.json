@@ -1,0 +1,38 @@
+{
+  "action": "Rien à faire. Relance automatique le 5 octobre.",
+  "action_date": "2026-10-05",
+  "comment": "LinkedIn Easy Apply, CV Sales.",
+  "couloir": "sales",
+  "cv": "sales",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "G4S Maroc (groupe Allied Universal)",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV Sales, disponibilité immédiate.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 55,
+  "missions": [
+    "Gérer et développer un portefeuille clients",
+    "Répondre aux appels d'offres",
+    "Construire les offres de prix"
+  ],
+  "nb_relances": 0,
+  "poste": "Sales Specialist",
+  "pourquoi": "Vente B2B de services (sécurité), appels d'offres, portefeuille existant. Groupe international structuré.",
+  "priorite": "C",
+  "publie": "publiée début sept.",
+  "qui": "claude",
+  "risques": "Bac+5 demandé ; salaire à vérifier.",
+  "salaire": "est. 14–18 k DH net",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/sales-specialist-at-g4s-4460721715"
+}

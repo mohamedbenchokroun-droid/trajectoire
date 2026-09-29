@@ -1,0 +1,36 @@
+{
+  "action": "Postuler sur ReKrute (CV Sales).",
+  "action_date": "2026-09-29",
+  "comment": "ReKrute (connectez-vous, bouton Postuler), CV Sales.",
+  "contacts": [
+    {
+      "nom": "RH NOVEC",
+      "role": "Candidature via ReKrute ; en parallèle, chercher sur LinkedIn le DRH ou le directeur du développement de NOVEC."
+    }
+  ],
+  "couloir": "sales",
+  "cv": "sales",
+  "entreprise": "NOVEC (groupe CDG, ingénierie)",
+  "entreprise_info": "Premier bureau d'ingénierie du Maroc (≈500 personnes), filiale de CDG Développement. Groupe public, très structuré, grilles et évolution claires.",
+  "km": 30,
+  "lieu": "Technopolis, Salé",
+  "maj": "2026-09-26T23:20:25.809Z",
+  "match": 68,
+  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Responsable Développement Afrique. J'ai développé et géré des comptes stratégiques au Maroc et ouvert des marchés en Afrique chez E-Maroc Wave, puis travaillé depuis 2021 avec la BEI, l'IFC et la GIZ sur des programmes d'investissement et des Investor Days régionaux. Je connais donc les deux côtés du développement de projets en Afrique : le client public et le bailleur qui le finance.\n\nJe rejoindrai en février 2027 l'Executive Master « Leading Digital Transformation » de l'UIR, compatible avec un poste à temps plein.\n\nJe serais ravi de vous présenter ce que je peux apporter à la stratégie africaine de NOVEC.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Identifier et qualifier les opportunités d'affaires en Afrique",
+    "Prospecter clients publics, privés et bailleurs",
+    "Construire les partenariats et le portefeuille d'opportunités",
+    "Rattaché à la direction générale déléguée au développement"
+  ],
+  "poste": "Responsable Développement Afrique",
+  "pourquoi": "Développer des affaires en Afrique auprès d'acteurs publics et institutionnels : vous avez ouvert des marchés africains chez E-Maroc Wave et vous travaillez depuis 5 ans avec des bailleurs (BEI, IFC, GIZ), ceux-là mêmes qui financent les projets d'infrastructure africains que NOVEC vise.",
+  "priorite": "A",
+  "publie": "publiée en septembre",
+  "qui": "toi",
+  "risques": "Demande Bac+5 ingénieur ou école de commerce, 8 à 12 ans d'international et idéalement une expérience en ingénierie. Couverture : Executive Master, et le lien direct avec les bailleurs qui financent ces projets. À 30 km, c'est la limite de votre rayon : Technopolis est facile par la rocade.",
+  "salaire": "est. 25–35 k DH net",
+  "source": "ReKrute",
+  "statut": "a_postuler",
+  "url": "https://www.rekrute.com/offre-emploi-responsable-developpement-afrique-recrutement-novec-sale-technopolis-186128.html"
+}

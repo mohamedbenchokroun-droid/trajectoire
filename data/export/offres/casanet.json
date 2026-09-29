@@ -1,0 +1,57 @@
+{
+  "action": "Rien à faire. Si elle accepte, Claude envoie un court message. Sinon, relance le 6 octobre.",
+  "action_date": "2026-10-06",
+  "comment": "LinkedIn Easy Apply, CV Sales, puis invitation à Jennate Benlemmouden.",
+  "contacts": [
+    {
+      "nom": "Jennate Benlemmouden",
+      "role": "Talent Acquisition, Casanet (LinkedIn)"
+    }
+  ],
+  "couloir": "sales",
+  "cv": "sales",
+  "derniere_action": "2026-09-29",
+  "entreprise": "Casanet (filiale de Maroc Telecom)",
+  "entreprise_info": "Intégrateur IT (réseaux, cybersécurité, cloud) du groupe Maroc Telecom. Grand groupe, process établis.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "LinkedIn affiche une candidature envoyée il y a 1 semaine sur ce compte (avant le 26/09).",
+      "par": "claude"
+    },
+    {
+      "action": "relance",
+      "le": "2026-09-29T13:00:00Z",
+      "notes": "Invitation LinkedIn + note envoyée à Jennate Benlemmouden (Talent Acquisition Casanet).",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-29T13:00:00Z",
+  "match": 58,
+  "message": "Bonjour Madame Benlemmouden,\n\nJe viens de postuler au poste d'Account Manager. J'ai 14 ans de gestion de comptes stratégiques B2B, du premier rendez-vous à la signature, et une vraie pratique des solutions digitales : j'ai conçu notre CRM, automatisé nos flux commerciaux et je démarre l'Executive Master « Leading Digital Transformation » de l'UIR en février 2027.\n\nJe serais heureux d'échanger sur les comptes que Casanet veut développer à Rabat.\n\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Développer et fidéliser un portefeuille de comptes stratégiques",
+    "Qualifier les opportunités, bâtir les propositions avec l'avant-vente",
+    "Négocier et signer ; développer les ventes additionnelles"
+  ],
+  "nb_relances": 1,
+  "poste": "Account Manager",
+  "pourquoi": "Gestion de portefeuille grands comptes, cycle de vente complet, propositions et négociation : votre métier. Votre aisance avec les outils digitaux aide à vendre des solutions IT.",
+  "priorite": "B",
+  "publie": "publiée vers le 12 sept.",
+  "qui": "claude",
+  "relance": {
+    "canal": "Invitation LinkedIn avec note",
+    "prevue": "2026-09-30",
+    "statut": "envoyée le 29/09",
+    "texte": "Bonjour Madame Benlemmouden, j’ai postulé au poste d’Account Manager chez Casanet. 14 ans de développement de comptes B2B, avec une vraie pratique du digital (CRM, automatisation). Je serais ravi d’échanger sur vos priorités à Rabat. Mohamed Benchokroun, 06 97 95 32 61"
+  },
+  "risques": "5 ans d'account management dans l'IT demandés. Couverture : vos projets digitaux (CRM, automatisation) et votre capacité à comprendre vite une offre technique. Poste intermédiaire : négocier le fixe au-dessus de 15 000.",
+  "salaire": "est. 16–22 k DH net + variable",
+  "source": "LinkedIn",
+  "statut": "relance",
+  "url": "https://ma.linkedin.com/jobs/view/account-manager-at-casanet-sa-filiale-de-maroc-telecom-4463524077"
+}

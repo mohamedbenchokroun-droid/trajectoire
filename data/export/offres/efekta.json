@@ -1,0 +1,47 @@
+{
+  "action": "Rien à faire. Relance automatique le 5 octobre.",
+  "action_date": "2026-10-05",
+  "comment": "LinkedIn Easy Apply, CV anglais. Puis message au recruteur (texte ci-dessous, en anglais).",
+  "contacts": [
+    {
+      "nom": "Recruteur Efekta",
+      "role": "Sur LinkedIn, page Efekta Education, onglet Personnes, filtre « Talent » ou « Recruiter »."
+    }
+  ],
+  "couloir": "sales",
+  "cv": "en",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "Efekta Education (groupe EF Education First)",
+  "entreprise_info": "EdTech du groupe suédois EF Education First (IA pour l'apprentissage de l'anglais). Vend aux ministères, écoles et universités. Culture internationale, processus de vente structurés.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV EN. Deal size déclaré : 30k USD, prétention 20 000 DH. Prépare un exemple de contrat de cette taille.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 75,
+  "message": "Hello,\n\nI have applied for the Account Director (Education) role in Rabat. For 14 years I have sold to and worked with institutional decision-makers in Morocco: regional investment centres, the European Investment Bank, IFC and GIZ, on programmes where the sales cycle runs through committees and public stakeholders. I also build and adopt digital tools myself (custom CRM, automation, generative AI), and I start the Executive Master in Leading Digital Transformation at UIR in February 2027.\n\nI would welcome a short call to discuss how I can open doors for Efekta with Moroccan schools, universities and public programmes.\n\nBest regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "missions": [
+    "Construire la stratégie commerciale vers les écoles, universités et programmes publics",
+    "Rencontrer ministères, académies régionales et directions d'établissements",
+    "Mener le cycle de vente complet, jusqu'à la signature",
+    "Suivre les indicateurs : partenariats, chiffre d'affaires, vélocité"
+  ],
+  "nb_relances": 0,
+  "poste": "Account Director (Education)",
+  "pourquoi": "Vente B2G et institutionnelle : convaincre des décideurs publics, gérer des cycles longs, parler à des ministères. Vous l'avez fait avec la BEI, la GIZ, les CRI et les régions. Le sujet (éducation, IA) colle à votre goût pour le digital, et vous serez vous-même étudiant UIR.",
+  "priorite": "A",
+  "publie": "publiée vers le 12 sept., 120 candidats",
+  "qui": "claude",
+  "risques": "Pas d'expérience directe dans l'éducation. Couverture : vos relations avec les institutions publiques et les bailleurs, et votre inscription à l'UIR (vous connaissez l'enseignement supérieur de l'intérieur). L'offre dit qu'une recommandation double les chances d'entretien : cherchez un contact EF ou Efekta dans votre réseau LinkedIn.",
+  "salaire": "est. 20–30 k DH net + variable",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/account-director-education-at-efekta-education-4464467885"
+}

@@ -1,0 +1,45 @@
+{
+  "action": "Rien à faire. Relance automatique le 5 octobre.",
+  "action_date": "2026-10-05",
+  "comment": "LinkedIn Easy Apply, CV Transformation digitale.",
+  "contacts": [
+    {
+      "nom": "Fatima Zahra Laalou",
+      "role": "Talent Acquisition Senior, DXC (LinkedIn)"
+    }
+  ],
+  "couloir": "digital",
+  "cv": "digital",
+  "date_postule": "2026-09-29",
+  "derniere_action": "2026-09-29",
+  "entreprise": "DXC Technology Maroc",
+  "entreprise_info": "Multinationale américaine de services IT, centre de Rabat Technopolis. Très structurée.",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV Transformation digitale.",
+      "par": "claude"
+    }
+  ],
+  "km": 28,
+  "lieu": "Rabat (Technopolis)",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 50,
+  "missions": [
+    "Stratégies et plans de changement pour des projets d'infrastructure IT",
+    "Plans de communication pour expliquer les changements aux employés",
+    "Programmes de formation et suivi des indicateurs d'adoption"
+  ],
+  "nb_relances": 0,
+  "poste": "Project Manager – Business Change Manager",
+  "pourquoi": "Conduite du changement, plans de communication vers des non-techniciens, formation, suivi de l'adoption : vous faites ce lien entre métiers et outils.",
+  "priorite": "B",
+  "publie": "publiée début sept.",
+  "qui": "claude",
+  "risques": "5 ans de conduite du changement en environnement IT et méthodes (Prosci/ADKAR) demandés. Écart réel ; le master aidera. Candidature d'opportunité.",
+  "salaire": "est. 18–25 k DH net",
+  "source": "LinkedIn",
+  "statut": "postule",
+  "url": "https://ma.linkedin.com/jobs/view/project-manager-business-change-manager-at-dxc-technology-morocco-4462169409"
+}

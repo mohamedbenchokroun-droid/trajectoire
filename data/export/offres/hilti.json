@@ -1,0 +1,29 @@
+{
+  "action": "Vérifier que l'offre est ouverte et postuler (CV Sales).",
+  "action_date": "2026-09-30",
+  "comment": "ReKrute, CV Sales.",
+  "couloir": "sales",
+  "cv": "sales",
+  "entreprise": "Hilti Maroc (groupe Hilti, Liechtenstein)",
+  "entreprise_info": "Multinationale (32 000 salariés, 120 pays) réputée pour son management, sa formation et ses parcours de carrière. Voiture de fonction habituelle.",
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-26T23:20:25.809Z",
+  "match": 60,
+  "missions": [
+    "Développer et fidéliser un portefeuille de clients BTP",
+    "Propositions commerciales et négociation",
+    "Atteinte des objectifs de zone"
+  ],
+  "poste": "Account Manager Rabat",
+  "pourquoi": "L'exemple même de l'organisation structurée qui fait grandir ses commerciaux. Poste un peu junior pour vous, mais porte d'entrée vers Key Account puis Sales Manager.",
+  "priorite": "B",
+  "publie": "publiée cet été",
+  "qui": "toi",
+  "risques": "Le fixe peut être sous 15 000 : ne l'accepter que si fixe + variable + voiture dépassent nettement votre plancher. Offre ancienne : vérifier qu'elle est toujours ouverte.",
+  "salaire": "est. 13–18 k DH net + voiture + variable",
+  "salaire_sous_seuil": true,
+  "source": "ReKrute",
+  "statut": "a_postuler",
+  "url": "https://www.rekrute.com/offre-emploi-account-manager-hf-rabat-recrutement-hilti-maroc-rabat-183465.html"
+}

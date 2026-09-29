@@ -1,0 +1,43 @@
+{
+  "action": "",
+  "action_date": "2026-09-29",
+  "comment": "LinkedIn, CV Com. Mentionné dans le message à Aya Amal.",
+  "contacts": [
+    {
+      "nom": "Aya Amal",
+      "role": "Talent Acquisition, DIORH (LinkedIn)"
+    }
+  ],
+  "couloir": "com",
+  "cv": "com",
+  "derniere_action": "2026-09-29",
+  "entreprise": "DIORH pour un grand établissement semi-public",
+  "historique": [
+    {
+      "action": "abandon",
+      "le": "2026-09-29T12:00:00Z",
+      "notes": "Offre clôturée sur LinkedIn : les candidatures ne sont plus acceptées.",
+      "par": "claude"
+    }
+  ],
+  "km": 15,
+  "lieu": "Rabat",
+  "maj": "2026-09-29T12:00:00Z",
+  "match": 55,
+  "missions": [
+    "Stratégie de mobilisation : public, collectivités, sponsors, associations",
+    "Programmes d'animation territoriale, d'accessibilité et de participation citoyenne",
+    "Coordination des relais locaux dans tout le pays",
+    "Reporting à la direction générale et aux instances"
+  ],
+  "poste": "Directeur du Pôle RSE, Impact et Engagement Citoyen",
+  "pourquoi": "Mobilisation des parties prenantes, communication événementielle, engagement citoyen à grande échelle. Votre CV Com parle déjà de RSE et d'engagement.",
+  "priorite": "B",
+  "publie": "publiée le 25 sept.",
+  "qui": "",
+  "risques": "15 ans d'expérience demandés dans la mobilisation à grande échelle : poste très senior. Candidature d'opportunité, portée par le même contact que le poste Expérience Client.",
+  "salaire": "est. 35–50 k DH net",
+  "source": "LinkedIn",
+  "statut": "abandon",
+  "url": "https://ma.linkedin.com/jobs/view/directeur-du-p%C3%B4le-rse-impact-et-engagement-citoyen-h-f-at-diorh-4469746816"
+}

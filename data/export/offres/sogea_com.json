@@ -1,0 +1,28 @@
+{
+  "canal": "linkedin",
+  "consigne": "Date d'envoi approximative (fin septembre) : dites-la à Claude si vous l'avez. Relance coordonnée avec la candidature Transformation digitale chez SOGEA.",
+  "couloir": "com",
+  "cv": "com",
+  "date_postule": "2026-09-28",
+  "derniere_action": "2026-09-28",
+  "entreprise": "SOGEA Maroc (groupe VINCI Construction)",
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-09-28T09:00:00Z",
+      "notes": "Envoyée par Mohamed, CV Communication.",
+      "par": "mohamed"
+    }
+  ],
+  "km": 12,
+  "lieu": "Skhirat-Témara",
+  "maj": "2026-09-29T02:00:00Z",
+  "match": 70,
+  "nb_relances": 0,
+  "poste": "Poste communication",
+  "pourquoi": "Candidature envoyée par Mohamed avec le CV Communication.",
+  "priorite": "A",
+  "salaire": "à préciser",
+  "source": "Candidature de Mohamed",
+  "statut": "postule"
+}
