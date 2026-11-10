@@ -1,16 +1,16 @@
 {
-  "action": "Postuler sur ReKrute (CV Sales), 10 minutes.",
-  "action_date": "2026-09-29",
-  "comment": "ReKrute, CV Sales.",
+  "action": "Candidature non envoyée. ReKrute déconnecté dans Chrome le 06/10. Opportunité ambitieuse : Bac+5 et compétences investissement/foncier à ne pas assimiler à la seule expérience commerciale.",
+  "action_date": "2026-10-07",
+  "comment": "Priorité secondaire. Un seul CV Sales pour MEDZ. Valoriser les événements investisseurs et la coordination institutionnelle sans revendiquer de compétences non démontrées en structuration financière ou foncière. Aucun envoi confirmé.",
   "couloir": "sales",
   "cv": "sales",
   "entreprise": "MEDZ (groupe CDG, aménagement industriel)",
   "entreprise_info": "Aménageur de zones industrielles du groupe CDG (≈30 zones, 2 600 ha). Institution publique solide.",
   "km": 15,
   "lieu": "Rabat",
-  "maj": "2026-09-26T23:20:25.809Z",
+  "maj": "2026-10-06T15:41:29.980Z",
   "match": 45,
-  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Directeur Business Development. Depuis 2021, j'ai conçu et piloté pour les régions et leurs partenaires des Investor Days (Guelmim, deux éditions ; Essaouira) qui présentaient foncier, filières et incitations à des investisseurs nationaux et internationaux. Auparavant, j'ai développé des comptes stratégiques au Maroc et en Afrique pendant plus de dix ans.\n\nSi ce poste appelle un profil plus senior en investissement, je serais heureux d'être considéré pour un rôle de chargé d'affaires ou de partenariats au sein de la direction Origination.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Directeur Business Development. Mon parcours de 14 ans combine développement commercial B2B, gestion de comptes stratégiques et coordination de projets institutionnels. Depuis 2021, j’ai notamment conçu et piloté des événements investisseurs régionaux, dont les Investor Days de Guelmim et d’Essaouira : cadrage, coordination des parties prenantes, préparation des supports et déploiement opérationnel.\n\nCette expérience complète mon activité commerciale : prospection, propositions, négociation et fidélisation, avec des outils CRM et de reporting pour structurer le suivi. Je souhaite mettre ces compétences au service du développement des relations entreprises et des partenariats de MEDZ.\n\nJe mesure la dimension spécialisée de ce poste en investissement. Si vous privilégiez une expérience directe du montage de projets d’investissement, je serais également heureux d’être considéré pour une fonction de développement commercial, de chargé d’affaires ou de partenariats au sein de vos équipes.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
   "missions": [
     "Piloter des projets d'investissement en phase de développement",
     "Structurer les projets (technique, économique, juridique, foncier)",
@@ -18,12 +18,33 @@
   ],
   "poste": "Directeur Business Development",
   "pourquoi": "Candidature ambitieuse. Votre angle : les Investor Days de Guelmim et d'Essaouira. Vous savez présenter un territoire à des investisseurs, ce qui est le cœur de l'origination de MEDZ.",
-  "priorite": "B",
+  "priorite": "C",
   "publie": "publiée en septembre",
-  "qui": "toi",
-  "risques": "Grande école d'ingénieur, MBA et 12 ans dont 8 en investissement demandés : écart important. On postule quand même (coût faible), et on garde MEDZ comme cible réseau pour un poste de niveau manager.",
-  "salaire": "est. 35–50 k DH net",
+  "qui": "agent",
+  "risques": "Écart important : Bac+5 et expérience directe de l’investissement, du montage financier, juridique et foncier demandés. Ne pas assimiler l’événementiel investisseurs au pilotage de projets d’investissement. Candidature opportuniste, avec ouverture à un rôle de développement commercial ou de partenariats de niveau manager. Rémunération non publiée.",
+  "salaire": "Non publié ; plancher requis : 15 000 DH net/mois, à confirmer",
   "source": "ReKrute",
-  "statut": "a_postuler",
-  "url": "https://www.rekrute.com/offre-emploi-directeur-business-development-recrutement-medz-rabat-186430.html"
+  "statut": "pret",
+  "url": "https://www.rekrute.com/offre-emploi-directeur-business-development-recrutement-medz-rabat-186430.html",
+  "blocage": "ReKrute : connexion demandée sur l’offre malgré le profil complet ; import du PDF révisé bloqué par l’extension Chrome",
+  "offre_verifiee_le": "2026-10-01",
+  "date_limite": "2026-11-15",
+  "reference_offre": "186430",
+  "source_verifiee": "https://www.rekrute.com/offre-emploi-directeur-business-development-recrutement-medz-rabat-186430.html",
+  "historique": [
+    {
+      "action": "prepare",
+      "le": "2026-10-01T11:58:41.169Z",
+      "par": "agent",
+      "batch_id": "preparation-2026-10-01",
+      "notes": "Candidature préparée ; aucun envoi effectué."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Ne pas présenter cette candidature comme soumise. Priorité C pour l’écart de prérequis, sans réécrire l’historique."
+    }
+  ]
 }

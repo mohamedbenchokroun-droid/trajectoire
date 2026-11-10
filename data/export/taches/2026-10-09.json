@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "texte": "Revoir les retours du lot et les canaux Efekta/G4S/Glovo",
+      "detail": "Ne pas appeler mécaniquement à J+10 : numéro professionnel et absence de réponse à vérifier. Aucun appel à l’UE.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "G4S : éventuel appel J+10 préparé, pas automatique",
+      "detail": "Standard officiel +212522497400. Contrôler réponses, preuve de candidature et date réelle de relance avant de demander un accord ; ne pas cumuler email/appel rapprochés.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Vérifier la formulation formation des prochains dossiers",
+      "detail": "Avant toute nouvelle diffusion, remplacer les mentions de simple projet/non-inscription par « Inscription validée le 07/10/2026 — Executive Master Leading Digital Transformation, UIR, session 2026–2027 », si pertinent. Ne pas écrire Master obtenu ou cours commencés. Confirmer la finalisation administrative demandée par l’UIR. Aucun CV PDF n’a été changé le 08/10 ; conserver un même CV par entreprise.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-08"
+    },
+    {
+      "texte": "Relances J+5 et revue J+10 : contrôler avant toute action",
+      "detail": "NTU : utiliser le brouillon mis à jour, pas l’ancienne mention de non-inscription. Vérifier réponses, autorisation ponctuelle et date réelle du dernier envoi avant relance/appel. NOVEC, G4S et les autres brouillons ne sont pas des relances envoyées. Ne pas incrémenter les compteurs ni classer à J+20 automatiquement.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-08"
+    },
+    {
+      "texte": "Contact RH LOCAMED vérifié — demande préalable en brouillon",
+      "detail": "Adresse rh@locamed.org publiée par l’employeur sur LinkedIn : https://fr.linkedin.com/posts/locamed-sant%C3%A9-%26-confort_recrutement-rabat-retail-activity-7513584765518839808-_STq . Brouillon https://mail.google.com/mail/u/0/#drafts/1a1200245d588b25 . Vérifier recevabilité Bac+3/expérience, rémunération et CRM, puis candidature Sales si critères compatibles. Aucun envoi, aucun CV joint, aucun doublon.",
+      "fait": true,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "Veille publique dédupliquée : pas de nouvelle candidature qualifiée",
+      "detail": "LinkedIn, ReKrute, emploi.ma et carrières Hilti/ICESCO/UE consultés. Hilti et LOCAMED CRM restent B, ICESCO B en veille avec exigences détaillées non accessibles. Nouvelle publication LOCAMED Superviseur & Responsable magasins (08/10 environ) : C/non prioritaire, Bac+5, expérience retail et déplacements fréquents hors rayon ; pas de nouvelle fiche ni envoi. Maroc Telecom communication interne LinkedIn 4376559740 fermé ; EDVANTIS relations entreprises emploi.ma 9207886 expiré ; offres de stage/junior et Casablanca écartées. Page de résultats emploi.ma bloquée 403, recherche publique indexée poursuivie. Aucun secteur exclu ni Sofrecom retenu.",
+      "fait": true,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "J+10 : contrôle Gmail réalisé, appels non effectués",
+      "detail": "Recherches Gmail après le 08/10 et par domaines : pas de nouvelle réponse de recrutement identifiée dans les résultats consultés. NTU, NOVEC, G4S toujours DRAFT. L’email UIR de paiement concerne la formation, pas une réponse emploi. Messagerie LinkedIn privée non contrôlée aujourd’hui : ne pas affirmer absence de réponse globale. Textes J+5 et scripts J+10 conservés, destinataires/numéros manquants à vérifier, autorisation ponctuelle toujours nécessaire. Aucun statut ni compteur d’envoi modifié ; aucun classement J+20.",
+      "fait": true,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "UE : dernière journée de dépôt, candidature déjà envoyée",
+      "detail": "Clôture le 09/10 à 18h00 Rabat confirmée sur la page officielle. Envoi du 06/10 conservé avec ses réserves documentaires ; pas de doublon, ni relance ni appel. Suivi après clôture programmé au 16/10.",
+      "fait": true,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "Edvantis : candidature envoyée à Zahia",
+      "detail": "Mail SENT 1a12142850af082d, CV design ciblé PDF joint et portfolio. Bac+3 déclaré, pas de Master design inventé. Fiche dédiée créée.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "edvantis-envoi-2026-10-09"
+    }
+  ],
+  "maj": "2026-10-09T15:24:59.238Z"
+}

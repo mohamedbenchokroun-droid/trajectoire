@@ -1,0 +1,47 @@
+{
+  "entreprise": "Deloitte Maroc",
+  "poste": "Responsable Communication, Marque Employeur & Événementiel",
+  "lieu": "à vérifier (piste publique à Casablanca, hors périmètre visé)",
+  "source": "Accusé Workday reçu dans Gmail",
+  "url": "",
+  "cv": "inconnu - ne pas inventer",
+  "priorite": "C",
+  "statut": "postule",
+  "date_postule": "2026-10-02",
+  "maj": "2026-10-05T23:50:34.831Z",
+  "salaire": "Non publié",
+  "pourquoi": "Candidature déjà envoyée par Mohamed et accusé reçu ; suivi sans doublon.",
+  "risques": "Lieu exact et CV transmis non vérifiés ; Casablanca serait hors périmètre souhaité.",
+  "action": "Attendre la décision ; ne pas renvoyer de candidature ni préparer de relance tant que la fiche officielle et le lieu ne sont pas confirmés.",
+  "qui": "agent",
+  "preuves": [
+    {
+      "type": "accuse",
+      "verifiee": true,
+      "le": "2026-10-02",
+      "label": "Accusé Workday Deloitte, poste nommé",
+      "url": "https://mail.google.com/mail/u/0/#all/1a0fcd09aba51c04"
+    }
+  ],
+  "historique": [
+    {
+      "action": "Accusé de candidature",
+      "le": "2026-10-02T13:32:02Z",
+      "par": "agent",
+      "batch_id": "suivi-2026-10-05",
+      "notes": "Accusé Workday reçu dans Gmail ; application antérieure à cette veille, aucun nouvel envoi."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:41.380Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    }
+  ],
+  "action_planifiee": {
+    "date": "2026-10-13",
+    "texte": "Attendre la décision ; ne pas renvoyer de candidature ni préparer de relance tant que la fiche officielle et le lieu ne sont pas confirmés.",
+    "qui": "agent"
+  }
+}

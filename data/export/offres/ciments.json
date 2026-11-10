@@ -1,16 +1,18 @@
 {
-  "action": "Rien à faire. Si elle accepte, Claude envoie un court message. Sinon, relance le 6 octobre.",
-  "action_date": "2026-10-06",
+  "action": "Relance LinkedIn envoyée à Yousra Ragouby le 12/10 et vérifiée. Contrôler la réponse le 19/10, sans nouveau message automatique.",
+  "action_date": "2026-10-19",
   "comment": "LinkedIn, CV Sales, puis message à Yousra Ragouby.",
   "contacts": [
     {
       "nom": "Yousra Ragouby",
-      "role": "Responsable recrutement, Ciments du Maroc (LinkedIn)"
+      "role": "Responsable recrutement, Ciments du Maroc (LinkedIn)",
+      "conversation_url": "https://www.linkedin.com/messaging/thread/2-ODZjNTI0ODAtZWFiMy00YWE5LWFhMDgtNDczZmQ2MmIxZDU5XzEwMA==/",
+      "verifie_le": "2026-10-06"
     }
   ],
   "couloir": "sales",
   "cv": "sales",
-  "derniere_action": "2026-09-29",
+  "derniere_action": "2026-10-12",
   "entreprise": "Ciments du Maroc (Heidelberg Materials)",
   "entreprise_info": "Filiale du groupe allemand Heidelberg Materials, coté en bourse, très structuré. À côté de chez vous.",
   "historique": [
@@ -25,33 +27,86 @@
       "le": "2026-09-29T13:00:00Z",
       "notes": "Invitation LinkedIn + note envoyée à Yousra Ragouby (Responsable recrutement Ciments du Maroc).",
       "par": "claude"
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "BROUILLON NON ENVOYÉ : Bonjour Madame Ragouby, je me permets de revenir sur ma candidature au poste de Chef de Secteur Commercial à Témara. Mon parcours en prospection B2B, négociation et fidélisation de comptes pourrait être utile à votre équipe. Le processus est-il toujours en cours ? Je reste disponible pour un échange. Bien cordialement, Mohamed Benchokroun."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.529Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "relance_envoyee",
+      "le": "2026-10-12T14:35:00+01:00",
+      "par": "agent",
+      "batch_id": "ciments-relance-2026-10-12",
+      "canal": "linkedin",
+      "notes": "Message vérifié dans la conversation de Yousra Ragouby à 14:35 ; aucune nouvelle candidature ni pièce jointe."
     }
   ],
   "km": 3,
   "lieu": "Témara",
-  "maj": "2026-09-29T13:00:00Z",
+  "maj": "2026-10-12T14:35:00+01:00",
   "match": 55,
   "missions": [
     "Déployer la stratégie commerciale sur le secteur",
     "Développer les clients, négocier prix et marges",
     "Suivre les encours et la concurrence"
   ],
-  "nb_relances": 1,
+  "nb_relances": 2,
   "poste": "Chef de Secteur Commercial",
   "pourquoi": "Poste commercial terrain dans un grand groupe à 3 km de chez vous. Vente B2B, négociation, recouvrement : maîtrisé.",
   "priorite": "B",
   "publie": "publiée vers le 12 sept., 200+ candidats",
-  "qui": "claude",
+  "qui": "agent",
   "relance": {
     "canal": "Invitation LinkedIn avec note",
     "prevue": "2026-09-30",
     "statut": "envoyée le 29/09",
     "texte": "Bonjour Madame Ragouby, j’ai postulé au poste de Chef de Secteur Commercial à Témara, où j’habite. 14 ans de développement commercial B2B et d’animation de réseaux de partenaires. Je serais ravi d’échanger avec vous. Mohamed Benchokroun, 06 97 95 32 61"
   },
-  "risques": "Poste de niveau 3 à 5 ans : salaire probablement juste au plancher. Intéressant pour le groupe, à négocier.",
-  "salaire": "est. 14–18 k DH net + voiture",
-  "salaire_sous_seuil": true,
+  "risques": "Poste de niveau 3 à 5 ans ; expérience B2B pertinente, secteur matériaux à découvrir. Salaire non publié, seuil >12 000 DH net non confirmé.",
+  "salaire": "Non publié ; seuil recherché strictement supérieur à 12 000 DH net/mois, à confirmer avant toute proposition.",
+  "salaire_sous_seuil": null,
   "source": "LinkedIn",
   "statut": "relance",
-  "url": "https://ma.linkedin.com/jobs/view/chef-de-secteur-commercial-at-ciments-du-maroc-4466307819"
+  "url": "https://ma.linkedin.com/jobs/view/chef-de-secteur-commercial-at-ciments-du-maroc-4466307819",
+  "relance_preparee": {
+    "texte": "Bonjour Madame Ragouby, je reviens vers vous au sujet de ma candidature au poste de Chef de Secteur Commercial à Témara. Mon parcours en développement B2B, négociation et suivi de comptes me semble pertinent pour votre équipe. Le recrutement est-il toujours en cours ? Je serais disponible pour un échange. Bien cordialement, Mohamed Benchokroun.",
+    "canal": "LinkedIn",
+    "date": "2026-10-06",
+    "statut": "envoyee",
+    "destinataire": "Yousra Ragouby",
+    "url": "https://www.linkedin.com/messaging/thread/2-ODZjNTI0ODAtZWFiMy00YWE5LWFhMDgtNDczZmQ2MmIxZDU5XzEwMA==/",
+    "date_envoi": "2026-10-12"
+  },
+  "action_planifiee": {
+    "date": "2026-10-19",
+    "texte": "Ciments du Maroc : contrôler la réponse LinkedIn à la relance du 12/10 ; ne pas réécrire sans motif.",
+    "qui": "agent"
+  },
+  "preuves": [
+    {
+      "type": "message_linkedin_envoye",
+      "verifiee": true,
+      "le": "2026-10-12T14:35:00+01:00",
+      "label": "Message à Yousra Ragouby visible dans la conversation LinkedIn à 14:35 ; une seule relance envoyée le 12/10.",
+      "url": "https://www.linkedin.com/messaging/thread/2-ODZjNTI0ODAtZWFiMy00YWE5LWFhMDgtNDczZmQ2MmIxZDU5XzEwMA==/",
+      "reference": "Relance Ciments du Maroc 12/10/2026"
+    }
+  ]
 }

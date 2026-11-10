@@ -1,0 +1,63 @@
+{
+  "entreprise": "Université Mohammed VI des Sciences et de la Santé (UM6SS)",
+  "poste": "Chargé(e) de communication",
+  "lieu": "Rabat",
+  "source": "Publication LinkedIn UM6SS transmise par Mohamed le 21/10/2026 (capture d'écran)",
+  "statut": "relance",
+  "priorite": "B",
+  "match": 84,
+  "cv": "com",
+  "salaire": "Non publié ; seuil de plus de 12 000 DH nets non vérifié",
+  "publication": null,
+  "offre_verifiee_le": "2026-10-21",
+  "contrat": "Non précisé dans la capture de l'annonce",
+  "pourquoi": "Poste en communication institutionnelle sur le site de Rabat d'une grande université structurée. Le parcours de Mohamed associe communication corporate, contenus digitaux, coordination de projets et événementiel.",
+  "risques": "Salaire non publié. Les exigences détaillées et le niveau de diplôme ne sont pas visibles sur la capture fournie ; à confirmer avec le recruteur avant de poursuivre les entretiens.",
+  "action": "Relance unique envoyée le 26/10 ; attendre la réponse et contrôler le 02/11 sans nouvel envoi automatique.",
+  "action_date": "2026-11-02",
+  "qui": "agent",
+  "action_planifiee": {
+    "date": "2026-11-02",
+    "texte": "Contrôler les réponses UM6SS ; ne pas relancer de nouveau sans élément utile.",
+    "qui": "agent"
+  },
+  "dossier_statut": "envoye",
+  "date_postule": "2026-10-21",
+  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Chargé de communication sur le site de Rabat de l’Université Mohammed VI des Sciences et de la Santé.\n\nDepuis 14 ans, j’accompagne des organisations et des entreprises dans la conception et la mise en œuvre de leurs actions de communication. Mes missions m’ont amené à cadrer les besoins, construire des messages et des supports, coordonner des intervenants et piloter des projets événementiels et digitaux. J’ai notamment contribué à des projets pour la BEI, l’IFC, la GIZ et le Cluster EnR.\n\nCette expérience de la communication institutionnelle, alliée à une pratique concrète de la production de contenus et de la coordination de projets, me permettrait de contribuer au rayonnement des activités d’enseignement, de recherche et de santé de l’UM6SS.\n\nBasé à Témara, je serais heureux d’échanger avec vous sur les besoins de votre équipe à Rabat. Vous trouverez mon CV en pièce jointe.\n\nJe vous remercie de l’attention portée à ma candidature.\n\nBien cordialement,\nMohamed Benchokroun\n+212 6 97 95 32 61\nmohamed.benchokroun@gmail.com",
+  "historique": [
+    {
+      "action": "candidature_envoyee",
+      "le": "2026-10-21T00:03:10Z",
+      "par": "agent",
+      "notes": "Email envoyé à recrutement@um6ss.ma. Contrôle Gmail : label SENT, destinataire et objet conformes, CV Mohamed Benchokroun Communication.pdf présent en pièce jointe (365315 octets). Identifiant du message : 1a15bc4dc6d6f746."
+    },
+    {
+      "action": "relance_email_envoyee",
+      "le": "2026-10-26T09:23:09.276Z",
+      "par": "agent",
+      "batch_id": "um6ss-relance-2026-10-26",
+      "notes": "Réponse dans le fil de la candidature du 21/10, envoyée à recrutement@um6ss.ma. Message Gmail 1a177841f76f1519, label SENT vérifié ; aucun nouveau CV joint, le PDF figure dans le message initial."
+    }
+  ],
+  "preuves": [
+    {
+      "type": "email_envoye",
+      "le": "2026-10-21T00:03:10Z",
+      "verifiee": true,
+      "label": "Email envoyé à recrutement@um6ss.ma avec le CV Communication PDF",
+      "reference": "Gmail 1a15bc4dc6d6f746",
+      "url": "https://mail.google.com/mail/u/?authuser=mohamed.benchokroun%40gmail.com#all/1a15bc4dc6d6f746"
+    },
+    {
+      "type": "email_relance_envoye",
+      "le": "2026-10-26T09:23:09.276Z",
+      "verifiee": true,
+      "label": "Relance UM6SS envoyée le 26/10 dans le fil de la candidature initiale",
+      "reference": "Gmail 1a177841f76f1519",
+      "url": "https://mail.google.com/mail/u/?authuser=mohamed.benchokroun%40gmail.com#all/1a177841f76f1519"
+    }
+  ],
+  "maj": "2026-10-26T09:23:09.276Z",
+  "nb_relances": 1,
+  "derniere_action": "2026-10-26"
+}

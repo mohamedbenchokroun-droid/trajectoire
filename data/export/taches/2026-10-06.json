@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "texte": "UE : candidature envoyée par Mohamed, vérifiée dans Gmail",
+      "detail": "06/10 à 11h40 Rabat ; 4 pièces jointes. Le CV joint est le PDF local, pas l’export officiel Europass. Aucun second envoi.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "DXC : invitation acceptée, contact direct disponible",
+      "detail": "Fatima Zahra Laalou est une relation de 1er degré. Message unique préparé pour les deux postes.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Lot de 5 relances prêt — aucune envoyée",
+      "detail": "Gmail : NTU (2 postes dans un fil), NOVEC. LinkedIn : Casanet/Jennate, Ciments/Yousra, DXC/Fatima. Textes dans les historiques des fiches ; 2 brouillons Gmail vérifiés.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "5 nouvelles pistes classées, sans doublon",
+      "detail": "ALH B ; Hespress Business Developer B (échéance 06/10), Community Manager C en alternative ; HUIR Social Media B avec écart Bac+5 ; ICESCO B en veille, modalités incomplètes. Hilti déjà existant revalidé, pas compté comme nouveau.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Lot d’envoi à valider en une fois",
+      "detail": "Relances proposées : NTU, NOVEC, Casanet, Ciments du Maroc et DXC. Pas de pièces jointes nouvelles ni de nouvelle candidature dans ce lot. NTU : précision Master non commencé incluse.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Accès et preuves avant nouvelles candidatures",
+      "detail": "ReKrute déconnecté dans Chrome. Hilti Avature ouvert ; aucun téléversement ni compte créé. Seuil salarial 15 000 DH net non confirmé sur les nouvelles pistes ; ne pas inventer.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Renforcer le dossier : preuves et cohérence",
+      "detail": "Vérifier le Master sur les PDF avant envoi ; conserver un CV par entreprise ; préparer 3 cas concrets de réalisations avec livrables et chiffres documentés, jamais inventés. Portfolio requis pour la piste Concepteur Rédacteur Hespress, non retenue dans le lot immédiat.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Refus et exclusions respectés",
+      "detail": "SOGEA x2 et UIR CC-0926 restent clos. Deux autres UIR restent en attente. Sofrecom, banques conventionnelles, SOREC, Casablanca exclus. Expertise France PRIM clôturée le 09/05 ; anciennes annonces Emploi.ma expirées écartées.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Affichage calendrier : correctif testé, publication à autoriser",
+      "detail": "Les dates personnalisées sont enregistrées mais le site affiche encore ses anciens rappels J+5/J+10. Correctif : 8 tests réussis. Déploiement bloqué par le contrôle de sécurité, car reconstruction/redémarrage du service requis. Aucun redémarrage effectué ; lire les consignes dans les historiques en attendant.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "calendrier-2026-10-06"
+    }
+  ],
+  "maj": "2026-10-06T15:45:56.611Z"
+}

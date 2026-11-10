@@ -1,23 +1,107 @@
 {
-  "action": "",
-  "action_date": "",
-  "comment": "ReKrute. On attend.",
+  "action": "Refus reçu ; aucune relance automatique. Réponse personnelle déjà envoyée par Mohamed le 05/10 : attendre uniquement un éventuel retour.",
+  "comment": "Candidature UIR 766 envoyée le 01/10/2026 via le portail officiel UIR. Même CV Communication joint aux trois offres UIR, avec lettre ciblée. Confirmation affichée : « Merci pour votre candidature ». Bac+3 déclaré. Le 02/10 : trois accusés génériques UIR vérifiés dans Gmail. Délai annoncé : un mois ; aucun refus à déduire avant vérification.",
   "couloir": "com",
   "cv": "com",
   "entreprise": "Université Internationale de Rabat (UIR)",
   "km": 25,
   "lieu": "Rabat-Salé (campus UIR)",
-  "maj": "2026-09-26T23:20:25.809Z",
+  "maj": "2026-10-05T23:50:34.831Z",
   "match": 60,
   "poste": "Chargé(e) de Communication – Collège des Sciences de la Santé",
-  "pourquoi": "Organisation structurée, et vous y serez étudiant. Poste en dessous de votre niveau et de votre plancher : à garder comme porte d'entrée seulement si rien de mieux d'ici décembre.",
+  "pourquoi": "Communication institutionnelle, production de contenus et coordination d'événements pertinentes. Candidature exploratoire : poste demandant Bac+5, diplôme obtenu Bac+3 ; salaire non publié.",
   "priorite": "C",
   "publie": "publiée en septembre",
-  "qui": "toi",
-  "risques": "Salaire probablement sous 15 000.",
-  "salaire": "est. 10–14 k DH net",
-  "salaire_sous_seuil": true,
+  "qui": "agent",
+  "risques": "Bac+5 demandé, Bac+3 déclaré. Salaire non publié ; vérifier le seuil de 15 000 DH net/mois avant tout entretien approfondi.",
+  "salaire": "Non communiqué ; seuil à confirmer : 15 000 DH net/mois.",
   "source": "ReKrute",
-  "statut": "veille",
-  "url": "https://www.rekrute.com/offre-emploi-chargee-de-communication-hf-recrutement-universite-internationale-de-rabat-uir-rabat-186649.html"
+  "statut": "refus",
+  "url": "https://www.rekrute.com/offre-emploi-chargee-de-communication-hf-recrutement-universite-internationale-de-rabat-uir-rabat-186649.html",
+  "date_postule": "2026-10-01",
+  "canal_envoi": "Portail officiel de recrutement UIR (offre spécifique)",
+  "url_candidature": "https://uir-recrutement.ma/emplois/administratif-fr/766-chargee-de-communication-fr/",
+  "piece_jointe_cv": "CV_Mohamed_Benchokroun_Communication.pdf",
+  "piece_jointe_lettre": "Lettre_Mohamed_Benchokroun_UIR_Communication_Sante_2026-10-01.pdf",
+  "nb_relances": 0,
+  "preuves": [
+    {
+      "type": "confirmation",
+      "verifiee": true,
+      "le": "2026-10-01",
+      "label": "Portail officiel UIR : « Merci pour votre candidature » après envoi pour Chargé(e) de Communication - Collège des Sciences de la Santé",
+      "reference": "UIR 766",
+      "url": "https://uir-recrutement.ma/remerciements/"
+    },
+    {
+      "type": "accuse",
+      "verifiee": true,
+      "le": "2026-10-02",
+      "label": "Gmail : trois accusés génériques de candidature@uir.ac.ma reçus le 01/10 (16:13 et 16:15), vérifiés ensemble ; postes non nommés dans ces emails.",
+      "url": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQhWfWjqpRfwcfVpVFmlGRXVzTk"
+    }
+  ],
+  "historique": [
+    {
+      "action": "postule",
+      "le": "2026-10-01T16:17:47.109Z",
+      "par": "agent",
+      "canal": "portail_officiel_uir",
+      "notes": "Envoi après accord ponctuel de Mohamed ; UIR 766 ; CV Communication et lettre PDF joints ; page de remerciement affichée."
+    },
+    {
+      "action": "Invitation LinkedIn",
+      "le": "2026-10-01",
+      "par": "agent",
+      "notes": "Widad LAOUFIR : invitation avec note envoyée. Confirmation LinkedIn vérifiée le 01/10. Acceptation non vérifiée aujourd’hui."
+    },
+    {
+      "action": "Accusés vérifiés",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "notes": "Trois emails UIR génériques, sans référence de poste ; aucune réponse personnalisée ni invitation à entretien observée."
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Refus confirmé",
+      "le": "2026-10-05T12:00:00Z",
+      "par": "agent",
+      "batch_id": "suivi-2026-10-05",
+      "notes": "Courriel 1a10d594913acd00 ; référence CC-0926. Attribution au poste de communication probable (code CC), non explicitée dans le courriel ; les deux autres candidatures UIR ne sont pas closes. Réponse personnelle envoyée par Mohamed le 05/10 ; aucun nouvel envoi par l’agent."
+    }
+  ],
+  "contacts": [
+    {
+      "nom": "Widad LAOUFIR",
+      "role": "Directrice du Capital Humain — UIR — invitation envoyée le 01/10/2026 ; acceptation à vérifier",
+      "url": "https://www.linkedin.com/in/widad-laoufir/",
+      "invitation": {
+        "date": "2026-10-01",
+        "statut": "envoyee",
+        "verifiee": true,
+        "note": "Bonjour Mme Laoufir, j’ai déposé mes candidatures UIR (communication, entrepreneuriat, recrutement Afrique). Mon parcours allie communication et développement B2B. Au plaisir d’échanger. Mohamed",
+        "preuve": "Interface LinkedIn : Invitation envoyée et En attente le 01/10 ; acceptation non vérifiée le 02/10."
+      }
+    }
+  ],
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-06",
+    "texte": "Bonjour, je me permets de revenir vers vous concernant mes trois candidatures UIR (communication santé, programmes entrepreneuriat et recrutement international Afrique). Mon parcours associe développement B2B, communication institutionnelle et coordination de projets, avec une pratique opérationnelle des outils digitaux. Je reste disponible pour un échange et pour tout complément utile. Merci pour votre retour. Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "derniere_action": "2026-10-05",
+  "refus": {
+    "date": "2026-10-05",
+    "reference": "CC-0926",
+    "preuve_email": "1a10d594913acd00",
+    "attribution": "Attribution au poste de communication probable (code CC), non explicitée dans le courriel ; les deux autres candidatures UIR ne sont pas closes."
+  }
 }

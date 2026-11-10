@@ -1,25 +1,140 @@
 {
-  "action": "",
-  "action_date": "2026-09-29",
+  "action": "Relance commune envoyée le 12/10. Attendre la réponse ; vérifier une seule fois le 19/10, sans nouvel envoi automatique.",
+  "action_date": "2026-10-19",
   "comment": "Inclus dans l'email NTU Communication & Visibility.",
   "consigne": "Couvert par l'email NTU du 29 septembre ; les relances se font sur la fiche Communication & Visibility.",
   "couloir": "com",
   "cv": "en",
   "date_postule": "2026-09-29",
-  "derniere_action": "2026-09-29",
+  "derniere_action": "2026-10-12",
   "entreprise": "NTU International (projets financés par l'Union européenne)",
   "km": 15,
   "lieu": "Rabat (missions)",
-  "maj": "2026-09-26T23:20:25.809Z",
+  "maj": "2026-10-12T12:02:22.000Z",
   "match": 64,
-  "nb_relances": 0,
+  "nb_relances": 1,
   "poste": "Communication & Knowledge Management Expert",
   "pourquoi": "Même famille que le poste Communication & Visibility. Couvert par le même email : pas d'action séparée.",
   "priorite": "B",
   "publie": "publiée le 25 sept.",
-  "qui": "toi",
+  "qui": "agent",
   "salaire": "Honoraires par jour de mission",
   "source": "LinkedIn",
   "statut": "postule",
-  "url": "https://ma.linkedin.com/jobs/view/communication-knowledge-management-expert-at-ntu-international-a-s-4471488708"
+  "url": "https://ma.linkedin.com/jobs/view/communication-knowledge-management-expert-at-ntu-international-a-s-4471488708",
+  "contacts": [
+    {
+      "nom": "Marina Mihaila",
+      "role": "Recruitment Consultant — NTU International A/S — invitation envoyée le 01/10/2026 ; acceptation à vérifier",
+      "url": "https://www.linkedin.com/in/marina-mihaila-08b0a3167/",
+      "invitation": {
+        "date": "2026-10-01",
+        "statut": "envoyee",
+        "verifiee": true,
+        "note": null,
+        "preuve": "Interface LinkedIn : Invitation envoyée et En attente le 01/10 ; acceptation non vérifiée le 02/10."
+      }
+    }
+  ],
+  "relance_preparee": {
+    "texte": "Dear Recruitment Team, I am following up on my application of 29 September for the two Rabat assignments: Senior Non-Key Expert – Communication & Visibility and Communication & Knowledge Management Expert. My background combines institutional communications, stakeholder coordination and the delivery of visual, editorial and event content for international organisations. Could you let me know whether either selection process is still ongoing, and whether you need any further information from me? My CV is attached in the earlier message in this thread. Kind regards, Mohamed Benchokroun.",
+    "canal": "Gmail",
+    "date": "2026-10-08",
+    "statut": "envoyee",
+    "destinataire": "recruitment@ntu.eu",
+    "draft_id": "r3930867352652814604",
+    "url": "https://mail.google.com/mail/u/0/#drafts/1a11d7983fddb7fc",
+    "lot_commun": "ntu-2-postes",
+    "message_id": "1a11d7983fddb7fc",
+    "date_envoi": "2026-10-12",
+    "message_id_envoye": "1a12ffe13a750d1f",
+    "thread_id": "1a0ea58565d11fe5",
+    "note": "L'ancien brouillon Gmail du 08/10 n'a pas été envoyé ; ne pas l'envoyer en doublon."
+  },
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-04",
+    "texte": "Hello, I am following up on my application for the Communication & Knowledge Management and Communication & Visibility opportunities. My experience combines B2B business development, institutional communication and project coordination, with hands-on use of digital tools. I would welcome a conversation and would be happy to provide any further information. Thank you for your consideration. Best regards, Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "appel_prepare": {
+    "date": "2026-10-09",
+    "statut": "brouillon_non_effectue",
+    "script": "Bonjour, Mohamed Benchokroun à l’appareil. Je vous appelle au sujet de mes candidatures NTU en communication et knowledge management / visibilité. Pourriez-vous m’indiquer si mon dossier a été orienté vers l’équipe concernée et si un complément serait utile ?",
+    "consigne": "Numéro professionnel à vérifier. Appeler un jour ouvré uniquement, après contrôle des réponses et validation. Aucun numéro inventé."
+  },
+  "revue_j20": {
+    "date": "2026-10-19",
+    "statut": "verification_a_faire",
+    "consigne": "Vérifier les réponses et l’état réel du recrutement ; aucun classement automatique."
+  },
+  "historique": [
+    {
+      "action": "Invitation LinkedIn",
+      "le": "2026-10-01",
+      "par": "agent",
+      "notes": "Marina Mihaila : invitation simple envoyée, aucun message direct. Confirmation LinkedIn vérifiée le 01/10. Acceptation non vérifiée aujourd’hui."
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "BROUILLON GMAIL NON ENVOYÉ : Dear Recruitment Team, I am following up on my application of 29 September for the Communication & Visibility and Communication & Knowledge Management assignments in Rabat. My experience combines institutional communications, event coordination and hands-on visual and digital content production. For accuracy, my completed qualification is a bachelor’s degree; the Executive Master mentioned in my initial email is a future study plan, not a programme in which I am currently enrolled. Could you let me know whether either recruitment process is still ongoing? My English CV is attached to my previous email in this thread. Kind regards, Mohamed Benchokroun."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.839Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "Veille et brouillons vérifiés",
+      "le": "2026-10-08T21:49:02.449Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-08",
+      "notes": "Gmail UIR 1a11708db9c13757 : validation inscription, pas diplôme obtenu. Brouillon NTU r3930867352652814604 / message 1a11d7983fddb7fc relu avec label DRAFT. Une seule relance pour deux postes ; aucun envoi et aucun compteur incrémenté."
+    },
+    {
+      "action": "relance_envoyee",
+      "le": "2026-10-12T12:02:22.000Z",
+      "par": "agent",
+      "batch_id": "ntu-relance-2026-10-12",
+      "canal": "gmail",
+      "notes": "Relance unique commune aux deux postes, Gmail SENT 1a12ffe13a750d1f, thread 1a0ea58565d11fe5. Ancien brouillon non envoyé. Aucun CV ou autre pièce jointe renvoyé."
+    }
+  ],
+  "action_planifiee": {
+    "date": "2026-10-19",
+    "texte": "NTU : contrôler la réponse à la relance du 12/10 ; aucune nouvelle relance sans motif.",
+    "qui": "agent"
+  },
+  "preuves": [
+    {
+      "type": "email_envoye",
+      "le": "2026-09-29",
+      "verifiee": true,
+      "label": "Gmail SENT — candidature et complément CV PDF anglais du 29/09",
+      "url": "https://mail.google.com/mail/u/0/#all/1a0ea58565d11fe5"
+    },
+    {
+      "type": "email_envoye",
+      "verifiee": true,
+      "le": "2026-10-12T12:02:22.000Z",
+      "label": "Gmail SENT : une relance commune aux deux postes NTU, dans le fil de candidature du 29/09 ; aucun CV renvoyé.",
+      "url": "https://mail.google.com/mail/u/0/#sent/1a12ffe13a750d1f",
+      "message_id": "1a12ffe13a750d1f",
+      "thread_id": "1a0ea58565d11fe5",
+      "reference": "Relance NTU 12/10/2026"
+    }
+  ]
 }

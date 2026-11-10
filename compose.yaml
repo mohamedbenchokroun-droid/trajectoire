@@ -13,10 +13,15 @@ services:
       TRAJECTOIRE_HOST: 0.0.0.0
       TRAJECTOIRE_PORT: 8096
       TRAJECTOIRE_DATA_DIR: /data
+      TRAJECTOIRE_CV_DIR: /app/cv-files
       TRAJECTOIRE_USERNAME: ${TRAJECTOIRE_USERNAME:?missing username}
       TRAJECTOIRE_PASSWORD: ${TRAJECTOIRE_PASSWORD:?missing password}
+      TRAJECTOIRE_HANDOFF_TOKEN_HASH: ${TRAJECTOIRE_HANDOFF_TOKEN_HASH:-}
+      TRAJECTOIRE_HANDOFF_ARCHIVE: /handoff/Trajectoire-passation-Claude-2026-10-28.zip
     volumes:
       - ./runtime-data:/data
+      - ./cv-files:/app/cv-files:ro
+      - ./handoff:/handoff:ro
     networks:
       - easypanel
     healthcheck:

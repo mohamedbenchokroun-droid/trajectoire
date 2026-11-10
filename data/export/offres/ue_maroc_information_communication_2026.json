@@ -1,0 +1,91 @@
+{
+  "entreprise": "Délégation de l’Union européenne au Maroc",
+  "poste": "Chargé(e) d’Information et de Communication",
+  "lieu": "Rabat",
+  "km": 20,
+  "couloir": "com",
+  "source": "EEAS - annonce officielle",
+  "url": "https://www.eeas.europa.eu/delegations/morocco/la-delegation-de-lunion-europeenne-au-maroc-recherche-une-charge-e-dinformation-et-de-communication_fr?s=204",
+  "source_verifiee": "https://www.eeas.europa.eu/delegations/morocco/la-delegation-de-lunion-europeenne-au-maroc-recherche-une-charge-e-dinformation-et-de-communication_fr?s=204",
+  "publie": "2026-09-25",
+  "date_limite": "2026-10-09 18:00 (Rabat)",
+  "offre_verifiee_le": "2026-10-09",
+  "cv": "com",
+  "cv_adapte": "CV_Mohamed_Benchokroun_UE_Communication_Europass.pdf",
+  "lettre_adaptee": "Lettre_Mohamed_Benchokroun_Delegation_UE_Maroc.pdf",
+  "diplome_copie": "Diplome_Licence_Angers_Mohamed_Benchokroun.pdf",
+  "priorite": "A",
+  "match": 85,
+  "statut": "postule",
+  "maj": "2026-10-16T11:26:19.193Z",
+  "salaire": "47 617 MAD brut de base selon l’annonce, payable en 13 mensualités ; net non publié.",
+  "pourquoi": "Rabat ; diplôme universitaire Bac+3 vérifié ; expérience communication institutionnelle et projets internationaux pertinente.",
+  "missions": [
+    "Plan de communication, réseaux sociaux et site web",
+    "Relations médias, événements et visites officielles",
+    "Communication des projets de l’UE et diplomatie publique",
+    "Rédaction de communiqués, discours et articles"
+  ],
+  "risques": "L’email envoyé contient le CV préparé localement (78 298 octets), non l’export officiel Europass (69 039 octets) créé ensuite. Ne pas affirmer que l’export officiel a été envoyé, ni renvoyer automatiquement. L’annonce demande Europass et justificatifs d’expérience ; seule l’attestation de travail jointe est confirmée. Envoi ne vaut pas réception/acceptation.",
+  "action_date": "2026-10-23",
+  "qui": "agent",
+  "action": "Gmail vérifié le 16/10 : aucun retour identifié de la Délégation. La page officielle décrit toujours la procédure après clôture, sans résultat publié ; candidature maintenue en attente, aucun rappel envoyé.",
+  "dossier_statut": "envoye_par_mohamed",
+  "message": "Madame, Monsieur, veuillez trouver ci-joint ma candidature au poste de chargé d’information et de communication : CV détaillé, lettre de motivation, copie de ma licence et justificatif d’expérience professionnelle. Je reste à votre disposition pour tout complément. Cordialement, Mohamed Benchokroun",
+  "destinataire": "DELEGATION-MOROCCO-RECRUTEMENT@eeas.europa.eu",
+  "objet": "Candidature pour le poste : Chargé(é) d'Information et de Communication - Mohamed Benchokroun",
+  "historique": [
+    {
+      "action": "Candidature préparée",
+      "le": "2026-10-05T23:50:34.831Z",
+      "par": "agent",
+      "batch_id": "suivi-2026-10-05",
+      "notes": "Source EEAS vérifiée ; aucune candidature envoyée. Trois PDFs créés ; attestation Corpotex déjà disponible. Preuve MB Creative à chercher."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Preuve Gmail SENT 1a110cc90e69ee3f, sujet « Candidature pour le poste : Chargé d’Information et de Communication - Mohamed Benchokroun ». CV local, lettre, licence, attestation joints."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.375Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "Veille du 09/10 — sans envoi",
+      "le": "2026-10-09T09:34:27.559Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-09",
+      "notes": "Annonce officielle relue : clôture aujourd’hui à 18h00 Rabat, Europass et justificatifs exigés. Envoi du 06/10 déjà confirmé, ne pas resoumettre. Aucun nouveau retour identifié par recherches Gmail du 09/10. Revue du 16/10 maintenue, pas d’appel. L’absence de réponse ne signifie pas refus."
+    },
+    {
+      "action": "Revue ciblée du 16 octobre",
+      "le": "2026-10-16T11:26:19.193Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-16",
+      "notes": "Gmail vérifié le 16/10 : aucun retour identifié de la Délégation. La page officielle décrit toujours la procédure après clôture, sans résultat publié ; candidature maintenue en attente, aucun rappel envoyé."
+    }
+  ],
+  "date_postule": "2026-10-06",
+  "derniere_action": "2026-10-06",
+  "preuves": [
+    {
+      "type": "email_envoye",
+      "verifiee": true,
+      "le": "2026-10-06T10:40:03Z",
+      "label": "Gmail SENT — envoi personnel de Mohamed, 4 pièces jointes",
+      "url": "https://mail.google.com/mail/u/0/#all/1a110cc90e69ee3f"
+    }
+  ],
+  "suivi_specifique": "Clôture 09/10/2026 à 18h Rabat. Sélection après clôture, seuls présélectionnés contactés, pas de renseignements téléphoniques. Revue du site le 16/10, sans classement automatique.",
+  "action_planifiee": {
+    "date": "2026-10-23",
+    "texte": "Vérifier Gmail et clôture officielle de la procédure UE ; ne pas classer refus sans preuve.",
+    "qui": "agent"
+  }
+}

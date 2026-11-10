@@ -1,11 +1,30 @@
 {
-  "action": "Postuler sur ReKrute (CV Sales).",
-  "action_date": "2026-09-29",
-  "comment": "ReKrute (connectez-vous, bouton Postuler), CV Sales.",
+  "action": "Brouillon Gmail prêt à candidature@novec.ma, adresse publiée par la RH. Demander le bon aiguillage du dossier du 01/10. Invitation Maryeme BENRAHO encore en attente au 06/10 ; pas de double contact simultané.",
+  "action_date": "2026-10-06",
+  "comment": "Candidature transmise via le formulaire officiel général de NOVEC le 01/10/2026, avec le poste et la référence ReKrute 186128 indiqués. Confirmation visible : « Merci pour votre message. Il a été envoyé. » Pas de preuve d'intégration dans l'ATS ReKrute.",
   "contacts": [
     {
       "nom": "RH NOVEC",
       "role": "Candidature via ReKrute ; en parallèle, chercher sur LinkedIn le DRH ou le directeur du développement de NOVEC."
+    },
+    {
+      "nom": "Maryeme BENRAHO",
+      "role": "Cadre RH — NOVEC — invitation envoyée le 01/10/2026 ; acceptation à vérifier",
+      "url": "https://www.linkedin.com/in/maryeme-benraho-03b1a0128/",
+      "invitation": {
+        "date": "2026-10-01",
+        "statut": "envoyee",
+        "verifiee": true,
+        "note": "Bonjour Mme Benraho, j’ai candidaté au poste Responsable Développement Afrique chez NOVEC. Mon parcours associe développement B2B et communication institutionnelle. Pourrions-nous échanger ? Mohamed",
+        "preuve": "Interface LinkedIn : Invitation envoyée et En attente le 01/10 ; acceptation non vérifiée le 02/10."
+      }
+    },
+    {
+      "nom": "Recrutement NOVEC",
+      "role": "Adresse recrutement publiée par Maryeme BENRAHO dans ses annonces",
+      "email": "candidature@novec.ma",
+      "source": "https://www.linkedin.com/feed/update/urn:li:activity:7454855115024416769/",
+      "verifie_le": "2026-10-06"
     }
   ],
   "couloir": "sales",
@@ -14,9 +33,9 @@
   "entreprise_info": "Premier bureau d'ingénierie du Maroc (≈500 personnes), filiale de CDG Développement. Groupe public, très structuré, grilles et évolution claires.",
   "km": 30,
   "lieu": "Technopolis, Salé",
-  "maj": "2026-09-26T23:20:25.809Z",
+  "maj": "2026-10-06T15:41:29.980Z",
   "match": 68,
-  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Responsable Développement Afrique. J'ai développé et géré des comptes stratégiques au Maroc et ouvert des marchés en Afrique chez E-Maroc Wave, puis travaillé depuis 2021 avec la BEI, l'IFC et la GIZ sur des programmes d'investissement et des Investor Days régionaux. Je connais donc les deux côtés du développement de projets en Afrique : le client public et le bailleur qui le finance.\n\nJe rejoindrai en février 2027 l'Executive Master « Leading Digital Transformation » de l'UIR, compatible avec un poste à temps plein.\n\nJe serais ravi de vous présenter ce que je peux apporter à la stratégie africaine de NOVEC.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
+  "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Responsable Développement Afrique. Mon parcours de 14 ans associe développement commercial B2B, gestion de comptes stratégiques et coordination de projets institutionnels. Chez E-Maroc Wave, j’ai développé des comptes au Maroc et contribué à l’expansion sur les marchés africains. Chez Corpotex, je pilote la prospection, la négociation et le suivi des comptes, ainsi que la structuration des équipes et des processus commerciaux.\n\nEn parallèle, mes missions auprès d’organisations internationales et d’institutions publiques m’ont appris à coordonner des interlocuteurs multiples et à transformer un besoin en proposition claire et en livrables suivis. Je souhaite mettre cette double expérience commerciale et institutionnelle au service de l’identification d’opportunités et du développement de partenariats pour NOVEC en Afrique.\n\nJe serais heureux d’échanger sur les besoins de votre équipe et sur la contribution concrète que je pourrais apporter.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
   "missions": [
     "Identifier et qualifier les opportunités d'affaires en Afrique",
     "Prospecter clients publics, privés et bailleurs",
@@ -24,13 +43,107 @@
     "Rattaché à la direction générale déléguée au développement"
   ],
   "poste": "Responsable Développement Afrique",
-  "pourquoi": "Développer des affaires en Afrique auprès d'acteurs publics et institutionnels : vous avez ouvert des marchés africains chez E-Maroc Wave et vous travaillez depuis 5 ans avec des bailleurs (BEI, IFC, GIZ), ceux-là mêmes qui financent les projets d'infrastructure africains que NOVEC vise.",
-  "priorite": "A",
+  "pourquoi": "Expérience commerciale B2B et de coordination institutionnelle pertinente pour le développement en Afrique. Écart explicite : Bac+5 et expérience en ingénierie demandés, non démontrés dans le parcours.",
+  "priorite": "B",
   "publie": "publiée en septembre",
-  "qui": "toi",
-  "risques": "Demande Bac+5 ingénieur ou école de commerce, 8 à 12 ans d'international et idéalement une expérience en ingénierie. Couverture : Executive Master, et le lien direct avec les bailleurs qui financent ces projets. À 30 km, c'est la limite de votre rayon : Technopolis est facile par la rocade.",
-  "salaire": "est. 25–35 k DH net",
+  "qui": "agent",
+  "risques": "Bac+5 demandé ; diplôme obtenu : Bac+3. L’expérience commerciale au Maroc et en Afrique est pertinente, sans équivalence de diplôme revendiquée. Expérience spécifique en ingénierie non établie. Technopolis est à la limite du rayon géographique. Rémunération non publiée, à confirmer.",
+  "salaire": "Non publié ; plancher requis : 15 000 DH net/mois, à confirmer",
   "source": "ReKrute",
-  "statut": "a_postuler",
-  "url": "https://www.rekrute.com/offre-emploi-responsable-developpement-afrique-recrutement-novec-sale-technopolis-186128.html"
+  "statut": "postule",
+  "url": "https://www.rekrute.com/offre-emploi-responsable-developpement-afrique-recrutement-novec-sale-technopolis-186128.html",
+  "offre_verifiee_le": "2026-10-01",
+  "date_limite": "2026-11-08",
+  "reference_offre": "186128",
+  "source_verifiee": "https://www.rekrute.com/offre-emploi-responsable-developpement-afrique-recrutement-novec-sale-technopolis-186128.html",
+  "historique": [
+    {
+      "action": "prepare",
+      "le": "2026-10-01T11:58:41.167Z",
+      "par": "agent",
+      "batch_id": "preparation-2026-10-01",
+      "notes": "Candidature préparée ; aucun envoi effectué."
+    },
+    {
+      "action": "postule",
+      "le": "2026-10-01T12:21:24.719Z",
+      "par": "agent",
+      "canal": "formulaire_officiel_novec",
+      "notes": "Candidature envoyée après accord ponctuel de Mohamed ; CV Sales et lettre PDF joints ; confirmation affichée par novec.ma."
+    },
+    {
+      "action": "Invitation LinkedIn",
+      "le": "2026-10-01",
+      "par": "agent",
+      "notes": "Maryeme BENRAHO : invitation avec note envoyée. Confirmation LinkedIn vérifiée le 01/10. Acceptation non vérifiée aujourd’hui."
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "BROUILLON GMAIL NON ENVOYÉ, vérifié avec label DRAFT. Madame, Monsieur, je reviens vers vous à la suite de ma candidature Responsable Développement Afrique (réf. ReKrute 186128), déposée le 1er octobre via le formulaire de votre site. Mon parcours associe développement commercial B2B, gestion de comptes et communication institutionnelle. Pourriez-vous me confirmer que mon dossier a bien été orienté vers l’équipe chargée de ce recrutement ? Bien cordialement, Mohamed Benchokroun, +212 6 97 95 32 61."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.912Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    }
+  ],
+  "date_postule": "2026-10-01",
+  "canal_envoi": "Formulaire officiel NOVEC (candidature spontanée, poste et référence précisés)",
+  "url_candidature": "https://www.novec.ma/condidature-spontannee/",
+  "piece_jointe_cv": "CV_Mohamed_Benchokroun_Sales.pdf",
+  "piece_jointe_lettre": "Lettre_Mohamed_Benchokroun_NOVEC_Developpement_Afrique_2026-10-01.pdf",
+  "nb_relances": 0,
+  "preuves": [
+    {
+      "type": "confirmation",
+      "verifiee": true,
+      "le": "2026-10-01",
+      "label": "Formulaire officiel NOVEC : « Merci pour votre message. Il a été envoyé. »",
+      "reference": "186128",
+      "url": "https://www.novec.ma/condidature-spontannee/"
+    }
+  ],
+  "relance_preparee": {
+    "texte": "Madame, Monsieur, je reviens vers vous à la suite de ma candidature Responsable Développement Afrique (réf. ReKrute 186128), déposée le 1er octobre via le formulaire de votre site. Mon parcours associe développement commercial B2B, gestion de comptes et communication institutionnelle. Pourriez-vous me confirmer que mon dossier a bien été orienté vers l’équipe chargée de ce recrutement ? Bien cordialement, Mohamed Benchokroun, +212 6 97 95 32 61.",
+    "canal": "Gmail",
+    "date": "2026-10-06",
+    "statut": "brouillon_non_envoye",
+    "destinataire": "candidature@novec.ma",
+    "draft_id": "r3385801263821764534",
+    "url": "https://mail.google.com/mail/u/0/#drafts/1a111d8266628cc0"
+  },
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-06",
+    "texte": "Bonjour, je me permets de revenir vers vous concernant ma candidature au poste de Responsable Développement Afrique. Mon parcours associe développement B2B, communication institutionnelle et coordination de projets, avec une pratique opérationnelle des outils digitaux. Je reste disponible pour un échange et pour tout complément utile. Merci pour votre retour. Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "appel_prepare": {
+    "date": "2026-10-12",
+    "statut": "a_evaluer",
+    "texte": "Dimanche J+10 reporté au lundi. Appeler uniquement si contact professionnel confirmé, pas de réponse et pas de relance trop récente."
+  },
+  "revue_j20": {
+    "date": "2026-10-21",
+    "statut": "verification_a_faire",
+    "consigne": "Vérifier les réponses et l’état réel du recrutement ; aucun classement automatique."
+  },
+  "action_planifiee": {
+    "date": "2026-10-06",
+    "texte": "Brouillon Gmail prêt à candidature@novec.ma, adresse publiée par la RH. Demander le bon aiguillage du dossier du 01/10. Invitation Maryeme BENRAHO encore en attente au 06/10 ; pas de double contact simultané.",
+    "qui": "agent"
+  }
 }

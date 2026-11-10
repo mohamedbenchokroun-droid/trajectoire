@@ -7,6 +7,17 @@ const crypto = require("node:crypto");
 
 const root = path.resolve(__dirname, "..");
 const dataDir = path.resolve(process.env.TRAJECTOIRE_DATA_DIR || path.join(root, "data", "export"));
+const cvDir = path.resolve(process.env.TRAJECTOIRE_CV_DIR || path.join(root, "cv-files"));
+const handoffArchive = process.env.TRAJECTOIRE_HANDOFF_ARCHIVE;
+const handoffHash = process.env.TRAJECTOIRE_HANDOFF_TOKEN_HASH;
+if (handoffHash && !/^[a-f0-9]{64}$/i.test(handoffHash)) throw new Error("Empreinte de passation invalide");
+const cvFiles = Object.freeze({
+  sales: "CV Mohamed Benchokroun Sales.pdf",
+  com: "CV Mohamed Benchokroun Communication.pdf",
+  digital: "CV Mohamed Benchokroun Transformation Digitale.pdf",
+  en: "CV Mohamed Benchokroun EN.pdf",
+  design: "CV Mohamed Benchokroun Design Graphique.pdf"
+});
 const host = process.env.TRAJECTOIRE_HOST || "127.0.0.1";
 const port = Number(process.env.TRAJECTOIRE_PORT || 8096);
 const allowed = new Set(["offres", "cibles", "taches", "profil"]);
@@ -17,6 +28,8 @@ const password = process.env.TRAJECTOIRE_PASSWORD;
 if (!username || !password || password.length < 20) throw new Error("Identifiants Trajectoire manquants ou trop courts");
 
 function authorized(req) {
+  const cookie = req.headers.cookie?.split(";").map(part => part.trim()).find(part => part.startsWith("trajectoire_handoff="));
+  if (cookie && validHandoffToken(cookie.slice("trajectoire_handoff=".length))) return true;
   if (!req.headers.authorization?.startsWith("Basic ")) return false;
   let supplied;
   try { supplied = Buffer.from(req.headers.authorization.slice(6), "base64").toString("utf8"); }
@@ -24,6 +37,13 @@ function authorized(req) {
   const expected = Buffer.from(username + ":" + password);
   const actual = Buffer.from(supplied);
   return actual.length === expected.length && crypto.timingSafeEqual(actual, expected);
+}
+
+function validHandoffToken(token) {
+  if (!handoffHash || !/^[a-f0-9]{64}$/i.test(token)) return false;
+  const actual = crypto.createHash("sha256").update(token, "ascii").digest();
+  const expected = Buffer.from(handoffHash, "hex");
+  return crypto.timingSafeEqual(actual, expected);
 }
 
 function respond(res, status, body, contentType = "application/json; charset=utf-8") {
@@ -93,6 +113,18 @@ async function patchDoc(collection, id, patch) {
 }
 
 async function handle(req, res) {
+  const url = new URL(req.url, "http://localhost");
+  const handoffLink = /^\/passation\/([a-f0-9]{64})$/i.exec(url.pathname);
+  if (req.method === "GET" && handoffLink && validHandoffToken(handoffLink[1])) {
+    res.writeHead(302, {
+      "Location": "/passation",
+      "Set-Cookie": `trajectoire_handoff=${handoffLink[1]}; Path=/; Max-Age=2592000; HttpOnly; Secure; SameSite=Lax`,
+      "Cache-Control": "no-store",
+      "Referrer-Policy": "no-referrer",
+      "X-Content-Type-Options": "nosniff"
+    });
+    return res.end();
+  }
   if (!authorized(req)) {
     res.writeHead(401, {
       "WWW-Authenticate": 'Basic realm="Trajectoire", charset="UTF-8"',
@@ -101,12 +133,52 @@ async function handle(req, res) {
     });
     return res.end("Accès privé");
   }
-  const url = new URL(req.url, "http://localhost");
+  if (req.method === "GET" && url.pathname === "/passation") {
+    return respond(res, 200, await fs.readFile(path.join(root, "cockpit", "passation.html")), "text/html; charset=utf-8");
+  }
+  if (req.method === "GET" && url.pathname === "/passation/archive") {
+    if (!handoffArchive) return respond(res, 404, { error: "Archive indisponible" });
+    let archive;
+    try { archive = await fs.readFile(handoffArchive); }
+    catch (error) {
+      if (error.code === "ENOENT") return respond(res, 404, { error: "Archive indisponible" });
+      throw error;
+    }
+    res.writeHead(200, {
+      "Content-Type": "application/zip",
+      "Content-Disposition": 'attachment; filename="Trajectoire-passation-Claude-2026-10-28.zip"',
+      "Content-Length": archive.length,
+      "Cache-Control": "private, no-store",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "DENY",
+      "Referrer-Policy": "no-referrer"
+    });
+    return res.end(archive);
+  }
   if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
     return respond(res, 200, await fs.readFile(path.join(root, "cockpit", "trajectoire.html")), "text/html; charset=utf-8");
   }
-  if (req.method === "GET" && url.pathname === "/db-adapter.js") {
-    return respond(res, 200, await fs.readFile(path.join(root, "cockpit", "db-adapter.js")), "text/javascript; charset=utf-8");
+  if (req.method === "GET" && ["/db-adapter.js", "/suivi.js"].includes(url.pathname)) {
+    return respond(res, 200, await fs.readFile(path.join(root, "cockpit", url.pathname.slice(1))), "text/javascript; charset=utf-8");
+  }
+  const cvMatch = /^\/cv\/(sales|com|digital|en|design)\.pdf$/.exec(url.pathname);
+  if (req.method === "GET" && cvMatch) {
+    let pdf;
+    try { pdf = await fs.readFile(path.join(cvDir, cvFiles[cvMatch[1]])); }
+    catch (error) {
+      if (error.code === "ENOENT") return respond(res, 404, { error: "CV indisponible" });
+      throw error;
+    }
+    res.writeHead(200, {
+      "Content-Type": "application/pdf",
+      "Content-Disposition": `inline; filename="${cvFiles[cvMatch[1]]}"`,
+      "Content-Length": pdf.length,
+      "Cache-Control": "private, no-store",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "DENY",
+      "Referrer-Policy": "no-referrer"
+    });
+    return res.end(pdf);
   }
   if (req.method === "GET" && url.pathname === "/api/state") {
     const state = {};

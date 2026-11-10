@@ -1,17 +1,20 @@
 {
-  "action": "Rien à faire. Relance automatique le 5 octobre.",
-  "action_date": "2026-10-05",
+  "action": "Candidature prise en charge pour qualification par Fatima Zahra Laalou le 27/10 ; attendre son retour, vérifier début novembre sans relance rapprochée.",
+  "action_date": "2026-11-03",
   "comment": "LinkedIn Easy Apply, CV Transformation digitale.",
   "contacts": [
     {
       "nom": "Fatima Zahra Laalou",
-      "role": "Talent Acquisition Senior, DXC (LinkedIn)"
+      "role": "Talent Acquisition Senior — DXC Technology",
+      "url": "https://www.linkedin.com/in/fatima-zahra-laalou-823500195/",
+      "invitation": "acceptee",
+      "verifie_le": "2026-10-06"
     }
   ],
   "couloir": "digital",
   "cv": "digital",
   "date_postule": "2026-09-29",
-  "derniere_action": "2026-09-29",
+  "derniere_action": "2026-10-27",
   "entreprise": "DXC Technology Maroc",
   "entreprise_info": "Multinationale américaine de services IT, centre de Rabat Technopolis. Très structurée.",
   "historique": [
@@ -20,26 +23,118 @@
       "le": "2026-09-29T12:00:00Z",
       "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV Transformation digitale.",
       "par": "claude"
+    },
+    {
+      "action": "Invitation LinkedIn",
+      "le": "2026-10-01",
+      "par": "agent",
+      "notes": "Fatima Zahra Laalou : invitation simple envoyée, aucun message direct. Confirmation LinkedIn vérifiée le 01/10. Acceptation non vérifiée aujourd’hui."
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "BROUILLON UNIQUE DXC NON ENVOYÉ : Bonjour Madame Laalou, merci d’avoir accepté mon invitation. J’ai candidaté le 29 septembre aux postes Business Change Manager et Lead Power Apps Adoption à Technopolis. Mon parcours combine accompagnement des utilisateurs, structuration des processus et mise en place d’outils CRM/no-code. Pourriez-vous m’indiquer si mon profil peut correspondre à l’un de ces besoins, ou m’orienter vers la personne qui suit ces recrutements ? Merci, Mohamed Benchokroun."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.605Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "Relance LinkedIn envoyée à Fatima Zahra Laalou",
+      "le": "2026-10-16T11:25:27.511Z",
+      "par": "agent",
+      "batch_id": "dxc-relance-2026-10-16",
+      "notes": "Un seul message commun aux deux candidatures. Confirmation visuelle LinkedIn : « Envoyé le 16/10/2026, 11:24 ». Bonjour Madame Laalou, merci d’avoir accepté mon invitation. J’ai candidaté le 29 septembre aux postes Business Change Manager et Lead Power Apps Adoption à Technopolis. Mon parcours associe développement B2B, communication et structuration de processus, avec la conception d’un CRM no-code pour les équipes. Pourriez-vous m’indiquer si mon profil peut correspondre à l’un de ces besoins, ou m’orienter vers la personne qui suit ces recrutements ? Bien cordialement, Mohamed Benchokroun."
+    },
+    {
+      "action": "Réponse recruteuse LinkedIn vérifiée",
+      "le": "2026-10-29T09:04:21Z",
+      "par": "agent",
+      "batch_id": "dxc-reponse-2026-10-29",
+      "notes": "Fatima Zahra Laalou a répondu le 27/10 à 19:20 : « C’est bien noté, je prends ta candidature en charge pour qualification. » Message vérifié dans le fil LinkedIn le 29/10. Aucune nouvelle relance envoyée."
     }
   ],
   "km": 28,
   "lieu": "Rabat (Technopolis)",
-  "maj": "2026-09-29T12:00:00Z",
+  "maj": "2026-10-29T09:04:21Z",
   "match": 50,
   "missions": [
     "Stratégies et plans de changement pour des projets d'infrastructure IT",
     "Plans de communication pour expliquer les changements aux employés",
     "Programmes de formation et suivi des indicateurs d'adoption"
   ],
-  "nb_relances": 0,
+  "nb_relances": 1,
   "poste": "Project Manager – Business Change Manager",
   "pourquoi": "Conduite du changement, plans de communication vers des non-techniciens, formation, suivi de l'adoption : vous faites ce lien entre métiers et outils.",
   "priorite": "B",
   "publie": "publiée début sept.",
-  "qui": "claude",
+  "qui": "agent",
   "risques": "5 ans de conduite du changement en environnement IT et méthodes (Prosci/ADKAR) demandés. Écart réel ; le master aidera. Candidature d'opportunité.",
   "salaire": "est. 18–25 k DH net",
   "source": "LinkedIn",
   "statut": "postule",
-  "url": "https://ma.linkedin.com/jobs/view/project-manager-business-change-manager-at-dxc-technology-morocco-4462169409"
+  "url": "https://ma.linkedin.com/jobs/view/project-manager-business-change-manager-at-dxc-technology-morocco-4462169409",
+  "relance_preparee": {
+    "texte": "Bonjour Madame Laalou, merci d’avoir accepté mon invitation. J’ai candidaté le 29 septembre aux postes Business Change Manager et Lead Power Apps Adoption à Technopolis. Mon parcours combine accompagnement des utilisateurs, structuration des processus et mise en place d’outils CRM/no-code. Pourriez-vous m’indiquer si mon profil peut correspondre à l’un de ces besoins, ou m’orienter vers la personne qui suit ces recrutements ? Merci, Mohamed Benchokroun.",
+    "canal": "LinkedIn",
+    "date": "2026-10-06",
+    "statut": "envoyee",
+    "destinataire": "Fatima Zahra Laalou",
+    "url": "https://www.linkedin.com/in/fatima-zahra-laalou-823500195/",
+    "lot_commun": "dxc-2-postes",
+    "date_envoi": "2026-10-16",
+    "texte_envoye": "Bonjour Madame Laalou, merci d’avoir accepté mon invitation. J’ai candidaté le 29 septembre aux postes Business Change Manager et Lead Power Apps Adoption à Technopolis. Mon parcours associe développement B2B, communication et structuration de processus, avec la conception d’un CRM no-code pour les équipes. Pourriez-vous m’indiquer si mon profil peut correspondre à l’un de ces besoins, ou m’orienter vers la personne qui suit ces recrutements ? Bien cordialement, Mohamed Benchokroun."
+  },
+  "relance": {
+    "statut": "envoyee",
+    "prevue": "2026-10-04",
+    "texte": "Bonjour, je me permets de revenir vers vous concernant mes candidatures DXC Business Change Manager et Lead Power Apps Adoption. Mon parcours associe développement B2B, communication institutionnelle et coordination de projets, avec une pratique opérationnelle des outils digitaux. Je reste disponible pour un échange et pour tout complément utile. Merci pour votre retour. Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté",
+    "date_envoi": "2026-10-16"
+  },
+  "appel_prepare": {
+    "date": "2026-10-09",
+    "statut": "brouillon_non_effectue",
+    "script": "Bonjour, Mohamed Benchokroun à l’appareil. Je vous appelle au sujet de mes candidatures DXC Business Change Manager et Lead Power Apps Adoption. Pourriez-vous m’indiquer si mon dossier a été orienté vers l’équipe concernée et si un complément serait utile ?",
+    "consigne": "Numéro professionnel à vérifier. Appeler un jour ouvré uniquement, après contrôle des réponses et validation. Aucun numéro inventé."
+  },
+  "revue_j20": {
+    "date": "2026-10-19",
+    "statut": "verification_a_faire",
+    "consigne": "Vérifier les réponses et l’état réel du recrutement ; aucun classement automatique."
+  },
+  "action_planifiee": {
+    "date": "2026-11-03",
+    "texte": "Vérifier la suite de la qualification par Fatima Zahra Laalou ; relancer seulement si aucune réponse et si utile.",
+    "qui": "agent"
+  },
+  "preuves": [
+    {
+      "type": "linkedin_message_envoye",
+      "verifiee": true,
+      "le": "2026-10-16T11:25:27.511Z",
+      "label": "Un message unique DXC — Fatima Zahra Laalou — 16/10/2026",
+      "url": "https://www.linkedin.com/in/fatima-zahra-laalou-823500195/"
+    },
+    {
+      "type": "linkedin_reponse_recruteuse",
+      "verifiee": true,
+      "le": "2026-10-29T09:04:21Z",
+      "label": "Fatima Zahra Laalou — prise en charge pour qualification, réponse du 27/10 à 19:20",
+      "url": "https://www.linkedin.com/messaging/thread/2-MjdjMzdmYTQtOGZkYy00MmU0LWJiMTUtOGVhMzA1NGM5YzE0XzEwMA==/"
+    }
+  ]
 }

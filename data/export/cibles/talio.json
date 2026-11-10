@@ -1,0 +1,41 @@
+{
+  "nom": "Talio — profil validé, missions à proposer",
+  "secteur": "Plateforme de mise en relation talents et entreprises",
+  "lieu": "France / télétravail depuis le Maroc à confirmer",
+  "url": "https://www.taliotalent.com/dashboard",
+  "priorite": "A",
+  "statut": "chaud",
+  "cv": "digital",
+  "postes": "Missions de transformation digitale à proposer ; aucune offre, client ni contrat encore présenté.",
+  "pourquoi": "Profil admis et validé par Talio le 25/09/2026. Il est visible auprès des entreprises partenaires ; cela ne vaut pas proposition ni contrat signé.",
+  "porte": "Compte Talio et talent@taliotalent.com ; demande de précisions envoyée le 12/10 (Gmail SENT).",
+  "action": "Attendre la réponse sur le calendrier, le contrat (salarié ou prestation), la durée, la rémunération et le télétravail depuis le Maroc. Vérifier le 19/10 sans relance automatique.",
+  "action_date": "2026-10-19",
+  "source": "Emails Talio du 25/09/2026 et Gmail SENT du 12/10/2026",
+  "preuve": {
+    "type": "email_envoye",
+    "verifiee": true,
+    "le": "2026-10-12T14:50:52+01:00",
+    "label": "Demande de clarification envoyée à talent@taliotalent.com, Gmail SENT 1a1309857f902641",
+    "url": "https://mail.google.com/mail/u/0/#sent/1a1309857f902641",
+    "message_id": "1a1309857f902641"
+  },
+  "historique": [
+    {
+      "action": "profil_admis",
+      "le": "2026-09-25",
+      "source": "Gmail 1a0d7e26f5fbf64a"
+    },
+    {
+      "action": "profil_valide",
+      "le": "2026-09-25",
+      "source": "Gmail 1a0d8eda1886f20f"
+    },
+    {
+      "action": "demande_modalites_envoyee",
+      "le": "2026-10-12T14:50:52+01:00",
+      "source": "https://mail.google.com/mail/u/0/#sent/1a1309857f902641"
+    }
+  ],
+  "maj": "2026-10-12T14:50:52+01:00"
+}

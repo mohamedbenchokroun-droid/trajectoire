@@ -1,0 +1,61 @@
+{
+  "id": "preparation-2026-10-01",
+  "notes": "Préparation uniquement : ce lot n'envoie aucun formulaire, email ou message. Le profil ReKrute est complet, mais les pages d'offres demandent toujours une connexion. Le nouveau PDF n'a pas pu être importé par l'extension Chrome. Vérifier l'accès au formulaire, la pièce jointe et conserver une preuve réelle avant tout envoi.",
+  "patches": [
+    {
+      "id": "novec",
+      "expectedStatuses": ["a_postuler", "pret"],
+      "patch": {
+        "statut": "pret",
+        "cv": "sales",
+        "qui": "agent",
+        "action_date": "2026-10-01",
+        "action": "Résoudre la connexion sur l'offre, puis ouvrir le formulaire ReKrute avec le CV Sales et le message préparé. Envoi prévu le 1er octobre ; non effectué.",
+        "blocage": "ReKrute : connexion demandée sur l’offre malgré le profil complet ; import du PDF révisé bloqué par l’extension Chrome",
+        "offre_verifiee_le": "2026-10-01",
+        "date_limite": "2026-11-08",
+        "reference_offre": "186128",
+        "source_verifiee": "https://www.rekrute.com/offre-emploi-responsable-developpement-afrique-recrutement-novec-sale-technopolis-186128.html",
+        "salaire": "Non publié ; plancher requis : 15 000 DH net/mois, à confirmer",
+        "risques": "Bac+5 demandé ; diplôme obtenu : Bac+3. L’expérience commerciale au Maroc et en Afrique est pertinente, sans équivalence de diplôme revendiquée. Expérience spécifique en ingénierie non établie. Technopolis est à la limite du rayon géographique. Rémunération non publiée, à confirmer.",
+        "comment": "Priorité du lot. CV Sales déjà présent sur le profil ReKrute ; vérifier la pièce jointe sélectionnée dans le formulaire. Ne pas renseigner Bac+5 ni une expertise technique en ingénierie. Aucun envoi confirmé.",
+        "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Responsable Développement Afrique. Mon parcours de 14 ans associe développement commercial B2B, gestion de comptes stratégiques et coordination de projets institutionnels. Chez E-Maroc Wave, j’ai développé des comptes au Maroc et contribué à l’expansion sur les marchés africains. Chez Corpotex, je pilote la prospection, la négociation et le suivi des comptes, ainsi que la structuration des équipes et des processus commerciaux.\n\nEn parallèle, mes missions auprès d’organisations internationales et d’institutions publiques m’ont appris à coordonner des interlocuteurs multiples et à transformer un besoin en proposition claire et en livrables suivis. Je souhaite mettre cette double expérience commerciale et institutionnelle au service de l’identification d’opportunités et du développement de partenariats pour NOVEC en Afrique.\n\nJe serais heureux d’échanger sur les besoins de votre équipe et sur la contribution concrète que je pourrais apporter.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com"
+      }
+    },
+    {
+      "id": "medz",
+      "expectedStatuses": ["a_postuler", "pret"],
+      "patch": {
+        "statut": "pret",
+        "cv": "sales",
+        "qui": "agent",
+        "action_date": "2026-10-01",
+        "action": "Candidature opportuniste : résoudre la connexion ReKrute puis utiliser le CV Sales et le message préparé. Envoi prévu le 1er octobre ; non effectué.",
+        "blocage": "ReKrute : connexion demandée sur l’offre malgré le profil complet ; import du PDF révisé bloqué par l’extension Chrome",
+        "offre_verifiee_le": "2026-10-01",
+        "date_limite": "2026-11-15",
+        "reference_offre": "186430",
+        "source_verifiee": "https://www.rekrute.com/offre-emploi-directeur-business-development-recrutement-medz-rabat-186430.html",
+        "salaire": "Non publié ; plancher requis : 15 000 DH net/mois, à confirmer",
+        "risques": "Écart important : Bac+5 et expérience directe de l’investissement, du montage financier, juridique et foncier demandés. Ne pas assimiler l’événementiel investisseurs au pilotage de projets d’investissement. Candidature opportuniste, avec ouverture à un rôle de développement commercial ou de partenariats de niveau manager. Rémunération non publiée.",
+        "comment": "Priorité secondaire. Un seul CV Sales pour MEDZ. Valoriser les événements investisseurs et la coordination institutionnelle sans revendiquer de compétences non démontrées en structuration financière ou foncière. Aucun envoi confirmé.",
+        "message": "Madame, Monsieur,\n\nJe vous adresse ma candidature au poste de Directeur Business Development. Mon parcours de 14 ans combine développement commercial B2B, gestion de comptes stratégiques et coordination de projets institutionnels. Depuis 2021, j’ai notamment conçu et piloté des événements investisseurs régionaux, dont les Investor Days de Guelmim et d’Essaouira : cadrage, coordination des parties prenantes, préparation des supports et déploiement opérationnel.\n\nCette expérience complète mon activité commerciale : prospection, propositions, négociation et fidélisation, avec des outils CRM et de reporting pour structurer le suivi. Je souhaite mettre ces compétences au service du développement des relations entreprises et des partenariats de MEDZ.\n\nJe mesure la dimension spécialisée de ce poste en investissement. Si vous privilégiez une expérience directe du montage de projets d’investissement, je serais également heureux d’être considéré pour une fonction de développement commercial, de chargé d’affaires ou de partenariats au sein de vos équipes.\n\nCordialement,\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com"
+      }
+    },
+    {
+      "id": "hilti",
+      "expectedStatuses": ["a_postuler", "pret", "veille"],
+      "patch": {
+        "statut": "expire",
+        "qui": "agent",
+        "action": "Offre ReKrute expirée : retirée du lot du 1er octobre. Rechercher une nouvelle offre officielle Hilti Rabat ; aucun envoi sur cette annonce.",
+        "action_date": "2026-09-30",
+        "offre_verifiee_le": "2026-09-30",
+        "date_limite": "2026-09-10",
+        "reference_offre": "183465",
+        "source_verifiee": "https://www.rekrute.com/offre-emploi-account-manager-hf-rabat-recrutement-hilti-maroc-rabat-183465.html",
+        "comment": "La page officielle ReKrute indique une offre expirée. Cette fiche ne représente pas une candidature envoyée."
+      }
+    }
+  ]
+}

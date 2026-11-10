@@ -4,7 +4,7 @@
   "couloir": "com",
   "cv": "com",
   "date_postule": "2026-09-28",
-  "derniere_action": "2026-09-28",
+  "derniere_action": "2026-10-05",
   "entreprise": "SOGEA Maroc (groupe VINCI Construction)",
   "historique": [
     {
@@ -12,11 +12,31 @@
       "le": "2026-09-28T09:00:00Z",
       "notes": "Envoyée par Mohamed, CV Communication.",
       "par": "mohamed"
+    },
+    {
+      "action": "Invitation LinkedIn",
+      "le": "2026-10-01",
+      "par": "agent",
+      "notes": "Sofia Naciri : invitation avec note envoyée. Confirmation LinkedIn vérifiée le 01/10. Acceptation non vérifiée aujourd’hui."
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Refus confirmé",
+      "le": "2026-10-05T12:00:00Z",
+      "par": "agent",
+      "batch_id": "suivi-2026-10-05",
+      "notes": "Courriel 1a10903bb14031be ; référence 2026-131240. Poste identifié explicitement. Réponse personnelle envoyée par Mohamed le 05/10 ; aucun nouvel envoi par l’agent."
     }
   ],
   "km": 12,
   "lieu": "Skhirat-Témara",
-  "maj": "2026-09-29T02:00:00Z",
+  "maj": "2026-10-05T23:50:34.831Z",
   "match": 70,
   "nb_relances": 0,
   "poste": "Poste communication",
@@ -24,5 +44,34 @@
   "priorite": "A",
   "salaire": "à préciser",
   "source": "Candidature de Mohamed",
-  "statut": "postule"
+  "statut": "refus",
+  "contacts": [
+    {
+      "nom": "Sofia Naciri",
+      "role": "Responsable Développement RH — SOGEA Maroc et DUMEZ Maroc — invitation envoyée le 01/10/2026 ; acceptation à vérifier",
+      "url": "https://www.linkedin.com/in/sofianaciri/",
+      "invitation": {
+        "date": "2026-10-01",
+        "statut": "envoyee",
+        "verifiee": true,
+        "note": "Bonjour Mme Naciri, j’ai candidaté chez SOGEA en communication et au poste Responsable digital et transformation. Mon parcours relie communication, projets et outils digitaux. Échangeons ? Mohamed",
+        "preuve": "Interface LinkedIn : Invitation envoyée et En attente le 01/10 ; acceptation non vérifiée le 02/10."
+      }
+    }
+  ],
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-03",
+    "texte": "Bonjour, je me permets de revenir vers vous concernant mes candidatures SOGEA en communication et transformation digitale. Mon parcours associe développement B2B, communication institutionnelle et coordination de projets, avec une pratique opérationnelle des outils digitaux. Je reste disponible pour un échange et pour tout complément utile. Merci pour votre retour. Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "action": "Refus reçu ; aucune relance automatique. Réponse personnelle déjà envoyée par Mohamed le 05/10 : attendre uniquement un éventuel retour.",
+  "qui": "agent",
+  "refus": {
+    "date": "2026-10-05",
+    "reference": "2026-131240",
+    "preuve_email": "1a10903bb14031be",
+    "attribution": "confirmée par le libellé du poste dans le courriel"
+  }
 }

@@ -1,0 +1,59 @@
+{
+  "statut": "abandon",
+  "priorite": "C",
+  "lieu": "Rabat",
+  "source": "ICESCO — page officielle vérifiée en direct dans Chrome",
+  "offre_verifiee_le": "2026-10-16",
+  "salaire": "Non publié",
+  "qui": "agent",
+  "action_date": null,
+  "entreprise": "ICESCO",
+  "poste": "Designer Graphic",
+  "cv": "com",
+  "url": "https://icesco.org/en/job-offer/graphic-designer/",
+  "date_limite": "2026-10-25",
+  "pourquoi": "Organisation internationale à Rabat, design et communication alignés avec l’expérience ; CDD 12 mois renouvelable.",
+  "risques": "Affiche officielle vérifiée : Master degree requis ; diplôme obtenu Bac+3. 5 années d’expérience et maîtrise de deux langues ICESCO aussi demandées. Salaire non publié.",
+  "action": "Écart de diplôme éliminatoire vérifié sur l’affiche officielle 2026 : Master requis, Bac+3 obtenu. Ne pas postuler ni envoyer de demande d’informations pour ce poste.",
+  "contacts": [
+    {
+      "nom": "Recrutement ICESCO",
+      "email": "Icescoemployment@icesco.org",
+      "role": "Adresse publiée dans l’offre"
+    }
+  ],
+  "message": "Madame, Monsieur, votre page Designer Graphic indique une clôture au 25 octobre 2026 pour un CDD à Rabat. L’affiche détaillée ne se charge pas de mon côté. Pourriez-vous me transmettre le descriptif actualisé, les conditions de diplôme/expérience et les pièces attendues pour candidater ? Je vous remercie. Bien cordialement, Mohamed Benchokroun.",
+  "maj": "2026-10-16T11:26:19.193Z",
+  "historique": [
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Nouvelle piste vérifiée le 06/10, dédupliquée avec le suivi vivant et Gmail. Aucun envoi."
+    },
+    {
+      "action": "Veille du 7 octobre — aucun envoi",
+      "le": "2026-10-07T09:25:08.107Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-07",
+      "notes": "Source annonce EN https://icesco.org/en/job-offer/graphic-designer/ ; période 30/09–25/10 sur https://icesco.org/en/get-engaged/join-the-icesco-family/apply-for-a-career/page/2/. Ne pas créer de doublon."
+    },
+    {
+      "action": "Veille du 09/10 — sans envoi",
+      "le": "2026-10-09T09:34:27.559Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-09",
+      "notes": "Page carrière anglaise et liste officielle relues. Lien de l’affiche comporte un chemin dupliqué ; lecture via lien et variante corrigée infructueuse. Ne pas inventer les exigences."
+    },
+    {
+      "action": "Revue ciblée du 16 octobre",
+      "le": "2026-10-16T11:26:19.193Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-16",
+      "notes": "Écart de diplôme éliminatoire vérifié sur l’affiche officielle 2026 : Master requis, Bac+3 obtenu. Ne pas postuler ni envoyer de demande d’informations pour ce poste."
+    }
+  ],
+  "date_publication": "2026-09-30",
+  "action_planifiee": null
+}

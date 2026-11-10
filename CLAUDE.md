@@ -1,5 +1,5 @@
 # Trajectoire
 
-Toutes les consignes, les règles et l'état du projet sont dans @AGENTS.md (fichier commun à Claude et à Codex).
+Lire `AGENTS.md` puis `PASSATION CLAUDE.md` avant toute action.
 
-Avant de reprendre : faire `git pull`, puis relire AGENTS.md et data/export/, car Codex a pu modifier les données.
+Le dépôt GitHub est une copie du code. L'état des candidatures est dans le cockpit vivant et dans `/opt/trajectoire/runtime-data/` sur le serveur. `data/export/` est une archive historique : ne jamais la recopier sur les données vivantes. Si tu reprends depuis l'archive de passation, elle contient un instantané daté du code local, du code déployé, des données vivantes et des CV ; vérifie le cockpit avant chaque envoi ou modification.

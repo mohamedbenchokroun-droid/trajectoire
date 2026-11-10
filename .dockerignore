@@ -1,6 +1,12 @@
 .git
 .env
+handoff
 runtime-data
+cv-files
+output
+preuves
+tmp
+node_modules
 cv-generator
 data
 automation

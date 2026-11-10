@@ -1,0 +1,58 @@
+{
+  "entreprise": "Interface (recrutement pour un client non nommé)",
+  "poste": "Graphiste Senior",
+  "lieu": "Rabat — sur site, selon l'annonce reprise par JobsRadar",
+  "source": "Indeed / Workable ; accusé de réception Workable dans Gmail",
+  "statut": "postule",
+  "priorite": "C",
+  "cv": "com",
+  "salaire": "Non publié ; seuil de plus de 12 000 DH nets non confirmé",
+  "publication": "2026-08-31 selon JobsRadar, date officielle non vérifiée",
+  "offre_verifiee_le": "2026-10-21",
+  "pourquoi": "Candidature confirmée par Workable ; graphisme institutionnel et publicitaire cohérent avec les réalisations de Mohamed.",
+  "risques": "Interface recrute pour un client non nommé : taille et structuration de l'employeur inconnues. Salaire non communiqué. Le CV effectivement transmis était Communication et non Design Graphique ; ne pas présenter un autre CV comme déjà envoyé.",
+  "action": "Aucune réponse au contrôle J+6 ; attendre et revérifier le 30/10, sans relance sur une adresse noreply.",
+  "action_date": "2026-10-30",
+  "qui": "agent",
+  "action_planifiee": {
+    "date": "2026-10-30",
+    "texte": "Vérifier une réponse ou un contact nominatif fiable avant toute relance ; ne pas écrire à noreply.",
+    "qui": "agent"
+  },
+  "dossier_statut": "envoye_accuse_recu",
+  "date_postule": "2026-10-20",
+  "preuves": [
+    {
+      "type": "accuse",
+      "le": "2026-10-20T17:04:47Z",
+      "verifiee": true,
+      "label": "Workable : Votre candidature au poste de Graphiste Senior a bien été envoyée ; CV Communication joint",
+      "reference": "1a15a45d7b16c1e0",
+      "url": "https://mail.google.com/mail/u/?authuser=mohamed.benchokroun%40gmail.com#all/1a15a45d7b16c1e0"
+    }
+  ],
+  "historique": [
+    {
+      "action": "accuse_recu",
+      "le": "2026-10-20T17:04:47Z",
+      "par": "gmail",
+      "batch_id": "veille-2026-10-21-interface",
+      "notes": "Accusé Workable de candidature Graphiste Senior chez Interface. CV_Mohamed_Benchokroun_Communication.pdf effectivement joint. Aucun nouvel envoi effectué pendant cette veille."
+    },
+    {
+      "action": "suivi_mis_a_jour",
+      "le": "2026-10-21T09:21:58Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-21-interface",
+      "notes": "Entrée créée après déduplication du cockpit vivant ; description du poste recoupée avec JobsRadar. Employeur final et salaire restent inconnus."
+    },
+    {
+      "action": "controle_j5_sans_relance",
+      "le": "2026-10-26T09:24:36.114Z",
+      "par": "agent",
+      "batch_id": "interface-revue-2026-10-26",
+      "notes": "Gmail contrôlé le 26/10 : accusé Workable du 20/10 seulement, aucune réponse du recruteur. Le message d’accusé vient d’une adresse noreply et le client final reste non nommé ; aucune relance envoyée sans contact fiable."
+    }
+  ],
+  "maj": "2026-10-26T09:24:36.114Z"
+}

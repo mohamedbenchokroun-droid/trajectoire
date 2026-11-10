@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "texte": "UE : vérifier réponses et état du recrutement officiel",
+      "detail": "Clôture 09/10 à 18h. Seuls les présélectionnés sont contactés ; pas de relance J+5 ni d’appel automatique, pas de classement sans preuve.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    }
+  ],
+  "maj": "2026-10-06T15:41:29.980Z"
+}

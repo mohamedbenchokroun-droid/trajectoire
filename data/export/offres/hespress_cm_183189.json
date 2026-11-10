@@ -1,0 +1,37 @@
+{
+  "statut": "abandon",
+  "priorite": "C",
+  "lieu": "Rabat",
+  "source": "ReKrute — annonce employeur",
+  "offre_verifiee_le": "2026-10-07",
+  "salaire": "Non publié — minimum 15 000 DH net à confirmer",
+  "qui": "agent",
+  "action_date": "2026-10-07",
+  "entreprise": "Hespress",
+  "poste": "Community Manager (H/F)",
+  "cv": "sales",
+  "url": "https://www.rekrute.com/offre-emploi-community-manager-hf-recrutement-hespress-rabat-183189.html",
+  "publie": "2026-08-06",
+  "date_limite": "2026-10-06",
+  "pourquoi": "Alternative au Business Developer : production visuelle et vidéo, contenus digitaux ; Bac+3 accepté dans le descriptif.",
+  "risques": "Échéance du 06/10 dépassée et fermeture vérifiée directement le 07/10. Pas de candidature tardive ni relance automatique.",
+  "action": "Annonce fermée : ReKrute affiche « Cette offre d’emploi n’est plus d’actualité ». Aucun envoi confirmé ; ne pas la présenter comme refus de candidature.",
+  "maj": "2026-10-07T09:25:08.107Z",
+  "historique": [
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Nouvelle piste vérifiée le 06/10, dédupliquée avec le suivi vivant et Gmail. Aucun envoi."
+    },
+    {
+      "action": "Veille du 7 octobre — aucun envoi",
+      "le": "2026-10-07T09:25:08.107Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-07",
+      "notes": "Fermeture vérifiée dans la page officielle ReKrute le 07/10. Classement motivé par l’annonce fermée, pas par J+20 ni par un refus recruteur."
+    }
+  ],
+  "motif_cloture": "Offre expirée sans envoi confirmé"
+}

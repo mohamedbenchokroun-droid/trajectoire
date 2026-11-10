@@ -30,6 +30,14 @@ function build(key) {
   const row = kids(bodyTbl, 'tr')[0];
   const [left, right] = kids(row, 'tc');
 
+  // Rééquilibre la page : marge haute plus généreuse et respiration dans la
+  // colonne de lecture. Les couleurs, la photo et la structure restent intactes.
+  for (const [cell, top] of [[left, 500], [right, 600]]) {
+    const margins = kids(kids(cell, 'tcPr')[0], 'tcMar')[0];
+    const topMargin = kids(margins, 'top')[0];
+    topMargin.setAttribute('w:w', String(top));
+  }
+
   // ---------- Remplacements simples de titres ----------
   for (const [from, to] of Object.entries(v.labels || {})) {
     all('p').filter(p => ptext(p).trim() === from).forEach(p => setText(p, to));
@@ -121,18 +129,23 @@ function build(key) {
   v.formation.slice(1).forEach((s, k) => setText(lignesF[k], s));
   lignesF.slice(v.formation.length - 1).forEach(p => right.removeChild(p));
 
-  // Dernier paragraphe du document (après le grand tableau) : minuscule, pour éviter une 2e page blanche
+  for (const p of kids(right, 'p').filter(p => ptext(p).trim())) {
+    let ppr = kids(p, 'pPr')[0];
+    if (!ppr) { ppr = doc.createElementNS(W, 'w:pPr'); p.insertBefore(ppr, p.firstChild); }
+    let spacing = kids(ppr, 'spacing')[0];
+    if (!spacing) {
+      spacing = doc.createElementNS(W, 'w:spacing');
+      const before = Array.from(ppr.childNodes).find(n => ['ind', 'jc', 'rPr'].includes(n.localName));
+      ppr.insertBefore(spacing, before || null);
+    }
+    spacing.setAttribute('w:after', key === 'Transformation_Digitale' ? '100' : key === 'EN' ? '60' : '40');
+  }
+
+  // Le gabarit se termine par un paragraphe vide après le tableau pleine page.
+  // Word le repousse sur une deuxième page blanche : il n'apporte aucun contenu.
   const body = doc.getElementsByTagNameNS(W, 'body')[0];
   const lastP = kids(body, 'p').pop();
-  if (lastP) {
-    let ppr = kids(lastP, 'pPr')[0];
-    if (!ppr) { ppr = doc.createElementNS(W, 'w:pPr'); lastP.insertBefore(ppr, lastP.firstChild); }
-    Array.from(ppr.childNodes).filter(c => c.localName === 'spacing' || c.localName === 'rPr').forEach(c => ppr.removeChild(c));
-    const sp = doc.createElementNS(W, 'w:spacing'); sp.setAttribute('w:before', '0'); sp.setAttribute('w:after', '0'); sp.setAttribute('w:line', '20'); sp.setAttribute('w:lineRule', 'exact');
-    const pstyle = kids(ppr, 'pStyle')[0];
-    ppr.insertBefore(sp, pstyle ? pstyle.nextSibling : ppr.firstChild);
-    const rp2 = doc.createElementNS(W, 'w:rPr'); rp2.appendChild(doc.createElementNS(W, 'w:vanish')); const sz = doc.createElementNS(W, 'w:sz'); sz.setAttribute('w:val', '2'); rp2.appendChild(sz); ppr.appendChild(rp2);
-  }
+  if (lastP && !ptext(lastP).trim()) body.removeChild(lastP);
 
   const out = path.join(__dirname, 'out', key);
   fs.rmSync(out, { recursive: true, force: true });

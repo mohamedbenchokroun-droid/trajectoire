@@ -1,0 +1,82 @@
+{
+  "entreprise": "ESLSCA Business School Rabat / Grupo Planeta",
+  "poste": "Chargé(e) des Admissions",
+  "lieu": "Rabat",
+  "source": "Grupo Planeta Careers / Talent Clue, offre 125689066",
+  "url": "https://grupoplaneta.talentclue.com/en/node/125689066/4590/modal",
+  "statut": "postule",
+  "priorite": "B",
+  "match": 76,
+  "cv": "sales",
+  "salaire": "Non publié ; conformité au seuil de plus de 12 000 DH nets à confirmer",
+  "publication": null,
+  "offre_verifiee_le": "2026-10-15",
+  "contrat": "Sur site ; type de contrat non précisé dans l'annonce officielle",
+  "pourquoi": "Groupe international structuré, à Rabat ; le rôle associe développement commercial B2C/B2B, partenariats, événements, CRM et suivi de KPI. Bac+3 accepté.",
+  "missions": [
+    "Identifier, contacter et conseiller les candidats aux formations",
+    "Développer des partenariats avec écoles, universités et entreprises",
+    "Participer aux forums et événements, piloter le suivi des objectifs dans le CRM"
+  ],
+  "risques": "Salaire non publié et date initiale de publication non vérifiée (republication LinkedIn le 13/10). Le niveau de poste peut être inférieur au salaire visé ; vérifier la rémunération avant tout entretien.",
+  "action": "Candidature ESLSCA envoyée le 15/10 avec le CV Sales ; accusé de réception Grupo Planeta reçu par Gmail le 15/10 à 11h11 UTC. Contrôler la réponse le 20/10.",
+  "action_date": "2026-10-15",
+  "qui": "agent",
+  "action_planifiee": {
+    "date": "2026-10-20",
+    "texte": "Contrôler les réponses/accusés, puis décider si une seule relance J+5 est utile et possible.",
+    "qui": "agent"
+  },
+  "dossier_statut": "envoye_accuse_recu",
+  "message": "Mon parcours associe développement commercial B2B, relation client et coordination de projets institutionnels et événementiels. J'ai structuré le suivi des opportunités dans un CRM no-code et travaillé avec des organisations de formation sur des projets concrets. Je souhaite mettre cette expérience au service de l'accompagnement des candidats, du développement de partenariats et du pilotage des admissions d'ESLSCA Rabat.",
+  "historique": [
+    {
+      "action": "verification",
+      "le": "2026-10-15T10:13:02.343Z",
+      "par": "agent",
+      "batch_id": "planeta-verification-2026-10-15",
+      "notes": "Annonce officielle active et formulaire Talent Clue vérifiés le 15/10/2026. Quatre postes indiqués ; Rabat, sur site, Bac+3 à Bac+5, salaire non communiqué. Aucun CV transmis ni candidature envoyée à ce stade."
+    },
+    {
+      "action": "blocage_envoi",
+      "le": "2026-10-15T10:37:59.782Z",
+      "par": "agent",
+      "batch_id": "planeta-captcha-2026-10-15",
+      "notes": "Formulaire Talent Clue complété, CV Mohamed Benchokroun Sales.pdf téléversé. Clic Apply effectué ; message d'erreur : The answer you entered for the CAPTCHA was not correct. Aucun accusé de réception, ne pas compter comme candidature envoyée."
+    },
+    {
+      "action": "candidature_envoyee",
+      "le": "2026-10-15T11:13:21.642Z",
+      "par": "agent",
+      "batch_id": "planeta-success-2026-10-15",
+      "notes": "CAPTCHA validé avec autorisation ponctuelle de Mohamed. Apply sur l'offre officielle 125689066, CV Sales déjà téléversé ; redirection vers candidate.b4workapp.com/register/email avec le texte ¡Inscripción realizada con éxito!. Capture locale conservée. Étape suivante B4work non suivie (elle accepte d'autres conditions)."
+    },
+    {
+      "action": "accuse_recu",
+      "le": "2026-10-16T09:17:17.814Z",
+      "par": "agent",
+      "batch_id": "planeta-accuse-2026-10-16",
+      "notes": "Gmail : Grupo Planeta no-reply@grupoplaneta.mail.talentclue.com, 15/10/2026 11:11:23 UTC, objet Grupo Planeta - Thanks for your application. Le corps confirme la candidature au poste Chargé(e) des Admissions – ESLSCA Business School Rabat, référence 125689066."
+    }
+  ],
+  "maj": "2026-10-16T09:17:17.814Z",
+  "republication_linkedin": "2026-10-13",
+  "date_postule": "2026-10-15",
+  "preuves": [
+    {
+      "type": "confirmation",
+      "le": "2026-10-15T11:13:21.642Z",
+      "verifiee": true,
+      "label": "Formulaire Talent Clue soumis ; page B4work : inscription réalisée avec succès",
+      "reference": "Capture locale : automation/preuve-eslsca-envoi-2026-10-15.png"
+    },
+    {
+      "type": "accuse",
+      "le": "2026-10-15T11:11:23Z",
+      "verifiee": true,
+      "label": "Accusé Grupo Planeta : Thanks for your application",
+      "reference": "1a13f427ad7756ab",
+      "url": "https://mail.google.com/mail/u/?authuser=mohamed.benchokroun%40gmail.com#all/1a13f427ad7756ab"
+    }
+  ]
+}

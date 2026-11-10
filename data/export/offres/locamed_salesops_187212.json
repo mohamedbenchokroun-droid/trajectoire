@@ -1,0 +1,76 @@
+{
+  "entreprise": "LOCAMED",
+  "poste": "Responsable Sales Operations et CRM",
+  "lieu": "Rabat",
+  "source": "ReKrute",
+  "url": "https://www.rekrute.com/offre-emploi-responsable-sales-operations-et-crm-recrutement-locamed-rabat-187212.html",
+  "statut": "veille",
+  "priorite": "B",
+  "cv": "sales",
+  "salaire": "Non publié — minimum 15 000 DH net non confirmé",
+  "date_limite": "2026-12-06",
+  "offre_verifiee_le": "2026-10-09",
+  "publication": "Indexation ReKrute : 06/10/2026 ; page consultée le 07/10 : « publiée aujourd’hui ». Date absolue à confirmer.",
+  "contrat": "CDI, présentiel",
+  "pourquoi": "Bonne proximité entre développement commercial B2B et structuration CRM. Groupe médical national avec 30 magasins selon l’annonce ; taille/gouvernance à qualifier avant validation du critère grande organisation.",
+  "missions": [
+    "Optimisation du CRM et des processus commerciaux",
+    "Tableaux de bord, analyse des ventes et prévisions",
+    "Appui aux équipes et structuration des objectifs"
+  ],
+  "risques": "Annonce officielle ReKrute relue le 08/10 : Bac+5 minimum, 3–5 ans CRM/Sales Operations ; salaire non publié. Diplôme obtenu Bac+3 : la validation d’inscription à l’Executive Master ne comble pas cette exigence. Salesforce/HubSpot cités sans maîtrise documentée. Structure et rémunération à qualifier. ReKrute déconnecté dans le navigateur partagé.",
+  "action": "Contact RH officiel trouvé et brouillon Gmail de qualification créé, non envoyé : vérifier Bac+3/expérience, salaire et CRM avant candidature. CV Sales conservé ; validation ponctuelle requise.",
+  "action_date": "2026-10-12",
+  "qui": "agent",
+  "action_planifiee": {
+    "date": "2026-10-12",
+    "texte": "Revoir le brouillon LOCAMED et la validation ponctuelle, puis qualifier diplôme/salaire/CRM. Ne pas envoyer automatiquement.",
+    "qui": "agent"
+  },
+  "message": "Madame, Monsieur,\nVotre poste de Responsable Sales Operations et CRM à Rabat retient mon attention par son articulation entre développement commercial et amélioration des processus. Mon parcours associe prospection B2B, suivi de comptes et mise en place d’outils CRM/no-code pour structurer l’activité. Je souhaite mettre cette double approche au service de vos équipes commerciales et de leur reporting. Titulaire d’une licence, je serais heureux d’échanger sur la manière dont mon expérience peut répondre à vos besoins, en toute transparence sur le niveau de diplôme demandé.\nBien cordialement,\nMohamed Benchokroun",
+  "dossier_statut": "texte_prepare_cv_selectionne_non_envoye",
+  "maj": "2026-10-09T09:34:27.559Z",
+  "historique": [
+    {
+      "action": "Veille du 7 octobre — aucun envoi",
+      "le": "2026-10-07T09:25:08.107Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-07",
+      "notes": "Nouvelle piste non dupliquée ; annonce originale vérifiée dans le navigateur. Aucun dépôt. Sources : annonce ReKrute 187212 et https://inaya.ma/qui-sommes-nous/."
+    },
+    {
+      "action": "Veille et brouillons vérifiés",
+      "le": "2026-10-08T21:49:02.449Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-08",
+      "notes": "Page directe ReKrute 187212 : publiée il y a 2 jours, échéance 06/12/2026. Doublon évité ; date contradictoire de l’index non retenue."
+    },
+    {
+      "action": "Veille du 09/10 — sans envoi",
+      "le": "2026-10-09T09:34:27.559Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-09",
+      "notes": "ReKrute 187212 relu : Rabat, CDI, Bac+5, 3–5 ans, échéance 06/12, salaire non publié. rh@locamed.org vérifié sur une publication de l’employeur pour Superviseur d’activité & Responsable des magasins ; pas présenté comme destinataire spécifique CRM. Gmail dédupliqué, brouillon créé et relu label DRAFT ; aucune candidature soumise."
+    }
+  ],
+  "contacts": [
+    {
+      "nom": "Service RH LOCAMED",
+      "email": "rh@locamed.org",
+      "role": "Adresse RH publiée par LOCAMED pour un autre recrutement ; gestion du poste CRM à confirmer",
+      "source": "https://fr.linkedin.com/posts/locamed-sant%C3%A9-%26-confort_recrutement-rabat-retail-activity-7513584765518839808-_STq",
+      "verifie_le": "2026-10-09"
+    }
+  ],
+  "qualification_preparee": {
+    "canal": "Gmail",
+    "date": "2026-10-09",
+    "statut": "brouillon_non_envoye",
+    "destinataire": "rh@locamed.org",
+    "draft_id": "r-7632385750495933666",
+    "message_id": "1a1200245d588b25",
+    "url": "https://mail.google.com/mail/u/0/#drafts/1a1200245d588b25",
+    "objet": "Responsable Sales Operations et CRM – Rabat – Réf. 187212 : précisions",
+    "texte": "Demande préalable : recevabilité Bac+3 et expérience malgré Bac+5 demandé, fourchette salariale (fixe minimum 15 000 DH net), CRM utilisé et orientation vers le bon interlocuteur. Pas de CV joint ; ce n’est pas une candidature déposée."
+  }
+}

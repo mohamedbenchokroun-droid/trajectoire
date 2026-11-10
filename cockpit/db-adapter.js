@@ -4,6 +4,12 @@
   const listeners = { offres: new Set(), cibles: new Set(), taches: new Set(), profil: new Set() };
   let state = null;
   let timer = null;
+  const connections = new Set();
+  let connection = { ok: false, le: null };
+  function connectionChanged(ok) {
+    connection = { ok, le: ok ? new Date().toISOString() : connection.le };
+    for (const callback of connections) callback(connection);
+  }
 
   function emit() {
     if (!state) return;
@@ -16,10 +22,13 @@
   }
 
   async function refresh() {
-    const response = await fetch("/api/state", { cache: "no-store" });
-    if (!response.ok) throw new Error("Chargement impossible : " + response.status);
-    state = await response.json();
-    emit();
+    try {
+      const response = await fetch("/api/state", { cache: "no-store" });
+      if (!response.ok) throw new Error("Chargement impossible : " + response.status);
+      state = await response.json();
+      emit();
+      connectionChanged(true);
+    } catch (error) { connectionChanged(false); throw error; }
   }
 
   function subscribe(name, callback, onError) {
@@ -61,6 +70,7 @@
   };
 
   window.trajectoireDB = {
+    onConnection(callback) { connections.add(callback); callback(connection); return () => connections.delete(callback); },
     async use() {
       await refresh();
       if (!timer) timer = setInterval(() => refresh().catch(() => {}), 15000);

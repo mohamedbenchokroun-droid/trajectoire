@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "texte": "Veille du 07/10 : Gmail contrôlé, aucun nouveau retour ciblé trouvé",
+      "detail": "Recherche depuis le 06/10 sur les candidatures/recrutements. NTU et NOVEC toujours en brouillons. Aucun email, message, candidature ou appel envoyé par cette veille.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Hespress : deux offres fermées, aucun envoi confirmé",
+      "detail": "ReKrute affiche explicitement « Cette offre d’emploi n’est plus d’actualité » pour Business Developer 183195 et Community Manager 183189. Retirées des candidatures à envoyer, sans les compter comme refus.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Nouvelle piste B à qualifier : LOCAMED — Sales Operations et CRM",
+      "detail": "Rabat, CDI, clôture 06/12. Bonne adéquation commerciale/CRM ; Bac+5 demandé, salaire non publié, structure à vérifier. CV Sales sélectionné et texte ciblé préparé, pas de nouveau PDF ni candidature envoyée.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "G4S : coordonnées RH officielles et brouillon prêts",
+      "detail": "team.recrutement@ma.g4s.com ; standard +212522497400. Brouillon Gmail non envoyé. Avant validation : revérifier dépôt du 29/09. Pas de réutilisation du contact de 2015.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Lot de relances reste en attente d’accord",
+      "detail": "Les 5 relances proposées le 06/10 ne sont pas envoyées : NTU, NOVEC, Casanet, Ciments, DXC. G4S est un brouillon supplémentaire à examiner ; aucun contact automatique.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Hilti actif ; ICESCO : dates officielles clarifiées",
+      "detail": "Hilti 20527 revalidé sans doublon. ICESCO version anglaise : publication 30/09 et clôture 25/10/2026, CDD 12 mois renouvelable ; exigences détaillées toujours manquantes.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Tri des fausses nouveautés et exclusions",
+      "detail": "Intelcom Account Manager 4440122687 et BLS Business Development 4454618139 : LinkedIn indique candidatures fermées. Institut français Rabat Culture : échéance 24/09, pas une offre ouverte malgré prise de poste 15/10. Emploi.ma : annonces récentes junior/Anapec ou hors zone écartées. Sofrecom et secteurs exclus non contactés.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Accès et calendrier : limitations conservées",
+      "detail": "ReKrute déconnecté dans le navigateur partagé. Mise à jour des données uniquement ; aucun rebuild/redémarrage. Correctif des dates d’affichage reste non publié sans autorisation distincte.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    }
+  ],
+  "maj": "2026-10-07T09:25:08.107Z"
+}

@@ -1,6 +1,8 @@
 # Passation — recherche d'emploi de Mohamed Benchokroun
 
-Ce dépôt contient tout le système de recherche d'emploi monté avec Claude (sept. 2026). Ce fichier permet à un autre agent (ChatGPT Codex ou autre) de reprendre le travail sans rien redemander à Mohamed. État au **29 septembre 2026**.
+Ce dépôt contient le système de recherche d'emploi de Mohamed. **État opérationnel au 12 octobre 2026** : la source de vérité est le cockpit vivant et ses fichiers `runtime-data/` sur Hetzner, jamais l'export Git. Les sections historiques ci-dessous ne remplacent pas les preuves et statuts du cockpit.
+
+**Mise à jour du 9 octobre 2026 — CVthèque :** nommer les nouveaux CV avec des espaces, jamais des underscores, et ne pas inclure le nom d'un employeur dans le nom d'un CV réutilisable. Le CV Design graphique est une cinquième version générique ; les cinq PDF doivent être consultables d'un clic dans le cockpit, sans téléchargement imposé. Conserver tels quels les noms des pièces jointes historiques dans les preuves d'envoi.
 
 ## 1. Qui, quoi
 
@@ -12,7 +14,7 @@ Ce dépôt contient tout le système de recherche d'emploi monté avec Claude (s
 
 **Critères**
 - Maximum ~30 km de Témara : Rabat, Salé, Skhirat, Témara, Technopolis. **Pas de Casablanca.**
-- **15 000 DH net/mois minimum.**
+- **Objectif : salaire strictement supérieur à 12 000 DH net/mois**, selon le critère fixé par Mohamed le 9 octobre 2026. Quand la rémunération n'est pas publiée, l'indiquer comme non vérifiée ; ne pas inventer de chiffre.
 - Grandes organisations structurées et connues : multinationales, groupes, semi-public, organisations internationales. **Pas de PME familiales.**
 - Métiers : commercial, communication, marketing, design, transformation digitale.
 
@@ -20,10 +22,10 @@ Ce dépôt contient tout le système de recherche d'emploi monté avec Claude (s
 - Banques et assurances conventionnelles ; crédit, microfinance, leasing.
 - Hôtels qui servent de l'alcool ; jeux (SOREC, loterie) ; alcool ; tabac.
 - Banques participatives : demander avant.
+- **Sofrecom Maroc : ne jamais candidater ni contacter pour Mohamed.** Sa femme y travaille ; conflit d'intérêts familial signalé par Mohamed le 30/09/2026.
 
 **Executive Master**
-- UIR « Leading Digital Transformation » : il commence en février 2027 et il n'est pas encore admis.
-- On écrit toujours **« (en cours) » sans aucune date**. C'est son choix, ne pas rouvrir le sujet.
+- Inscription à l'UIR « Leading Digital Transformation » confirmée le 7 octobre 2026 pour la promotion 2026-2027. Présenter la formation comme en cours / promotion 2026-2027, sans laisser croire que le diplôme est déjà acquis ni écrire « diplôme non obtenu » sur le CV.
 
 **Confidentialité**
 - **Jamais de noms de clients sur un support public** (LinkedIn, ReKrute, posts). Sont concernés : BEI/EIB, IFC, GIZ, Cluster EnR, CRI, Nexans et les noms d'événements.
@@ -42,9 +44,9 @@ Ce dépôt contient tout le système de recherche d'emploi monté avec Claude (s
 - Le CV part en **vraie pièce jointe PDF**.
 - **Jamais « Fwd: »** dans l'objet, **jamais de lien Drive** dans le corps.
 
-**Validation**
-- Tout envoi en son nom (candidature, message, relance) passe par **un « ok » de sa part, un seul par lot**.
-- Il a écrit : « tu peux envoyer des messages en mon nom, je te le permets ».
+**Autonomie des envois**
+- Depuis le 9 octobre, Mohamed donne carte blanche pour les candidatures et relances **ciblées**, lorsque l'annonce, le profil, les données requises, le canal et l'absence de doublon sont vérifiés. Ne pas demander un accord par lot. Respecter néanmoins toute confirmation ponctuelle imposée par l'outil ou le site au moment d'une action sensible.
+- Ne jamais transformer une veille, un brouillon ou un formulaire commencé en « candidature envoyée » sans preuve visible. Ne pas arroser des postes hors critères pour augmenter le compteur.
 
 **Style de communication**
 - Réponses **très courtes**.
@@ -53,22 +55,23 @@ Ce dépôt contient tout le système de recherche d'emploi monté avec Claude (s
 - Il écrit en français et en darija.
 
 **Limites**
-- Ne jamais taper ses mots de passe ni créer de compte à sa place. Il se connecte lui-même.
+- Ne pas créer de compte ni inventer un mot de passe, diplôme, résultat, salaire ou expérience. Si un formulaire exige une donnée inconnue, ne pas deviner. Respecter les vérifications de sécurité et les exigences de confirmation de l'outil utilisé.
 - Ne jamais faire de capture d'écran du bureau (incident de vie privée).
 
-## 3. Les 4 CV
+## 3. Les 5 CV
 
-Ils sont dans `C:\Users\mbenc\OneDrive\Documents\Recherche emploi 2026\CV\`, en `.docx` et `.pdf` d'une page. Ils sont aussi sur Google Drive, sous ces noms exacts :
+Les PDF publics pour consultation en ligne sont dans `cv-files/` et servis par le cockpit. Les sources de travail sont dans `cv-generator/` (quatre versions) et `automation/build-edvantis-cv.py` (version Design, fichier générique). Ne jamais remplacer dans les preuves l'ancien CV réellement envoyé.
 
 | Clé | Fichier | Usage |
 |---|---|---|
-| `sales` | CV_Mohamed_Benchokroun_Sales.pdf | Commercial, grands comptes |
-| `com` | CV_Mohamed_Benchokroun_Communication.pdf (= « CV_C ») | Communication, RSE, événementiel |
-| `digital` | CV_Mohamed_Benchokroun_Transformation_Digitale.pdf | Transformation digitale, adoption d'outils |
-| `en` | CV_Mohamed_Benchokroun_EN.pdf | Offres en anglais |
+| `sales` | CV Mohamed Benchokroun Sales.pdf | Commercial, grands comptes |
+| `com` | CV Mohamed Benchokroun Communication.pdf | Communication, RSE, événementiel |
+| `digital` | CV Mohamed Benchokroun Transformation Digitale.pdf | Transformation digitale, adoption d'outils |
+| `en` | CV Mohamed Benchokroun EN.pdf | Offres en anglais |
+| `design` | CV Mohamed Benchokroun Design Graphique.pdf | Design graphique, portfolio, enseignement du design |
 
 - Les textes sont dans `cv-generator/versions.js`. Voir le README pour régénérer.
-- Le design est le sien, avec barre latérale navy, photo et accents dorés. **Ne pas changer le design.**
+- Les PDF ont été corrigés et vérifiés visuellement le 12/10 ; garder les noms lisibles avec espaces, et vérifier chaque nouvelle version avant publication.
 - `cv-generator/lettre_modele.html` et `lettre_sogea.html` : modèles de lettre de motivation (HTML → PDF).
 
 ## 4. Canaux et méthodes qui fonctionnent
@@ -88,33 +91,30 @@ Ils sont dans `C:\Users\mbenc\OneDrive\Documents\Recherche emploi 2026\CV\`, en 
 - **Il ne reste qu'une invitation personnalisée pour ce mois** : la garder pour une cible prioritaire.
 
 **ReKrute** (compte n° 284964)
-- Le profil est rempli à 95 %, sans nom de client : résumé, 5 expériences, formations Bac+3, 3 langues, 15 compétences.
-- **Ce qui bloque les candidatures** : il manque la **date de naissance** (obligatoire) et le **salaire actuel** (tranche obligatoire). Seul Mohamed peut les donner.
-- Tant que le profil n'est pas complet, le bouton des offres affiche « Je m'identifie pour postuler ».
+- Profil et connexion à revérifier dans le compte, sans exposer de noms de clients sur le profil public. Mohamed a donné sa date de naissance (06/11/1988) et une indication de tranche salariale le 30/09 ; ne plus les demander mécaniquement. Une session ReKrute peut expirer : vérifier avant de conclure qu'une candidature est possible ou envoyée.
 
 **Espace candidat VINCI** (`vinci-construction.profils.org`) : utilisé pour SOGEA.
 
-**Canaux abandonnés**
-- Outlook, qu'on ne peut pas automatiser.
-- Le connecteur Gmail pour les pièces jointes : fichier trop lourd.
+**Canaux**
+- Gmail et LinkedIn ont été utilisés et vérifiés le 12/10. Évaluer chaque canal connecté au moment de l'action ; ne pas présumer qu'un ancien blocage persiste.
 
 ## 5. Tableau de bord « Trajectoire »
 
 - Il est dans `cockpit/trajectoire.html`. Palette mauve, police Plus Jakarta Sans 800 + Manrope, en-tête en verre flouté, pleine largeur, grande fiche centrée, clics annulables. **Il a refusé le bleu et le style navy/or.**
-- En ligne, c'est un artifact Claude avec base intégrée : https://claude.ai/artifact/QXH2qYRhYJzRxEEvsyVamr. **Cette base n'est accessible que depuis Claude.**
-- Pour continuer ailleurs, la source de vérité est l'**export JSON** dans `data/export/` : `offres/*.json` (une fiche par candidature) et `cibles/*.json` (organisations à approcher).
-- Il faudra soit reconstruire un tableau de bord qui lit ces fichiers (même design), soit tenir un simple fichier de suivi.
+- En ligne : https://trajectoire.65-109-143-147.sslip.io/ sur Hetzner. Les données vivantes sont dans `/opt/trajectoire/runtime-data/` sur ce serveur ; `data/export/` n'est qu'une archive et ne doit **jamais** écraser le suivi vivant. Le serveur fournit `/api/state` et les cinq PDF consultables d'un clic.
 
 **Champs d'une offre**
 - Identité : `entreprise`, `poste`, `lieu`, `km`, `source`, `url`.
-- Choix du CV : `cv` (sales|com|digital|en).
+- Choix du CV : `cv` (sales|com|digital|en|design).
 - Évaluation : `match`, `salaire`, `pourquoi`, `missions[]`, `risques`, `contacts[]`, `message`.
 - `statut` : a_postuler | postule | relance | entretien | offre | refus | abandon | veille.
 - Suivi : `action`, `qui`, `action_date`, `historique[]`, `nb_relances`, `date_postule`, `relance{}`.
 
-**Règle de relance** : relance à J+5, appel à J+10, classement à J+20.
+**Règle de relance** : vérifier les réponses avant toute relance ; J+5 et J+10 sont des points de contrôle, pas des envois automatiques. Éviter les messages répétitifs. N'archiver à J+20 qu'après vérification des réponses et du statut.
 
-## 6. Pipeline au 29/09/2026
+## 6. Pipeline historique au 29/09/2026 — NE PAS UTILISER COMME ÉTAT ACTUEL
+
+Le tableau ci-dessous est une archive. Lire les statuts dans le cockpit vivant avant toute action. Au 12/10, SOGEA et un poste UIR ont répondu négativement ; les deux autres UIR sont encore sans réponse ; l'UE, NOVEC et Edvantis ont déjà reçu des candidatures. NTU (un email commun aux deux postes), Casanet et Ciments du Maroc ont été relancés le 12/10, preuves dans leurs fiches. Ne pas redéposer un dossier déjà envoyé.
 
 | Entreprise | Poste | Statut | CV | Postulé le | Prochaine action |
 |---|---|---|---|---|---|
@@ -136,11 +136,10 @@ Ils sont dans `C:\Users\mbenc\OneDrive\Documents\Recherche emploi 2026\CV\`, en 
 | UIR | 2 postes communication | veille | com | — | — |
 | DIORH ×2 | CX / RSE | abandonné | — | — | offres fermées |
 
-## 7. Prochaines étapes
+## 7. Suite opérationnelle
 
-1. **Obtenir de Mohamed, en une seule question** : sa date de naissance et sa tranche de salaire actuel. Ensuite, finir le profil ReKrute et postuler à NOVEC, MEDZ et Hilti.
-2. **Le 5 octobre** : relancer les 9 candidatures du 28-29/09. Préparer les textes et obtenir un seul « ok ».
-3. **Le 6 octobre** : relancer Casanet et Ciments si les invitations ne sont pas acceptées.
-4. **Chaque jour ouvré** : chercher de nouvelles offres (LinkedIn, ReKrute, emploi.ma, sites carrière des grands groupes et des organisations internationales à Rabat) qui respectent **toutes** les règles de la section 2. Qualifier chaque offre (match, salaire estimé, missions, CV à utiliser), puis présenter le lot à Mohamed en quelques lignes.
-5. Les organisations à approcher en direct sont dans `data/export/cibles/` : AMDIE, CDG, MASEN, ICESCO, ADD, Maroc Telecom, cabinets de recrutement, réseau des organisations internationales…
-6. Une tâche Claude planifiée (`automation/suivi-recherche-emploi.md`, jours ouvrés à 7 h 30) faisait ce travail quotidien. **Si Codex reprend, penser à la désactiver côté Claude pour éviter les doublons.**
+1. Chaque jour, lire le cockpit vivant et les réponses Gmail/LinkedIn connectées, dédupliquer, puis vérifier les annonces récentes sur LinkedIn, ReKrute, emploi.ma, Indeed, Google Emploi, MarocAnnonces et les carrières officielles.
+2. N'envoyer que les candidatures adaptées et exactes. Renseigner source, date, lieu, formation requise, salaire publié ou « non publié », CV utilisé et preuve d'envoi. Garder le même CV pour plusieurs postes chez le même employeur.
+3. Vérifier les réponses aux relances NTU, Casanet et Ciments du Maroc le 19/10, sans re-relance automatique. Examiner Edvantis à partir du 14/10. UIR : respecter l'accusé de réception d'un mois avant de conclure.
+4. Hilti Rabat, référence 20527, reste une piste B vérifiée le 12/10 : 2 ans de vente, permis B, expérience BTP souhaitée ; salaire non publié. LOCAMED Sales Ops/CRM exige Bac+5 ; Ericsson BOS Client Executive exige notamment 10 M USD de ventes annuelles et un réseau de dirigeants télécom, donc ne pas les envoyer en force.
+5. L'automatisation Codex `trajectoire-veille-emploi-quotidienne` est active chaque jour à 7 h 30 (heure de Casablanca). Elle doit rester silencieuse si rien d'utile ne change. Vérifier qu'aucune tâche Claude parallèle ne crée de doublon.

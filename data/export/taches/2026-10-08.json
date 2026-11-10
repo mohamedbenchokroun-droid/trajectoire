@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "texte": "Qualifier LOCAMED et exigences ICESCO, préparer Hilti",
+      "detail": "Aucun nouvel envoi sans lot validé. Vérifier Bac+3/Bac+5, CRM et salaire LOCAMED ; conditions détaillées ICESCO ; PDF cohérent Hilti.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-07"
+    },
+    {
+      "texte": "Formation UIR : validation d’inscription vérifiée ; brouillon NTU corrigé",
+      "detail": "Email officiel executive.education@uir.ac.ma du 07/10 : inscription Executive Master Leading Digital Transformation, session 2026–2027, validée. L’UIR demande néanmoins de compléter l’inscription dans l’espace candidat. Preuve : https://mail.google.com/mail/u/0/#all/1a11708db9c13757 . Ne pas confondre avec les candidatures emploi UIR ni présenter le Master comme obtenu ou les cours comme commencés. Brouillon NTU commun actualisé et relu DRAFT, non envoyé ; PDFs non modifiés.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-08"
+    },
+    {
+      "texte": "Veille du 08/10 : offres revalidées et exclusions documentées",
+      "detail": "LOCAMED 187212 B/Sales : actif, Rabat, Bac+5 exigé, salaire inconnu, échéance 06/12/2026. Hilti 20527 B/Sales : actif, Rabat, salaire inconnu. Aucun nouveau dossier A/B suffisamment qualifié ajouté. ICESCO : exigences détaillées restent à confirmer. Nouvelle piste FES coordinateur projet Rabat du 07/10, échéance 18/10 : C, Master obtenu et expérience spécifique participation politique/genre/cooperation exigés, non démontrés ; non retenue pour envoi. Source https://tanmia.ma/07-10-2026/89094/ et https://tanmia.ma/wp-content/uploads/2026/10/TdR-COORDINATEUR-TRICE-DE-PROJET.pdf . Migrations & Développement communication exclue : Agadir, 9 000–10 500 DH brut (https://tanmia.ma/02-10-2026/88973/). Alerte LinkedIn Robert & Partners écartée : Casablanca/secteur financier. Recherches LinkedIn, ReKrute, emploi.ma et carrières publiques sans autre nouvelle offre qualifiée.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-08"
+    },
+    {
+      "texte": "Réponses et brouillons contrôlés, aucun nouvel envoi",
+      "detail": "Recherche Gmail du 08/10 : aucune nouvelle réponse de recrutement identifiée dans les résultats consultés. Formation UIR traitée séparément. Brouillons NTU, NOVEC et G4S toujours non envoyés. Lot des 5 relances du 06/10 toujours en attente de validation ; G4S ne fait pas partie de ce lot. Aucun email, message LinkedIn, candidature ou appel effectué. UE : maintenir revue après clôture du 09/10, pas de relance automatique. Refus existants conservés.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-08"
+    }
+  ],
+  "maj": "2026-10-08T21:49:02.449Z"
+}

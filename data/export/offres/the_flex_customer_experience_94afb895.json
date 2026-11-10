@@ -1,0 +1,31 @@
+{
+  "entreprise": "The Flex",
+  "poste": "French-Speaking Customer Experience Specialist",
+  "lieu": "Télétravail - Rabat accepté",
+  "source": "Ashby - annonce officielle 94afb895-95c7-4ca9-8aec-3f76a9b7ed48",
+  "url": "https://jobs.ashbyhq.com/The-Flex/94afb895-95c7-4ca9-8aec-3f76a9b7ed48/application",
+  "statut": "veille",
+  "priorite": "C",
+  "match": 55,
+  "cv": "en",
+  "salaire": "Non publié dans l'annonce officielle ; seuil de plus de 12 000 DH nets non vérifié",
+  "publication": null,
+  "offre_verifiee_le": "2026-10-21",
+  "contrat": "Temps plein, télétravail",
+  "pourquoi": "Le poste accepte Rabat en télétravail et valorise le français, l'anglais, la relation client, le CRM et les outils digitaux.",
+  "risques": "Poste de support client moins senior que les cibles habituelles de Mohamed ; entreprise en croissance plutôt qu'un grand groupe. Salaire non publié. Le formulaire exige un chiffre en GBP sans préciser la période, ainsi que des choix personnels sur le travail au-delà de neuf heures par jour et durant les jours de repos.",
+  "action": "Non envoyée le 21/10/2026 : champs obligatoires de salaire GBP et de disponibilité horaire non confirmés ; ne pas inventer ces préférences. Attendre une réponse groupée de Mohamed avant tout envoi.",
+  "action_date": "2026-10-21",
+  "qui": "agent",
+  "dossier_statut": "non_envoye",
+  "historique": [
+    {
+      "action": "verification",
+      "le": "2026-10-21T00:21:36Z",
+      "par": "agent",
+      "notes": "Annonce Ashby officielle active, poste à Rabat en télétravail. Aucun formulaire soumis. Deux réponses obligatoires restent inconnues : prétention en GBP et disponibilité au-delà de neuf heures par jour. Le travail pendant les jours de repos est une préférence facultative également non confirmée."
+    }
+  ],
+  "preuves": [],
+  "maj": "2026-10-21T00:21:36Z"
+}

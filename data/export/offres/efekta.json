@@ -1,6 +1,6 @@
 {
-  "action": "Rien à faire. Relance automatique le 5 octobre.",
-  "action_date": "2026-10-05",
+  "action": "Texte de relance préparé ; identifier un contact RH ou le canal candidature et vérifier les messages LinkedIn avant tout envoi. Aucun destinataire email confirmé.",
+  "action_date": "2026-10-07",
   "comment": "LinkedIn Easy Apply, CV anglais. Puis message au recruteur (texte ci-dessous, en anglais).",
   "contacts": [
     {
@@ -20,11 +20,32 @@
       "le": "2026-09-29T12:00:00Z",
       "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV EN. Deal size déclaré : 30k USD, prétention 20 000 DH. Prépare un exemple de contrat de cette taille.",
       "par": "claude"
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Revue Gmail : aucun retour de recrutement identifié. Pas d’adresse inventée. Glovo : périmètre géographique et partenaires alcool restent à vérifier."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:41.111Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
     }
   ],
   "km": 15,
   "lieu": "Rabat",
-  "maj": "2026-09-29T12:00:00Z",
+  "maj": "2026-10-06T15:41:29.980Z",
   "match": 75,
   "message": "Hello,\n\nI have applied for the Account Director (Education) role in Rabat. For 14 years I have sold to and worked with institutional decision-makers in Morocco: regional investment centres, the European Investment Bank, IFC and GIZ, on programmes where the sales cycle runs through committees and public stakeholders. I also build and adopt digital tools myself (custom CRM, automation, generative AI), and I start the Executive Master in Leading Digital Transformation at UIR in February 2027.\n\nI would welcome a short call to discuss how I can open doors for Efekta with Moroccan schools, universities and public programmes.\n\nBest regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
   "missions": [
@@ -38,10 +59,39 @@
   "pourquoi": "Vente B2G et institutionnelle : convaincre des décideurs publics, gérer des cycles longs, parler à des ministères. Vous l'avez fait avec la BEI, la GIZ, les CRI et les régions. Le sujet (éducation, IA) colle à votre goût pour le digital, et vous serez vous-même étudiant UIR.",
   "priorite": "A",
   "publie": "publiée vers le 12 sept., 120 candidats",
-  "qui": "claude",
+  "qui": "agent",
   "risques": "Pas d'expérience directe dans l'éducation. Couverture : vos relations avec les institutions publiques et les bailleurs, et votre inscription à l'UIR (vous connaissez l'enseignement supérieur de l'intérieur). L'offre dit qu'une recommandation double les chances d'entretien : cherchez un contact EF ou Efekta dans votre réseau LinkedIn.",
   "salaire": "est. 20–30 k DH net + variable",
   "source": "LinkedIn",
   "statut": "postule",
-  "url": "https://ma.linkedin.com/jobs/view/account-director-education-at-efekta-education-4464467885"
+  "url": "https://ma.linkedin.com/jobs/view/account-director-education-at-efekta-education-4464467885",
+  "relance_preparee": {
+    "texte": "Hello, I am following up on my application of 29 September for the Account Director Education position in Rabat. My background combines B2B business development, account management and cross-functional coordination. Is the recruitment process still ongoing? I would welcome an opportunity to discuss the role. Kind regards, Mohamed Benchokroun.",
+    "canal": "canal_a_verifier",
+    "date": "2026-10-07",
+    "statut": "texte_prepare_destinataire_manquant"
+  },
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-04",
+    "texte": "Hello, I am following up on my application for the Account Director (Education) role. My experience combines B2B business development, institutional communication and project coordination, with hands-on use of digital tools. I would welcome a conversation and would be happy to provide any further information. Thank you for your consideration. Best regards, Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "appel_prepare": {
+    "date": "2026-10-09",
+    "statut": "brouillon_non_effectue",
+    "script": "Bonjour, Mohamed Benchokroun à l’appareil. Je vous appelle au sujet de ma candidature au poste de Account Director (Education). Pourriez-vous m’indiquer si mon dossier a été orienté vers l’équipe concernée et si un complément serait utile ?",
+    "consigne": "Numéro professionnel à vérifier. Appeler un jour ouvré uniquement, après contrôle des réponses et validation. Aucun numéro inventé."
+  },
+  "revue_j20": {
+    "date": "2026-10-19",
+    "statut": "verification_a_faire",
+    "consigne": "Vérifier les réponses et l’état réel du recrutement ; aucun classement automatique."
+  },
+  "action_planifiee": {
+    "date": "2026-10-07",
+    "texte": "Texte de relance préparé ; identifier un contact RH ou le canal candidature et vérifier les messages LinkedIn avant tout envoi. Aucun destinataire email confirmé.",
+    "qui": "agent"
+  }
 }

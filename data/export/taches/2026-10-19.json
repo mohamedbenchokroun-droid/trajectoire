@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "texte": "Edvantis : revue J+10",
+      "detail": "Vérifier réponses et date de dernière relance. Envisager un contact seulement si utile et numéro professionnel confirmé ; pas de classement automatique.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "edvantis-envoi-2026-10-09"
+    }
+  ],
+  "maj": "2026-10-09T15:24:59.238Z"
+}

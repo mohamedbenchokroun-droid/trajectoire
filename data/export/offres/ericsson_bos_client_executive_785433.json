@@ -1,0 +1,49 @@
+{
+  "entreprise": "Ericsson",
+  "poste": "BOS Client Executive",
+  "lieu": "Rabat (annonce LinkedIn ; confirmer dans la fiche de candidature)",
+  "source": "Accusé de réception Ericsson du 15/10/2026, référence 785433 ; annonce LinkedIn consultée le 16/10",
+  "url": "https://ma.linkedin.com/jobs/view/bos-client-executive-at-ericsson-4473224398",
+  "reference_offre": "785433",
+  "statut": "postule",
+  "date_postule": "2026-10-15",
+  "priorite": "C",
+  "match": 35,
+  "cv": null,
+  "salaire": "Non publié ; seuil > 12 000 DH nets non vérifié",
+  "pourquoi": "Grand groupe structuré à Rabat ; composante commerciale et transformation digitale. La candidature est confirmée par Ericsson, mais plusieurs exigences spécialisées semblent éloignées du parcours connu.",
+  "missions": [
+    "Développer le portefeuille BOS/OSS-BSS auprès des opérateurs télécoms",
+    "Piloter les opportunités commerciales et les relations avec les décideurs",
+    "Coordonner les équipes vente, livraison et expertise technique"
+  ],
+  "risques": "Annonce LinkedIn actuelle exige 10 ans de vente IT, relations C-level dans les télécoms marocains, formation ingénierie/ICT et 10 M USD de ventes annuelles. Ces éléments ne sont pas établis dans le profil connu ; ne pas les revendiquer. CV effectivement joint et auteur de l'envoi non vérifiés ; aucune relance agressive.",
+  "action": "Ericsson a confirmé par email le 15/10 la réception de la candidature BOS Client Executive (réf. 785433). CV utilisé et canal de dépôt non vérifiés. Attendre leur retour.",
+  "action_date": "2026-10-16",
+  "qui": "compte de Mohamed (auteur non établi)",
+  "action_planifiee": {
+    "date": "2026-10-22",
+    "texte": "Vérifier toute réponse Ericsson ; pas de relance automatique compte tenu de l'écart de critères.",
+    "qui": "agent"
+  },
+  "preuves": [
+    {
+      "type": "accuse",
+      "le": "2026-10-15T16:45:26Z",
+      "verifiee": true,
+      "label": "Ericsson — Thank you for your application! (BOS Client Executive, 785433)",
+      "reference": "Gmail 1a140744ff0c650b",
+      "url": "https://mail.google.com/mail/u/?authuser=mohamed.benchokroun%40gmail.com#all/1a140744ff0c650b"
+    }
+  ],
+  "historique": [
+    {
+      "action": "accuse_recu",
+      "le": "2026-10-16T11:22:07.886Z",
+      "par": "agent",
+      "batch_id": "ericsson-accuse-2026-10-16",
+      "notes": "Email officiel Ericsson Global Support reçu le 15/10/2026 à 16:45:26 UTC : We have received your application to BOS Client Executive, 785433. Aucun détail fiable sur le CV joint ni sur l'auteur du dépôt."
+    }
+  ],
+  "maj": "2026-10-16T11:22:07.886Z"
+}

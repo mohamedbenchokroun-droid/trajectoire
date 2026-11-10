@@ -1,16 +1,18 @@
 {
-  "action": "Rien à faire. Si elle accepte, Claude envoie un court message. Sinon, relance le 6 octobre.",
-  "action_date": "2026-10-06",
+  "action": "Relance LinkedIn envoyée à Jennate Benlemmouden le 12/10, message corrigé et vérifié. Attendre sa réponse ; contrôler le 19/10 sans nouvelle relance automatique.",
+  "action_date": "2026-10-19",
   "comment": "LinkedIn Easy Apply, CV Sales, puis invitation à Jennate Benlemmouden.",
   "contacts": [
     {
       "nom": "Jennate Benlemmouden",
-      "role": "Talent Acquisition, Casanet (LinkedIn)"
+      "role": "Talent Acquisition, Casanet (LinkedIn)",
+      "conversation_url": "https://www.linkedin.com/messaging/thread/2-ZDFhZWY5YzUtZDUxMy00OGM5LThiMmItZjFlZDlhMWY2Y2Q3XzEwMA==/",
+      "verifie_le": "2026-10-06"
     }
   ],
   "couloir": "sales",
   "cv": "sales",
-  "derniere_action": "2026-09-29",
+  "derniere_action": "2026-10-12",
   "entreprise": "Casanet (filiale de Maroc Telecom)",
   "entreprise_info": "Intégrateur IT (réseaux, cybersécurité, cloud) du groupe Maroc Telecom. Grand groupe, process établis.",
   "historique": [
@@ -25,11 +27,40 @@
       "le": "2026-09-29T13:00:00Z",
       "notes": "Invitation LinkedIn + note envoyée à Jennate Benlemmouden (Talent Acquisition Casanet).",
       "par": "claude"
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "BROUILLON NON ENVOYÉ : Bonjour Madame Benlemmouden, je reviens vers vous au sujet de ma candidature Account Manager. Mon expérience en développement B2B et en structuration du suivi commercial avec des outils CRM me semble pertinente pour ce poste. Le recrutement est-il toujours en cours ? Je serais ravi d’échanger brièvement avec vous. Bien cordialement, Mohamed Benchokroun."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:40.460Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "relance_envoyee",
+      "le": "2026-10-12T14:30:00+01:00",
+      "par": "agent",
+      "batch_id": "casanet-relance-2026-10-12",
+      "canal": "linkedin",
+      "notes": "Message corrigé et vérifié dans la conversation de Jennate Benlemmouden à 14:30 ; aucune nouvelle candidature ni pièce jointe."
     }
   ],
   "km": 15,
   "lieu": "Rabat",
-  "maj": "2026-09-29T13:00:00Z",
+  "maj": "2026-10-12T14:30:00+01:00",
   "match": 58,
   "message": "Bonjour Madame Benlemmouden,\n\nJe viens de postuler au poste d'Account Manager. J'ai 14 ans de gestion de comptes stratégiques B2B, du premier rendez-vous à la signature, et une vraie pratique des solutions digitales : j'ai conçu notre CRM, automatisé nos flux commerciaux et je démarre l'Executive Master « Leading Digital Transformation » de l'UIR en février 2027.\n\nJe serais heureux d'échanger sur les comptes que Casanet veut développer à Rabat.\n\nMohamed Benchokroun\n06 97 95 32 61 · mohamed.benchokroun@gmail.com",
   "missions": [
@@ -37,21 +68,45 @@
     "Qualifier les opportunités, bâtir les propositions avec l'avant-vente",
     "Négocier et signer ; développer les ventes additionnelles"
   ],
-  "nb_relances": 1,
+  "nb_relances": 2,
   "poste": "Account Manager",
   "pourquoi": "Gestion de portefeuille grands comptes, cycle de vente complet, propositions et négociation : votre métier. Votre aisance avec les outils digitaux aide à vendre des solutions IT.",
   "priorite": "B",
   "publie": "publiée vers le 12 sept.",
-  "qui": "claude",
+  "qui": "agent",
   "relance": {
     "canal": "Invitation LinkedIn avec note",
     "prevue": "2026-09-30",
     "statut": "envoyée le 29/09",
     "texte": "Bonjour Madame Benlemmouden, j’ai postulé au poste d’Account Manager chez Casanet. 14 ans de développement de comptes B2B, avec une vraie pratique du digital (CRM, automatisation). Je serais ravi d’échanger sur vos priorités à Rabat. Mohamed Benchokroun, 06 97 95 32 61"
   },
-  "risques": "5 ans d'account management dans l'IT demandés. Couverture : vos projets digitaux (CRM, automatisation) et votre capacité à comprendre vite une offre technique. Poste intermédiaire : négocier le fixe au-dessus de 15 000.",
-  "salaire": "est. 16–22 k DH net + variable",
+  "risques": "5 ans d'account management IT demandés ; expérience B2B et projets digitaux transférables mais écart sectoriel. Salaire non publié, seuil >12 000 DH net non confirmé.",
+  "salaire": "Non publié ; seuil recherché strictement supérieur à 12 000 DH net/mois, à confirmer avant toute proposition.",
   "source": "LinkedIn",
   "statut": "relance",
-  "url": "https://ma.linkedin.com/jobs/view/account-manager-at-casanet-sa-filiale-de-maroc-telecom-4463524077"
+  "url": "https://ma.linkedin.com/jobs/view/account-manager-at-casanet-sa-filiale-de-maroc-telecom-4463524077",
+  "relance_preparee": {
+    "texte": "Bonjour Madame Benlemmouden, je reviens vers vous au sujet de ma candidature au poste d’Account Manager chez Casanet. Mon expérience en développement de comptes B2B et en structuration du suivi commercial pourrait-elle répondre à vos priorités actuelles ? Si le recrutement est toujours ouvert, je serais ravi d’échanger brièvement. Bien cordialement, Mohamed Benchokroun.",
+    "canal": "LinkedIn",
+    "date": "2026-10-06",
+    "statut": "envoyee",
+    "destinataire": "Jennate Benlemmouden",
+    "url": "https://www.linkedin.com/messaging/thread/2-ZDFhZWY5YzUtZDUxMy00OGM5LThiMmItZjFlZDlhMWY2Y2Q3XzEwMA==/",
+    "date_envoi": "2026-10-12"
+  },
+  "action_planifiee": {
+    "date": "2026-10-19",
+    "texte": "Casanet : contrôler la réponse LinkedIn à la relance du 12/10 ; ne pas réécrire sans motif.",
+    "qui": "agent"
+  },
+  "preuves": [
+    {
+      "type": "message_linkedin_envoye",
+      "verifiee": true,
+      "le": "2026-10-12T14:30:00+01:00",
+      "label": "Message à Jennate Benlemmouden visible dans la conversation LinkedIn à 14:30, corrigé via Modifier ; une seule relance envoyée le 12/10.",
+      "url": "https://www.linkedin.com/messaging/thread/2-ZDFhZWY5YzUtZDUxMy00OGM5LThiMmItZjFlZDlhMWY2Y2Q3XzEwMA==/",
+      "reference": "Relance Casanet 12/10/2026"
+    }
+  ]
 }

@@ -13,11 +13,25 @@
       "le": "2026-09-29T12:00:00Z",
       "notes": "LinkedIn affiche « Candidature envoyée il y a 1 mois » sur ce compte (avant le 26/09, donc pas envoyée par Claude). Mohamed ne s’en souvient pas.",
       "par": "claude"
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:41.302Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
     }
   ],
   "km": 15,
   "lieu": "Rabat-Salé-Kénitra",
-  "maj": "2026-09-29T13:00:00Z",
+  "maj": "2026-10-02T09:32:12.313Z",
   "match": 55,
   "message": "Hello,\n\nI have applied for the Channel Sales Manager position. I know Morocco's solar ecosystem from the inside: I have worked with the Moroccan renewable energy cluster (Cluster EnR) and delivered the Solar Rooftop 500 programme events and the Nexans Climate Summit, which put me in contact with installers, EPC contractors and public stakeholders. Add 14 years of B2B key account development and channel negotiation.\n\nI would be glad to discuss how I can grow LONGi's channel in Morocco.\n\nBest regards,\nMohamed Benchokroun\n+212 6 97 95 32 61 · mohamed.benchokroun@gmail.com",
   "missions": [
@@ -42,5 +56,10 @@
   "salaire": "est. 20–30 k DH net (contrat)",
   "source": "LinkedIn",
   "statut": "postule",
-  "url": "https://ma.linkedin.com/jobs/view/channel-sales-manager-at-longi-solar-4435292755"
+  "url": "https://ma.linkedin.com/jobs/view/channel-sales-manager-at-longi-solar-4435292755",
+  "action_planifiee": {
+    "date": "2026-10-13",
+    "texte": "En veille : CDD, offre d’un mois. Pas de relance tant qu’on n’a pas de contact.",
+    "qui": "claude"
+  }
 }

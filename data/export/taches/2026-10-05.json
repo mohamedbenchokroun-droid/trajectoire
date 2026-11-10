@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "texte": "Refus SOGEA x2 confirmés et clos",
+      "detail": "Digital : 02/10 réf. 2026-132411 ; communication : 05/10 réf. 2026-131240. Mohamed a répondu au second refus le 05/10 ; aucune relance automatique.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "suivi-2026-10-05"
+    },
+    {
+      "texte": "UIR : refus CC-0926 reçu, deux autres candidatures en attente",
+      "detail": "Attribution à la communication probable mais non explicite ; Mohamed a déjà répondu au refus le 05/10. Ne pas relancer le poste clos.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "suivi-2026-10-05"
+    },
+    {
+      "texte": "Deloitte : accusé Workday enregistré",
+      "detail": "Responsable Communication, Marque Employeur & Événementiel ; reçu le 02/10. Lieu et CV transmis à vérifier ; aucune nouvelle candidature.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "suivi-2026-10-05"
+    },
+    {
+      "texte": "UE Maroc : dossier prioritaire A à finaliser avant le 09/10 18h",
+      "detail": "CV détaillé, lettre et copie de licence préparés. Preuve de cinq ans de communication MB Creative non trouvée ; attestation Corpotex disponible. Aucun email envoyé.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "suivi-2026-10-05"
+    }
+  ],
+  "maj": "2026-10-05T23:50:34.831Z"
+}

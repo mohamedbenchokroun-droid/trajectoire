@@ -1,6 +1,6 @@
 {
-  "action": "Rien à faire. Relance automatique le 5 octobre.",
-  "action_date": "2026-10-05",
+  "action": "Candidature LinkedIn confirmée le 16/10 ; offre fermée aux nouveaux dépôts. Brouillon Gmail de relance non envoyé ; aucune réponse RH identifiée.",
+  "action_date": "2026-10-19",
   "comment": "LinkedIn Easy Apply, CV Sales.",
   "couloir": "sales",
   "cv": "sales",
@@ -13,11 +13,46 @@
       "le": "2026-09-29T12:00:00Z",
       "notes": "Envoyée par Claude. LinkedIn Candidature simplifiée, CV Sales, disponibilité immédiate.",
       "par": "claude"
+    },
+    {
+      "action": "Veille et préparation",
+      "le": "2026-10-02T09:32:12.313Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-02",
+      "notes": "Suivi lu en direct, brouillons et échéances préparés ; aucune candidature, relance ou invitation envoyée par cette veille."
+    },
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Revue Gmail : aucun retour de recrutement identifié. Pas d’adresse inventée. Glovo : périmètre géographique et partenaires alcool restent à vérifier."
+    },
+    {
+      "action": "Calendrier explicite vérifié",
+      "le": "2026-10-06T15:44:41.168Z",
+      "batch_id": "calendrier-2026-10-06",
+      "par": "agent",
+      "notes": "Le calendrier respecte l’action décidée au lieu des rappels mécaniques J+5/J+10. Aucun envoi."
+    },
+    {
+      "action": "Veille du 7 octobre — aucun envoi",
+      "le": "2026-10-07T09:25:08.107Z",
+      "par": "agent",
+      "batch_id": "veille-2026-10-07",
+      "notes": "Adresse et standard confirmés sur la page officielle carrière G4S ; brouillon Gmail 1a115abf1a130e01 vérifié DRAFT. Pas d’ajout au lot de 5 déjà proposé sans nouvelle validation."
+    },
+    {
+      "action": "Preuve de candidature vérifiée sur LinkedIn",
+      "le": "2026-10-16T11:27:50.053Z",
+      "par": "agent",
+      "batch_id": "g4s-proof-2026-10-16",
+      "notes": "Statut de la demande = Candidature envoyée. Aucune réponse Gmail du domaine G4S depuis le 10/10. Le brouillon de relance reste non envoyé."
     }
   ],
   "km": 15,
   "lieu": "Rabat",
-  "maj": "2026-09-29T12:00:00Z",
+  "maj": "2026-10-16T11:27:50.053Z",
   "match": 55,
   "missions": [
     "Gérer et développer un portefeuille clients",
@@ -29,10 +64,64 @@
   "pourquoi": "Vente B2B de services (sécurité), appels d'offres, portefeuille existant. Groupe international structuré.",
   "priorite": "C",
   "publie": "publiée début sept.",
-  "qui": "claude",
+  "qui": "agent",
   "risques": "Bac+5 demandé ; salaire à vérifier.",
   "salaire": "est. 14–18 k DH net",
   "source": "LinkedIn",
   "statut": "postule",
-  "url": "https://ma.linkedin.com/jobs/view/sales-specialist-at-g4s-4460721715"
+  "url": "https://ma.linkedin.com/jobs/view/sales-specialist-at-g4s-4460721715",
+  "relance_preparee": {
+    "date": "2026-10-07",
+    "canal": "Gmail",
+    "statut": "brouillon_non_envoye",
+    "destinataire": "team.recrutement@ma.g4s.com",
+    "draft_id": "r5443658714379960351",
+    "url": "https://mail.google.com/mail/u/0/#drafts/1a115abf1a130e01",
+    "texte": "Madame, Monsieur, je reviens vers vous au sujet de ma candidature Sales Specialist à Rabat, transmise le 29 septembre. Mon parcours associe développement commercial B2B, prospection, négociation et suivi de comptes. Pourriez-vous m’indiquer si le recrutement est toujours en cours et m’orienter vers la personne qui suit les candidatures ? Bien cordialement, Mohamed Benchokroun."
+  },
+  "relance": {
+    "statut": "brouillon_non_envoye",
+    "prevue": "2026-10-04",
+    "texte": "Bonjour, je me permets de revenir vers vous concernant ma candidature au poste de Sales Specialist. Mon parcours associe développement B2B, communication institutionnelle et coordination de projets, avec une pratique opérationnelle des outils digitaux. Je reste disponible pour un échange et pour tout complément utile. Merci pour votre retour. Mohamed Benchokroun",
+    "consigne": "Vérifier les réponses et l’acceptation LinkedIn avant envoi. Un seul message par entreprise ; pas de relance rapprochée après la note du 01/10. Validation ponctuelle nécessaire.",
+    "canal": "Canal à confirmer : réponse au fil existant ou LinkedIn si accepté"
+  },
+  "appel_prepare": {
+    "date": "2026-10-09",
+    "statut": "brouillon_non_effectue",
+    "telephone": "+212522497400",
+    "type_numero": "Standard du siège G4S Maroc — pas une ligne directe RH",
+    "source": "https://www.g4s.com/fr-ma/carriere",
+    "script": "Bonjour, Mohamed Benchokroun. Pourriez-vous me mettre en relation avec l’équipe recrutement concernant le poste Sales Specialist à Rabat ?",
+    "consigne": "Vérifier réponses et envoi éventuel de la relance, puis validation ponctuelle avant appel. Aucun appel automatique."
+  },
+  "revue_j20": {
+    "date": "2026-10-19",
+    "statut": "verification_a_faire",
+    "consigne": "Vérifier les réponses et l’état réel du recrutement ; aucun classement automatique."
+  },
+  "action_planifiee": {
+    "date": "2026-10-19",
+    "texte": "Revoir réponse G4S et utilité de la relance ; ne pas marquer refus sans preuve.",
+    "qui": "agent"
+  },
+  "contacts": [
+    {
+      "nom": "Équipe recrutement G4S Maroc",
+      "role": "Adresse RH générale officielle ; pas de recruteur nominatif confirmé",
+      "email": "team.recrutement@ma.g4s.com",
+      "telephone": "+212522497400",
+      "source": "https://www.g4s.com/fr-ma/carriere",
+      "verifie_le": "2026-10-07"
+    }
+  ],
+  "preuves": [
+    {
+      "type": "linkedin_candidature_confirmee",
+      "verifiee": true,
+      "le": "2026-10-16T11:27:50.053Z",
+      "label": "LinkedIn : Statut de la demande — Candidature envoyée, il y a 2 semaines ; offre fermée aux nouveaux dépôts",
+      "url": "https://www.linkedin.com/jobs/view/4460721715/"
+    }
+  ]
 }

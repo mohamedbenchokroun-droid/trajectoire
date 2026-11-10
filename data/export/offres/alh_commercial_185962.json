@@ -1,0 +1,34 @@
+{
+  "statut": "a_postuler",
+  "priorite": "B",
+  "lieu": "Rabat",
+  "source": "ReKrute — annonce employeur",
+  "offre_verifiee_le": "2026-10-06",
+  "salaire": "Non publié — minimum 15 000 DH net à confirmer",
+  "qui": "agent",
+  "action_date": "2026-10-07",
+  "entreprise": "ALH Holding",
+  "poste": "Commercial Senior (H/F) – Immobilier",
+  "cv": "sales",
+  "url": "https://www.rekrute.com/offre-emploi-commercial-senior-hf---immobilier-recrutement-alh-holding-rabat-185962.html",
+  "date_limite": "2026-11-03",
+  "pourquoi": "CDI à Rabat ; Bac+3 demandé ; portefeuille, négociation, prospection et CRM proches du parcours commercial.",
+  "missions": [
+    "Prospection et portefeuille clients",
+    "Commercialisation immobilière et visites",
+    "Suivi des réservations, dossiers et recouvrement"
+  ],
+  "risques": "Expérience immobilier souhaitée ; rémunération fixe et variable non publiée ; périmètre de la filiale immobilière à confirmer. Groupe diversifié incluant l’hôtellerie : ne pas accepter un poste couvrant une activité exclue.",
+  "action": "CV Sales sélectionné et texte prêt ; ReKrute affiche « Je m’identifie pour postuler ». Qualifier la rémunération et le périmètre immobilier.",
+  "message": "Madame, Monsieur, je vous propose ma candidature au poste Commercial Senior Immobilier à Rabat. Mon parcours associe développement B2B, gestion de portefeuilles, négociation et structuration du suivi client avec des outils CRM. Je souhaite mettre cette expérience au service de la prospection, de la fidélisation et de la qualité du parcours client de vos projets immobiliers. Je serais heureux d’échanger sur vos attentes et le périmètre de ce poste. Cordialement, Mohamed Benchokroun.",
+  "maj": "2026-10-06T15:41:29.980Z",
+  "historique": [
+    {
+      "action": "Revue du 6 octobre — aucun envoi par l’agent",
+      "le": "2026-10-06T15:41:29.980Z",
+      "par": "agent",
+      "batch_id": "revue-2026-10-06",
+      "notes": "Nouvelle piste vérifiée le 06/10, dédupliquée avec le suivi vivant et Gmail. Aucun envoi."
+    }
+  ]
+}

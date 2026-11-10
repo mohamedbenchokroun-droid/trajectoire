@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trajectoire</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,6 +156,28 @@ section.panel.on { display: grid; gap: 18px; }
 .act.done .t { text-decoration: line-through; }
 @media (max-width: 560px) { .act { grid-template-columns: 40px 1fr; } .act .b { grid-column: 1 / -1; } .act .ai { width: 40px; height: 40px; } }
 .empty { color: var(--muted); padding: 18px; text-align: center; border: 1px dashed var(--line); border-radius: 18px; }
+.agenda { display: grid; gap: 12px; max-height: 390px; overflow-y: auto; }
+.agenda-day h3 { font: 700 12px var(--body); color: var(--a-ink); margin: 0 0 8px; }
+.agenda-item { width: 100%; border: 1px solid var(--line); background: var(--solid); border-radius: 14px; padding: 12px; margin-bottom: 6px; text-align: left; cursor: pointer; display: grid; gap: 4px; }
+.agenda-item strong { font-size: 13px; overflow-wrap: anywhere; }
+.agenda-item small { color: var(--ink-2); }
+.agenda-item .meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.agenda-item.forecast { border-style: dashed; }
+.ops-note { color: var(--ink-2); font-size: 13px; margin: 0 0 14px; }
+.checks { display: flex; gap: 10px; flex-wrap: wrap; }
+.checks button { border: 1px solid var(--line); border-radius: 14px; background: var(--solid); padding: 10px 14px; text-align: left; cursor: pointer; }
+.proof { padding: 14px; border: 1px solid var(--line); border-radius: 16px; background: var(--solid); }
+.proof p { font-size: 13px; margin: 6px 0; color: var(--ink-2); }
+.proof h4 { font-size: 13px; margin: 0; }
+.proof ul { margin: 10px 0 0; padding-left: 18px; font-size: 13px; }
+.pill.verified { background: var(--go-soft); color: var(--go); }
+.progress-map { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.progress-map article { padding: 20px; min-width: 0; }
+.progress-map h3 { font: 800 19px var(--display); margin: 8px 0 12px; }
+.progress-map p { font-size: 13px; color: var(--ink-2); margin: 8px 0; line-height: 1.5; }
+.progress-map button { border: 0; background: transparent; color: var(--a-ink); font: 800 12px var(--body); padding: 8px 0 0; cursor: pointer; text-align: left; }
+@media (max-width: 900px) { .progress-map { grid-template-columns: 1fr; } }
+.cv .bd p { color: var(--ink-2); font-size: 13px; line-height: 1.45; margin: 0 0 12px; }
 
 /* Anneau */
 .ringwrap { display: grid; justify-items: center; gap: 16px; }
@@ -498,6 +525,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 .act .b.undo-b { border-style: dashed; color: var(--muted); border-color: var(--line); }
 .act .b.undo-b:hover { color: var(--a-ink); border-color: var(--a2); }
 </style>
+</head>
+<body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
@@ -578,15 +607,36 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
       <div class="row" id="flow"></div>
     </article>
 
+    <div class="progress-map" aria-label="Bilan et prochaines étapes">
+      <article class="glass"><span class="label">Ce qui est fait</span><h3 id="doneTitle">Candidatures suivies</h3><div id="doneSummary"></div><button data-stage="sent">Voir les candidatures envoyées →</button></article>
+      <article class="glass"><span class="label">Ce qui reste</span><h3 id="todoTitle">Prochaines étapes</h3><div id="todoSummary"></div><button data-stage="prep">Voir les candidatures à préparer →</button></article>
+      <article class="glass"><span class="label">Axes d’amélioration</span><h3>Qualité du dossier</h3><div id="improveSummary"></div><button data-tab="cv">Voir les cinq CV →</button></article>
+    </div>
+
     <div class="bento">
       <article class="glass box c-8">
-        <div class="head"><div><span class="label">Aujourd'hui pour vous</span><h2 class="big" style="margin-top:8px" id="actTitle">Votre liste</h2></div><span class="label" id="actCount"></span></div>
+        <div class="head"><div><span class="label">Vos interventions</span><h2 class="big" style="margin-top:8px" id="actTitle">Votre liste</h2></div><span class="label" id="actCount"></span></div>
         <ul class="acts" id="acts"></ul>
       </article>
       <article class="glass box c-4 ringwrap">
         <span class="label" style="justify-self:start">Objectif de la semaine</span>
         <div class="ring" id="ring"><div><div><b id="ringV">0%</b><small>accompli</small></div></div></div>
         <ul class="legend" id="legend"></ul>
+      </article>
+
+      <article class="glass box c-6">
+        <div class="head"><div><span class="label">Travail prévu pour l’assistant</span><h2 class="big" style="margin-top:8px">Suivi à traiter</h2></div><span class="label" id="agentCount"></span></div>
+        <p class="ops-note">Préparation, vérifications et relances. Chaque envoi reste distinct de sa préparation dans le suivi.</p>
+        <ul class="acts" id="agentActs"></ul>
+      </article>
+      <article class="glass box c-6">
+        <div class="head"><div><span class="label">Les 14 prochains jours</span><h2 class="big" style="margin-top:8px">Agenda</h2></div><span class="label" id="agendaCount"></span></div>
+        <p class="ops-note">Relance J+5 · appel J+10 · bilan J+20. Les étapes suivantes sont indiquées comme prévisions.</p>
+        <div class="agenda" id="agenda"></div>
+      </article>
+      <article class="glass box c-12">
+        <div class="head"><span class="label">Vérifications du suivi</span><span class="label">Sofrecom exclue</span></div>
+        <div class="checks" id="checks"></div>
       </article>
 
       <article class="glass box c-4">
@@ -626,6 +676,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
         <button data-c="sent" aria-pressed="false">Envoyées</button>
         <button data-c="relance" aria-pressed="false">Relancées</button>
         <button data-c="itw" aria-pressed="false">Entretiens</button>
+        <button data-c="veille" aria-pressed="false">En veille</button>
         <button data-c="fin" aria-pressed="false">Terminées</button>
       </div>
     </div>
@@ -640,7 +691,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 
   <!-- ================= CV ================= -->
   <section class="panel" id="p-cv">
-    <div style="margin-top:8px"><span class="label">Mes CV</span><h2 class="big" style="margin-top:8px">Un profil, quatre angles</h2></div>
+    <div style="margin-top:8px"><span class="label">Mes CV</span><h2 class="big" style="margin-top:8px">Un profil, cinq angles</h2></div>
+    <p class="ops-note">Les cinq PDF sont les versions actuelles, privées et consultables d’un clic. Textes et mise en page revus le 12 octobre ; aucun résultat chiffré non vérifié n’a été ajouté.</p>
     <div class="cards" id="cvs"></div>
     <form class="glass pf" id="pf">
       <span class="label">Vos chiffres · ils rendent les CV plus forts</span>
@@ -672,17 +724,20 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 <aside class="drawer" id="drawer" hidden role="dialog" aria-modal="true"></aside>
 
 <script src="/db-adapter.js"></script>
+<script src="/suivi.js"></script>
 <script>
 (function () {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
+  const suivi = window.trajectoireSuivi;
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const safeHref = value => { try { const u = new URL(String(value)); return ["http:", "https:"].includes(u.protocol) ? esc(u.href) : ""; } catch { return ""; } };
+  const cvHref = key => ({ sales: "/cv/sales.pdf", com: "/cv/com.pdf", digital: "/cv/digital.pdf", en: "/cv/en.pdf", design: "/cv/design.pdf" })[key] || "";
   const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
   const fmt = d => new Intl.DateTimeFormat("fr-CA", { timeZone: "Africa/Casablanca", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
   const today = fmt(new Date());
-  const addDays = (iso, n) => { const d = new Date(iso + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
-  const jolie = iso => iso ? new Intl.DateTimeFormat("fr-FR", { timeZone: "UTC", day: "numeric", month: "short" }).format(new Date(String(iso).slice(0, 10) + "T12:00:00Z")) : "";
+  const addDays = suivi.addDays;
+  const jolie = iso => suivi.date(iso) ? new Intl.DateTimeFormat("fr-FR", { timeZone: "UTC", day: "numeric", month: "short" }).format(new Date(suivi.date(iso) + "T12:00:00Z")) : "date à vérifier";
   const diffJ = iso => Math.round((new Date(today + "T12:00:00Z") - new Date(String(iso).slice(0, 10) + "T12:00:00Z")) / 864e5);
   const dow = (new Date(today + "T12:00:00Z").getUTCDay() + 6) % 7;
   const weekStart = addDays(today, -dow);
@@ -707,41 +762,35 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   });
   try { const t = localStorage.getItem("cc4-tab"); if (t && $("#p-" + t)) show(t); } catch (e) {}
 
-  let db = null, offres = [], cibles = [], taches = {}, profil = {}, fC = "all", openId = null;
+  let db = null, offres = [], cibles = [], taches = {}, profil = {}, fC = "all", openId = null, duplicateMap = new Map();
 
   // ---------- Modèle ----------
   function stage(x) {
+    if (suivi.exclusion(x) || x.doublon_de || duplicateMap.has(x.id)) return "fin";
     const s = x.statut || "a_postuler";
-    if (["a_postuler", "pret", "veille"].includes(s)) return "prep";
+    if (["a_postuler", "pret"].includes(s)) return "prep";
+    if (s === "veille") return "veille";
     if (s === "postule") return (x.nb_relances || 0) > 0 ? "relance" : "sent";
     if (s === "relance") return "relance";
     if (s === "entretien") return "itw";
     if (s === "offre") return "offre";
     return "fin";
   }
-  const stepIndex = x => ({ prep: 0, sent: 1, relance: 2, itw: 4, offre: 5, fin: 0 })[stage(x)] + (stage(x) === "relance" && (x.nb_relances || 0) > 1 ? 1 : 0);
+  const stepIndex = x => ({ prep: 0, veille: 0, sent: 1, relance: 2, itw: 4, offre: 5, fin: 0 })[stage(x)] + (stage(x) === "relance" && (x.nb_relances || 0) > 1 ? 1 : 0);
   function next(x) {
-    const s = x.statut || "a_postuler";
-    if (x.appel && !x.appel.fait) return { qui: "vous", t: "Appeler : " + (x.appel.motif || "faire avancer"), d: x.appel.date || today };
-    if (s === "entretien") return { qui: "vous", t: x.entretien?.date ? "Entretien le " + jolie(x.entretien.date) : "Noter la date de l'entretien", d: x.entretien?.date || today };
-    if (s === "pret") return { qui: "vous", t: "Valider l'envoi de la candidature", d: today };
-    if ((s === "postule" || s === "relance") && x.derniere_action) {
-      const n = x.nb_relances || 0;
-      if (n === 0) return { qui: "vous", t: "Préparer la relance", d: addDays(x.derniere_action, 5) };
-      if (n === 1) return { qui: "vous", t: "Appel de relance", d: addDays(x.derniere_action, 5) };
-      return { qui: "vous", t: "Sans réponse : décider du classement", d: addDays(x.derniere_action, 10) };
-    }
-    if (s === "a_postuler") return { qui: "vous", t: "Préparer la candidature", d: x.action_date || today };
-    return null;
+    return duplicateMap.has(x.id) ? null : suivi.next(x, today);
   }
   function phrase(x) {
     const st = stage(x), n = next(x);
-    if (x.statut === "pret") return "Prête : attend votre « ok »";
+    if (suivi.exclusion(x)) return "Exclue · " + suivi.exclusion(x);
+    if (x.doublon_de || duplicateMap.has(x.id)) return "Doublon détecté · aucun nouvel envoi prévu";
+    if (x.blocage) return "À résoudre · " + x.blocage;
+    if (x.statut === "pret") return "Prête · envoi prévu le " + jolie(x.action_date || today);
     if (x.statut === "veille") return "En veille";
     if (st === "prep") return "En préparation";
-    if (st === "sent" || st === "relance") { const j = diffJ(x.date_postule || x.derniere_action || today); return "Envoyée il y a " + j + " jour" + (j > 1 ? "s" : "") + (n ? " · prochaine étape le " + jolie(n.d) : ""); }
+    if (st === "sent" || st === "relance") { const d = suivi.date(x.date_postule) || suivi.date(x.derniere_action); const j = d ? Math.max(0, diffJ(d)) : null; return (j === null ? "Envoi déclaré · date à vérifier" : "Envoyée il y a " + j + " jour" + (j > 1 ? "s" : "")) + (n ? " · prochaine étape le " + jolie(n.d) : ""); }
     if (st === "itw") return "Entretien" + (x.entretien?.date ? " le " + jolie(x.entretien.date) : "");
-    return { offre: "Offre reçue", refus: "Refus", abandon: "Classée" }[x.statut] || "Terminée";
+    return { offre: "Offre reçue", refus: "Refus", abandon: "Classée", expire: "Offre expirée" }[x.statut] || "Terminée";
   }
   const initials = s => String(s || "?").replace(/\(.*?\)/g, "").trim().split(/[\s–-]+/).filter(Boolean).slice(0, 2).map(w => w[0]).join("").toUpperCase();
   const coName = s => String(s || "").replace(/\s*\(.*\)\s*/, "").trim();
@@ -749,21 +798,16 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   function actions() {
     const a = [];
     offres.forEach(x => {
-      if (x.statut === "entretien") a.push({ k: "itw", ic: "cal", t: "Préparer l'entretien " + coName(x.entreprise), d: x.poste + (x.entretien?.date ? " · " + jolie(x.entretien.date) : ""), id: x.id, b: "Préparer" });
-      const call = x.appel && !x.appel.fait ? x.appel : ((x.statut === "postule" || x.statut === "relance") && x.nb_relances === 1 && x.derniere_action && addDays(x.derniere_action, 5) <= today)
-        ? { motif: "Relance téléphonique", script: "« Bonjour, Mohamed Benchokroun. J'ai candidaté au poste de " + x.poste + ". Pourriez-vous me passer la personne en charge ? »", tel: (x.contacts || []).find(c => c.tel)?.tel } : null;
-      if (call) a.push({ k: "call", ic: "phone", t: "Appeler " + coName(x.entreprise), d: (call.motif || "") + (call.script ? "\n" + call.script : ""), tel: call.tel, id: x.id, b: "J'ai appelé" });
+      const n = next(x); if (!n || n.d > today) return;
+      a.push({ k: n.kind, qui: n.qui, ic: n.kind === "call" ? "phone" : n.kind === "itw" ? "cal" : "brief", t: coName(x.entreprise) + " · " + n.t, d: x.poste + (n.d < today ? "\nÉchéance dépassée : " + jolie(n.d) : ""), tel: x.appel?.tel, id: x.id, b: "Voir le dossier" });
     });
-    const pret = offres.filter(x => x.statut === "pret");
-    if (pret.length) a.push({ k: "send", ic: "send", t: pret.length + (pret.length > 1 ? " candidatures prêtes à partir" : " candidature prête à partir"), d: pret.map(x => coName(x.entreprise)).join(" · ") + "\nValidez le lot avant tout envoi.", ids: pret.map(x => x.id), b: pret.length > 1 ? "Voir les " + pret.length : "Voir la candidature" });
     const tk = Object.keys(taches).sort().filter(k => k <= today).pop();
-    (taches[tk]?.items || []).forEach((it, i) => a.push({ k: "task", ic: "check", t: it.texte, d: it.detail || "", fait: it.fait, tkey: tk, ti: i, b: it.fait ? "↺ Pas fait" : "C'est fait" }));
-    const ord = { itw: 0, call: 1, send: 2, task: 3 };
+    (taches[tk]?.items || []).forEach((it, i) => a.push({ k: "task", qui: it.responsable === "agent" ? "agent" : "vous", ic: "check", t: it.texte, d: it.detail || "", fait: it.fait, tkey: tk, ti: i, b: it.fait ? "↺ Pas fait" : "C'est fait" }));
+    const ord = { itw: 0, call: 1, blocked: 2, followup: 3, send: 4, prep: 5, review: 6, task: 7 };
     return a.sort((p, q) => (p.fait ? 1 : 0) - (q.fait ? 1 : 0) || ord[p.k] - ord[q.k]);
   }
   async function doAct(a) {
     if (a.id) { openDrawer(a.id); return; }
-    if (a.k === "send") { if (a.ids.length === 1) openDrawer(a.ids[0]); else { setFilter("prep"); show("cands"); } return; }
     if (a.k === "task" && db) {
       const val = !a.fait;
       const setDone = async v => { const its = structuredClone(taches[a.tkey].items); its[a.ti].fait = v; await db.doc("taches/" + a.tkey).update({ items: its }); };
@@ -776,20 +820,21 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 
   // ---------- Rendu : aujourd'hui ----------
   function renderJour() {
-    const acts = actions(), open = acts.filter(a => !a.fait);
-    const sent = offres.filter(x => !["prep"].includes(stage(x)));
+    const allActs = actions(), acts = allActs.filter(a => a.qui === "vous"), agentActs = allActs.filter(a => a.qui === "agent"), open = acts.filter(a => !a.fait);
+    const unique = offres.filter(x => !duplicateMap.has(x.id) && !x.doublon_de);
+    const sent = unique.filter(suivi.sent);
     const itw = offres.filter(x => ["itw", "offre"].includes(stage(x)));
-    const wk = offres.filter(x => x.date_postule && x.date_postule >= weekStart).length;
+    const wk = unique.filter(x => suivi.date(x.date_postule) && x.date_postule >= weekStart && x.date_postule <= today).length;
     $("#oSent").textContent = sent.length; $("#oWeek").innerHTML = wk + '<span style="font-size:.5em;color:var(--muted)">/10</span>'; $("#oItw").textContent = itw.length;
     const nCall = open.filter(a => a.k === "call").length, nItw = open.filter(a => a.k === "itw").length;
     $("#coach").textContent = open.length
       ? "Aujourd'hui, " + open.length + (open.length > 1 ? " choses pour vous" : " chose pour vous") + (nCall || nItw ? " dont " + [nCall ? nCall + " appel" + (nCall > 1 ? "s" : "") : "", nItw ? nItw + " entretien" + (nItw > 1 ? "s" : "") : ""].filter(Boolean).join(" et ") : "") + "."
-      : "Rien d'urgent aujourd'hui. Consultez vos candidatures et votre réseau.";
+      : "Aucune intervention attendue de vous aujourd'hui. " + agentActs.filter(a => !a.fait).length + " éléments dans le suivi de l’assistant.";
 
     // Projecteur : la prochaine action la plus importante
-    const top = open[0];
+    const top = open[0] || agentActs.find(a => !a.fait);
     $("#spot").innerHTML = top
-      ? `<div class="ic">${ico(top.ic)}</div><div><span class="label">Prochaine action</span><h2>${esc(top.t)}</h2><p>${esc((top.d || "").split("\n")[0])}</p></div>${top.b ? `<button class="go-btn" id="spotGo">${esc(top.b)} ${ico("arrow")}</button>` : `<span class="pill C">À valider</span>`}`
+      ? `<div class="ic">${ico(top.ic)}</div><div><span class="label">${top.qui === "vous" ? "Votre prochaine intervention" : "Prochaine étape du suivi"}</span><h2>${esc(top.t)}</h2><p>${esc((top.d || "").split("\n")[0])}</p></div>${top.b ? `<button class="go-btn" id="spotGo">${esc(top.b)} ${ico("arrow")}</button>` : ""}`
       : `<div class="ic">${ico("spark")}</div><div><span class="label">Prochaine action</span><h2>Tout est à jour</h2><p>Profitez-en pour préparer un entretien ou écrire à un ancien contact.</p></div><button class="go-btn" data-tab="reseau">Réseau ${ico("arrow")}</button>`;
     const spot = $("#spot");
     spot.onclick = top && top.b ? (e => { if (!e.target.closest("[data-tab]")) doAct(top); }) : null;
@@ -801,6 +846,18 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const hot = ST.map(s => cnt(s[0])).reduce((m, v, i, arr) => (v > 0 ? i : m), 0);
     $("#flow").innerHTML = ST.map(([k, l, s], i) => `<button class="stage ${i === hot ? "hot" : ""}" data-stage="${k}"><span class="dot">${cnt(k)}</span><span>${l}</span><small>${s}</small></button>`).join("");
     $("#flowNote").textContent = offres.length + " pistes suivies";
+    const verified = sent.filter(x => suivi.proofs(x).length);
+    const pending = unique.filter(x => stage(x) === "prep");
+    const latest = [...sent].sort((a, b) => String(b.date_postule || "").localeCompare(String(a.date_postule || ""))).slice(0, 3);
+    $("#doneTitle").textContent = sent.length + " candidature" + (sent.length > 1 ? "s" : "") + " déclarée" + (sent.length > 1 ? "s" : "");
+    const recentProof = unique.flatMap(x => suivi.proofs(x).map(p => ({ ...p, entreprise: x.entreprise })))
+      .sort((a, b) => String(b.le || "").localeCompare(String(a.le || "")))[0];
+    $("#doneSummary").innerHTML = `<p>${verified.length} avec preuve renseignée ; ${sent.length - verified.length} envoi${sent.length - verified.length > 1 ? "s" : ""} à confirmer.</p>`
+      + (recentProof ? `<p>Dernière activité vérifiée : ${esc(coName(recentProof.entreprise))}, le ${esc(jolie(recentProof.le))}.</p>` : "")
+      + (latest.length ? `<p>Derniers envois déclarés : ${latest.map(x => esc(coName(x.entreprise))).join(" · ")}.</p>` : "<p>Aucun envoi déclaré.</p>");
+    $("#todoTitle").textContent = pending.length + " candidature" + (pending.length > 1 ? "s" : "") + " à préparer";
+    $("#todoSummary").innerHTML = `<p>${agentActs.filter(a => !a.fait).length} étape${agentActs.filter(a => !a.fait).length > 1 ? "s" : ""} pour l’assistant ; ${open.length} intervention${open.length > 1 ? "s" : ""} pour vous.</p><p>Relances et appels planifiés dans l’agenda ci-dessous.</p>`;
+    $("#improveSummary").innerHTML = `<p>Les cinq CV ont été corrigés et sont consultables directement. Ajouter des résultats chiffrés seulement lorsqu’ils sont vérifiés.</p><p>Suivi : distinguer chaque brouillon d’un envoi confirmé et éviter les relances répétitives.</p>`;
 
     // Liste d'actions
     $("#actTitle").textContent = open.length ? open.length + (open.length > 1 ? " actions" : " action") : "Journée libre";
@@ -812,12 +869,27 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
         ${a.b ? `<button class="b ${a.fait ? "undo-b" : ""}" data-a="${i}">${esc(a.b)}</button>` : ""}
       </li>`).join("") : `<li class="empty">Rien pour vous aujourd'hui.</li>`;
     document.querySelectorAll("#acts [data-a]").forEach(b => b.addEventListener("click", () => doAct(acts[+b.dataset.a])));
+    $("#agentCount").textContent = agentActs.filter(a => !a.fait).length + " à traiter";
+    $("#agentActs").innerHTML = agentActs.length ? agentActs.map((a, i) => `<li class="act task ${a.fait ? "done" : ""}"><div class="ai">${ico(a.ic)}</div><div><div class="t">${esc(a.t)}</div><div class="d">${esc(a.d)}</div></div><button class="b" data-agent="${i}">${esc(a.b)}</button></li>`).join("") : `<li class="empty">Aucune étape échue à traiter.</li>`;
+    document.querySelectorAll("#agentActs [data-agent]").forEach(b => b.addEventListener("click", () => doAct(agentActs[+b.dataset.agent])));
+    const agenda = suivi.agenda(offres, today), groups = new Map();
+    agenda.forEach(a => { const key = a.d < today ? "retard" : a.d; if (!groups.has(key)) groups.set(key, []); groups.get(key).push(a); });
+    $("#agendaCount").textContent = agenda.length + " étapes";
+    $("#agenda").innerHTML = agenda.length ? [...groups].map(([d, rows]) => `<section class="agenda-day"><h3>${d === "retard" ? "À rattraper" : d === today ? "Aujourd’hui" : jolie(d)}</h3>${rows.map(a => `<button class="agenda-item ${a.forecast ? "forecast" : ""}" data-open="${esc(a.id)}"><strong>${esc(coName(a.entreprise))}</strong><small>${esc(a.t)}</small><span class="meta"><span class="pill ${a.qui === "vous" ? "you" : "C"}">${a.qui === "vous" ? "Votre intervention" : "Assistant"}</span>${a.forecast ? `<small>Prévision si aucune réponse</small>` : d === "retard" ? `<small>Échéance : ${esc(jolie(a.d))}</small>` : ""}</span></button>`).join("")}</section>`).join("") : `<div class="empty">Aucune échéance sur cette période.</div>`;
+    const issues = offres.flatMap(x => {
+      const label = suivi.exclusion(x) || (duplicateMap.has(x.id) || x.doublon_de ? "Doublon à contrôler" : x.blocage || "");
+      return label ? [{ x, label }] : [];
+    });
+    const unverified = sent.filter(x => !suivi.proofs(x).length);
+    $("#checks").innerHTML = issues.slice(0, 5).map(({ x, label }) => `<button data-open="${esc(x.id)}"><b>${esc(coName(x.entreprise))}</b><br><small>${esc(label)}</small></button>`).join("") + `<button data-tab="cands">${unverified.length ? unverified.length + " envois déclarés · preuves à vérifier" : "Preuves d’envoi à jour"}</button>`;
 
     // Objectif
-    const relW = offres.reduce((n, x) => n + (x.historique || []).filter(h => (h.action === "relance" || h.action === "appel") && String(h.le).slice(0, 10) >= weekStart).length, 0);
-    const resW = cibles.reduce((n, c) => n + (c.historique || []).filter(h => String(h.le).slice(0, 10) >= weekStart).length, 0);
+    const thisWeek = h => suivi.date(h.le) && suivi.date(h.le) >= weekStart && suivi.date(h.le) <= today;
+    const relW = unique.reduce((n, x) => n + (x.historique || []).filter(h => (h.action === "relance" || h.action === "appel") && thisWeek(h)).length, 0);
+    const resW = cibles.reduce((n, c) => n + (c.historique || []).filter(thisWeek).length, 0);
     const pc = v => Math.min(100, Math.round(v * 100));
-    const parts = [["Candidatures (10)", pc(wk / 10)], ["Relances (5)", pc(relW / 5)], ["Réseau (5)", pc(resW / 5)], ["Entretiens (1)", pc(itw.length)]];
+    const itwW = unique.filter(x => (x.historique || []).some(h => h.action === "entretien" && thisWeek(h))).length;
+    const parts = [["Candidatures (10)", pc(wk / 10)], ["Relances (5)", pc(relW / 5)], ["Réseau (5)", pc(resW / 5)], ["Entretiens (1)", pc(itwW)]];
     const g = Math.round(parts.reduce((s, p) => s + p[1], 0) / parts.length);
     $("#ring").style.setProperty("--p", g); $("#ringV").textContent = g + "%";
     $("#legend").innerHTML = parts.map(([l, v]) => `<li><span>${l}</span><b>${v}%</b><div class="bar"><i style="width:${v}%"></i></div></li>`).join("");
@@ -851,17 +923,18 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   document.querySelectorAll("#fC button").forEach(b => b.addEventListener("click", () => setFilter(b.dataset.c)));
   function renderCands() {
     $("#nC").textContent = offres.filter(x => !["fin"].includes(stage(x))).length;
-    const T = { all: "Toutes vos pistes", prep: "Prêtes ou en préparation", sent: "Envoyées, en attente", relance: "Relancées", itw: "Entretiens", offre: "Offres", fin: "Terminées" };
+    const T = { all: "Toutes vos pistes", prep: "Prêtes ou en préparation", sent: "Envoyées, en attente", relance: "Relancées", itw: "Entretiens", veille: "Pistes en veille", offre: "Offres", fin: "Terminées" };
     $("#candTitle").textContent = T[fC] || T.all;
     const list = offres.filter(x => fC === "all" ? stage(x) !== "fin" : (fC === "itw" ? ["itw", "offre"].includes(stage(x)) : stage(x) === fC))
       .sort((a, b) => stepIndex(b) - stepIndex(a) || (a.priorite || "C").localeCompare(b.priorite || "C") || (b.match || 0) - (a.match || 0));
     $("#cands").innerHTML = list.length ? list.map(x => {
-      const si = stepIndex(x), n = next(x), due = n && n.qui === "vous" && n.d <= today;
+      const si = stepIndex(x), n = next(x), due = n && n.d <= today, verified = suivi.proofs(x).length;
       return `<button class="glass jc" data-open="${esc(x.id)}">
         <div class="top"><span class="mono">${esc(initials(coName(x.entreprise)))}</span><div><div class="co">${esc(coName(x.entreprise))}</div><div class="po">${esc(x.poste)}</div></div></div>
         <div class="steps5">${[1, 2, 3, 4, 5].map(k => `<i class="${k < si ? "ok" : k === si ? "cur" : ""}"></i>`).join("")}</div>
         <div class="st">${esc(phrase(x))}</div>
-        <div class="foot"><span class="pill ${esc(x.priorite || "C")}">Priorité ${esc(x.priorite || "C")}</span>${due ? `<span class="pill due">À vous aujourd'hui</span>` : `<span class="label">${esc(x.match || 0)}% match</span>`}</div>
+        <div class="foot"><span class="pill ${esc(x.priorite || "C")}">Priorité ${esc(x.priorite || "C")}</span>${due ? `<span class="pill due">${n.qui === "vous" ? "Votre intervention" : "Assistant · à traiter"}</span>` : `<span class="label">${esc(x.match || 0)}% match</span>`}</div>
+        ${suivi.sent(x) ? `<div><span class="pill ${verified ? "verified" : "B"}">${verified ? "Preuve vérifiée" : "Envoi déclaré · à vérifier"}</span></div>` : ""}
       </button>`;
     }).join("") : `<div class="empty">Rien dans cette étape pour l'instant.</div>`;
   }
@@ -881,14 +954,17 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     d.hidden = false; s.hidden = false; d.scrollTop = 0;
     requestAnimationFrame(() => requestAnimationFrame(() => { d.classList.add("open"); s.classList.add("open"); }));
   }
-  const STATUT = { a_postuler: "En préparation", pret: "Prête à partir", postule: "Envoyée", relance: "Relancée", entretien: "Entretien", offre: "Offre reçue", refus: "Refus", abandon: "Classée", veille: "En veille" };
+  const STATUT = { a_postuler: "En préparation", pret: "Prête à partir", postule: "Envoyée", relance: "Relancée", entretien: "Entretien", offre: "Offre reçue", refus: "Refus", abandon: "Classée", veille: "En veille", expire: "Offre expirée", exclu: "Exclue" };
   function renderDrawer() {
     const x = offres.find(o => o.id === openId); if (!x) { closeDrawer(); return; }
+    const draftNote = $("#drawer").dataset.offer === x.id ? $("#dnote")?.value || "" : "";
+    const draftDate = $("#drawer").dataset.offer === x.id ? $("#ditwdate")?.value : null;
+    $("#drawer").dataset.offer = x.id;
     const n = next(x), m = Math.max(0, Math.min(100, Number(x.match) || 0));
     const L = { postule: "Candidature envoyée", relance: "Relance", appel: "Appel", entretien: "Entretien obtenu", offre: "Offre", refus: "Refus", abandon: "Classée", envoye: "Envoi" };
     const hist = [...(x.historique || [])].sort((a, b) => String(a.le).localeCompare(String(b.le)));
-    const cvUrl = profil.cv_liens && profil.cv_liens[x.cv];
-    const cvName = { sales: "Sales", com: "Communication", digital: "Transformation digitale", en: "Anglais" }[x.cv] || x.cv || "—";
+    const cvUrl = cvHref(x.cv);
+    const cvName = { sales: "Sales", com: "Communication", digital: "Transformation digitale", en: "Anglais", design: "Design graphique" }[x.cv] || x.cv || "—";
     const sal = String(x.salaire || "À préciser").replace(/^est\.\s*/i, "").replace(/\s*net\b.*$/i, "");
     const matchTxt = m >= 70 ? "Très bon match" : m >= 55 ? "Bon match" : "Match partiel";
     const lieu = String(x.lieu || "—").split("(")[0].trim();
@@ -899,8 +975,9 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const cur = Math.max(0, FR.findIndex(f => f[0] === st));
     // ce qui se passe maintenant
     let nowIcon = "spark", nowTitle = "", nowText = "", nowTone = "claude";
-    if (x.statut === "pret") { nowIcon = "send"; nowTitle = "Prête à partir"; nowText = "Cette candidature attend votre validation avant l'envoi avec le CV " + cvName + "."; nowTone = "you"; }
-    else if (n) { nowIcon = n.qui === "vous" ? "phone" : "spark"; nowTitle = n.qui === "vous" ? "À vous de jouer" : "À suivre"; nowText = n.t + (n.d ? " · " + jolie(n.d) : ""); nowTone = n.qui === "vous" ? "you" : "claude"; }
+    if (suivi.exclusion(x) || x.doublon_de || duplicateMap.has(x.id)) { nowTitle = "Aucun envoi prévu"; nowText = phrase(x); }
+    else if (x.statut === "pret" && !x.blocage) { nowIcon = "send"; nowTitle = "Candidature préparée"; nowText = "Envoi prévu le " + jolie(x.action_date || today) + " avec le CV " + cvName + ". Aucun envoi confirmé à ce stade."; }
+    else if (n) { nowIcon = n.kind === "itw" ? "cal" : n.qui === "vous" ? "phone" : "spark"; nowTitle = n.qui === "vous" ? "Votre intervention" : "Suivi de l’assistant"; nowText = n.t + (n.d ? " · " + jolie(n.d) : ""); nowTone = n.qui === "vous" ? "you" : "claude"; }
     else { nowTitle = STATUT[x.statut] || "Terminée"; nowText = "Aucune action prévue."; }
     const last = hist[hist.length - 1];
 
@@ -952,19 +1029,23 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
                 <button data-act="abandon">${ico("arrow")}<span>Je passe</span></button>
               </div>
               <details class="fx-note"><summary>Ajouter une précision (facultatif)</summary><textarea id="dnote" placeholder="Nom de la personne, date d'entretien, remarque…"></textarea></details>
+              <label class="field" style="margin-top:12px">Date de l’entretien, si connue<input type="date" id="ditwdate" value="${esc(draftDate ?? suivi.date(x.entretien?.date) ?? "")}"></label>
               <span id="dmsg"></span>
               ${x.avant && last && last.par === "mohamed" ? `<button type="button" class="undo" id="undoLast">↺ Annuler « ${esc(L[last.action] || last.action)} »</button>` : ""}
             </section>
+
+            <section class="proof"><h4>${suivi.proofs(x).length ? "Preuves vérifiées" : "Preuve d’envoi"}</h4>${suivi.proofs(x).length ? `<ul>${suivi.proofs(x).map(p => `<li>${esc(p.label || (p.type === "email_envoye" ? "Email envoyé" : "Confirmation reçue"))} · ${esc(jolie(p.le))}${p.reference ? `<p>Référence : ${esc(p.reference)}</p>` : ""}${safeHref(p.url) ? `<a href="${safeHref(p.url)}" target="_blank" rel="noopener">Voir la preuve</a>` : ""}</li>`).join("")}</ul>` : `<p>${suivi.sent(x) ? "Le statut d’envoi est déclaré dans le suivi. La confirmation ou le message envoyé reste à vérifier." : "Aucune candidature envoyée à ce stade."}</p>`}</section>
 
             ${hist.length ? `<section class="fx-hist"><small>Historique</small><ul>${hist.slice(-5).reverse().map(h => `<li><time>${esc(jolie(h.le))}</time><span>${esc(L[h.action] || h.action)}${h.notes ? `<em>${esc(h.notes)}</em>` : ""}</span></li>`).join("")}</ul></section>` : ""}
 
             <div class="fx-links">
               ${safeHref(x.url) ? `<a href="${safeHref(x.url)}" target="_blank" rel="noopener">${ico("brief")} Voir l'offre</a>` : ""}
-              ${safeHref(cvUrl) ? `<a href="${safeHref(cvUrl)}" target="_blank" rel="noopener">${ico("doc")} CV ${esc(cvName)}</a>` : ""}
+              ${cvUrl ? `<a href="${cvUrl}" target="_blank" rel="noopener">${ico("doc")} CV ${esc(cvName)}</a>` : ""}
             </div>
           </aside>
         </div>
       </div>`;
+    $("#dnote").value = draftNote;
     $("#dx").addEventListener("click", closeDrawer);
     document.querySelectorAll("#drawer [data-act]").forEach(b => b.addEventListener("click", () => report(x, b.dataset.act)));
     const ub = $("#undoLast");
@@ -986,7 +1067,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     if (!db) { m.className = "err"; m.textContent = "Le suivi n'est pas disponible dans cette vue."; return; }
     const le = new Date().toISOString(), h = { action: act, notes: ($("#dnote").value || "").trim(), le, par: "mohamed" };
     const patch = { historique: [...(x.historique || []), h].slice(-40), retour: h, maj: le };
-    if (act === "entretien") patch.statut = "entretien";
+    if (act === "entretien") { patch.statut = "entretien"; const date = suivi.date($("#ditwdate").value); if (date) patch.entretien = { ...x.entretien, date }; }
     if (act === "refus") patch.statut = "refus";
     if (act === "abandon") patch.statut = "abandon";
     if (act === "appel") { patch.derniere_action = today; patch.nb_relances = Math.max(2, x.nb_relances || 0); if (x.appel) patch.appel = { ...x.appel, fait: true }; if (x.statut === "postule") patch.statut = "relance"; }
@@ -995,7 +1076,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const prev = {};
     Object.keys(patch).forEach(k => { prev[k] = x[k] === undefined ? DEL : structuredClone(x[k]); });
     const avant = {};
-    ["statut", "nb_relances", "derniere_action", "appel"].forEach(k => { if (k in patch) avant[k] = x[k] === undefined ? null : structuredClone(x[k]); });
+    ["statut", "nb_relances", "derniere_action", "appel", "entretien"].forEach(k => { if (k in patch) avant[k] = x[k] === undefined ? null : structuredClone(x[k]); });
     patch.avant = avant;
     prev.avant = x.avant === undefined ? DEL : structuredClone(x.avant);
     const LBL = { appel: "Appel noté", entretien: "Entretien noté", refus: "Refus noté", abandon: "Candidature classée" };
@@ -1034,9 +1115,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 
   // ---------- CV ----------
   function renderCV() {
-    const L = profil.cv_liens || {};
-    $("#cvs").innerHTML = [["sales", "Sales", "Business development B2B"], ["com", "Communication", "Communication corporate & digitale"], ["digital", "Digital", "Transformation digitale"], ["en", "English", "Business & communications"]]
-      .map(([k, tag, t]) => `<div class="glass cv"><div class="band"><small>${tag.toUpperCase()}</small><b>${esc(t)}</b></div><div class="bd">${safeHref(L[k]) ? `<a class="btn" href="${safeHref(L[k])}" target="_blank" rel="noopener">Ouvrir le PDF ${ico("arrow")}</a>` : `<span style="color:var(--muted)">Lien à venir</span>`}</div></div>`).join("");
+    $("#cvs").innerHTML = [["sales", "Sales", "Business development B2B", "Bon ciblage commercial ; ajouter CA, portefeuille et résultats de négociation."], ["com", "Communication", "Communication corporate & digitale", "Projets convaincants ; préciser budgets, publics touchés et effets obtenus."], ["digital", "Digital", "Transformation digitale", "Outils crédibles ; montrer adoption, gains de temps et résultats du CRM."], ["en", "English", "Business & communications", "Anglais clair ; préciser des résultats mesurables sans les inventer."], ["design", "Design graphique", "Design graphique & communication visuelle", "Identités, édition et contenus visuels ; parcours professionnel mis en avant sans prétendre à un diplôme de design."]]
+      .map(([k, tag, t, note]) => `<div class="glass cv"><div class="band"><small>${tag.toUpperCase()}</small><b>${esc(t)}</b></div><div class="bd"><p>${esc(note)}</p><a class="btn" href="${cvHref(k)}" target="_blank" rel="noopener">Voir le CV ${ico("arrow")}</a></div></div>`).join("");
   }
   const PF = ["ca_corpotex", "clients_corpotex", "equipe", "crm", "budget_events", "participants", "salaire_preavis", "linkedin", "autres"];
   let pfLoaded = false;
@@ -1063,13 +1143,13 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   function setLive(t, w) { $("#liveTxt").textContent = t; $("#live").classList.toggle("warn", !!w); }
-  function all() { renderJour(); renderCands(); renderReseau(); renderCV(); if (openId) renderDrawer(); }
+  function all() { duplicateMap = suivi.duplicates(offres); renderJour(); renderCands(); renderReseau(); renderCV(); if (openId) renderDrawer(); }
   all();
 
   (async () => {
     try { db = await window.trajectoireDB?.use?.(); } catch (e) { db = null; }
     if (!db) { setLive("Connexion aux données indisponible", true); return; }
-    setLive("Synchronisé avec ce serveur");
+    window.trajectoireDB.onConnection?.(s => setLive(s.ok ? "Actualisé à " + new Intl.DateTimeFormat("fr-FR", { timeZone: "Africa/Casablanca", hour: "2-digit", minute: "2-digit" }).format(new Date(s.le)) : "Connexion interrompue · données anciennes", !s.ok));
     const err = () => setLive("Connexion interrompue", true);
     db.collection("offres").onSnapshot(s => { offres = s.docs.map(d => ({ id: d.id, ...d.data() })); all(); }, err);
     db.collection("cibles").onSnapshot(s => { cibles = s.docs.map(d => ({ id: d.id, ...d.data() })); all(); }, err);
@@ -1081,3 +1161,5 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   })();
 })();
 </script>
+</body>
+</html>

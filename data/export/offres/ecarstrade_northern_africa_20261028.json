@@ -1,0 +1,40 @@
+{
+  "entreprise": "eCarsTrade",
+  "poste": "Team Lead – Key Account Management, Northern Africa",
+  "lieu": "Afrique du Nord — télétravail intégral (contrat B2B indépendant)",
+  "couloir": "sales",
+  "source": "Alerte LinkedIn du 27/10/2026 ; page carrière officielle eCarsTrade",
+  "url": "https://www.linkedin.com/jobs/view/4483563722/",
+  "source_verifiee": "https://ecarstrade.com/join-our-team",
+  "publie": "Annonce reçue le 27/10/2026 ; date de publication non vérifiée",
+  "offre_verifiee_le": "2026-10-28",
+  "cv": "en",
+  "priorite": "B",
+  "match": 67,
+  "statut": "veille",
+  "salaire": "Non publié ; rémunération fixe + variable, seuil >12 000 DH net non vérifié",
+  "pourquoi": "Mission B2B grands comptes et croissance en Afrique du Nord, télétravail explicitement annoncé ; parcours commercial et langues pertinents.",
+  "missions": [
+    "Développer les comptes revendeurs et les ventes dans la région",
+    "Gérer un portefeuille de grands comptes et accompagner les responsables de comptes",
+    "Piloter le plan commercial, les négociations et le suivi CRM"
+  ],
+  "risques": "Contrat indépendant et non CDI ; montant du fixe inconnu. Une connaissance approfondie des concessionnaires automobiles nord-africains et l'encadrement d'une équipe sont demandés, sans preuve claire dans le CV actuel. Vérifier ces points et la page de candidature avant envoi.",
+  "action": "Nouvelle piste vérifiée ; aucune candidature envoyée. Vérifier la rémunération et l'adéquation réelle avec les exigences de management et du marché automobile.",
+  "action_date": "2026-10-28",
+  "action_planifiee": {
+    "date": "2026-10-29",
+    "texte": "Vérifier sur le formulaire officiel l'éligibilité Maroc, la rémunération fixe et les exigences de management ; candidater avec CV EN si compatible.",
+    "qui": "agent"
+  },
+  "historique": [
+    {
+      "action": "Piste identifiée, non postulée",
+      "le": "2026-10-28T12:32:43+01:00",
+      "par": "agent",
+      "batch_id": "veille-2026-10-28",
+      "notes": "Annonce LinkedIn 4483563722 reçue le 27/10 ; carrière eCarsTrade officielle consultée le 28/10 ; salaire inconnu, contrat B2B indépendant, aucune candidature envoyée."
+    }
+  ],
+  "maj": "2026-10-28T12:32:43+01:00"
+}

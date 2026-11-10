@@ -10,3 +10,5 @@ dbdump/
 chk.js
 .env
 runtime-data/
+handoff/
+cv-files/

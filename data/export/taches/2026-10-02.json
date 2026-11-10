@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "texte": "UIR : trois accusés de candidature reçus, vérifiés dans Gmail",
+      "detail": "Emails génériques du 01/10 à 16:13 et 16:15 ; pas de réponse à entretien. Relance groupée préparée pour le 06/10.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    },
+    {
+      "texte": "Six invitations LinkedIn du 01/10 enregistrées",
+      "detail": "UIR, NOVEC, SOGEA, DXC (2), NTU ; trois avec note et trois simples. Acceptation non vérifiée aujourd’hui. Aucun nouveau contact dans cette veille.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    },
+    {
+      "texte": "Hilti Rabat : source officielle retrouvée, priorité B, CV Sales",
+      "detail": "https://careers.hilti.group/en-gb/jobs/20527-en/account-manager-rabat/ — référence 20527. Date et salaire non publiés. Permis requis à vérifier. Aucun envoi.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    },
+    {
+      "texte": "Relances J+5 et appels J+10 préparés sans envoi",
+      "detail": "SOGEA 03–04/10 ; lot du 29/09 : 04/10 ; NOVEC/UIR : 06/10. Appels 08, 09, 11/10 (report au lundi 12 si dimanche). Vérifier réponses et éviter les doublons avec les invitations récentes.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    },
+    {
+      "texte": "Qualifier les pistes C avant candidature",
+      "detail": "NOVEC Chargé Développement Afrique 186129 : Bac+5/2–3 ans, déjà une candidature Responsable ; ne pas doubler. Volkswagen Rabat : expérience automobile et structure à vérifier, salaire inconnu ; page Emploi.ma inaccessible (403).",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    },
+    {
+      "texte": "Vérifier les prérequis Hilti et l’accès au formulaire",
+      "detail": "Minimum 15 000 DH net non confirmé et permis non vérifié. Ancienne fiche ReKrute expirée remplacée par la source officielle, sans créer un doublon.",
+      "fait": false,
+      "responsable": "agent",
+      "batch_id": "veille-2026-10-02"
+    }
+  ],
+  "maj": "2026-10-02T09:32:12.313Z"
+}

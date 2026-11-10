@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "texte": "UIR : revoir les deux candidatures encore ouvertes",
+      "detail": "Gmail relu le 12/10 : un refus UIR (Communication santé), deux candidatures encore sans réponse. L'accusé UIR indique qu'une absence de réponse à un mois vaut dossier non retenu ; pas de nouvelle relance aujourd'hui. NOVEC : pas de réponse reçue, pas de nouvel envoi.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "revue-2026-10-06"
+    },
+    {
+      "texte": "Reprendre qualification LOCAMED et dossiers Hilti / ICESCO",
+      "detail": "LOCAMED Sales Operations/CRM : annonces Bac+5, non prioritaire avec Bac+3 ; ne pas envoyer en force. Hilti 20527 : offre officielle toujours active, profil commercial compatible mais salaire non publié et parcours de dépôt CV à finaliser. ICESCO : vérifier les exigences détaillées avant le 25/10. Aucun envoi de ces trois dossiers ce jour.",
+      "fait": false,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "Relances : contrôle des réponses avant tout lot",
+      "detail": "Gmail relu le 12/10 ; NTU relancé une seule fois dans le fil d'origine pour deux postes, message SENT 1a12ffe13a750d1f. Aucun envoi à G4S, NOVEC ou UIR aujourd'hui ; Edvantis à revoir le 14/10.",
+      "fait": true,
+      "batch_id": "veille-2026-10-09",
+      "responsable": "agent"
+    },
+    {
+      "texte": "CVthèque : cinq CV corrigés et publiés",
+      "detail": "PDF Communication, Sales, Transformation digitale, EN et Design graphique corrigés, vérifiés visuellement et accessibles d'un clic dans le cockpit. Historique d'envoi Edvantis préservé.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "reprise-2026-10-12"
+    },
+    {
+      "texte": "NTU : relance unique envoyée pour les deux postes",
+      "detail": "Gmail SENT du 12/10, même fil que la candidature du 29/09 ; preuve et prochaine vérification du 19/10 sur chaque fiche NTU.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "reprise-2026-10-12"
+    },
+    {
+      "texte": "Casanet et Ciments du Maroc : deux relances LinkedIn envoyées",
+      "detail": "Jennate Benlemmouden (Casanet) à 14:30 et Yousra Ragouby (Ciments du Maroc) à 14:35 le 12/10. Messages visibles, preuves sur les deux fiches ; prochaine vérification le 19/10, sans nouvelle relance automatique.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "linkedin-relances-2026-10-12"
+    },
+    {
+      "texte": "Filtre des nouvelles offres : garder Hilti, écarter les écarts majeurs",
+      "detail": "Hilti Rabat 20527 confirmé actif le 12/10 : 2 ans de vente et permis, BTP souhaité, salaire non publié. Ericsson BOS Client Executive exige 10 M USD de ventes annuelles et réseau dirigeants télécom, hors preuve du profil ; LOCAMED Sales Ops/CRM exige Bac+5 ; aucune candidature présentée comme envoyée sur ces offres.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "linkedin-relances-2026-10-12"
+    },
+    {
+      "texte": "Talio : clarifications demandées sur les missions et le contrat",
+      "detail": "Profil admis et validé le 25/09, sans proposition ni contrat à ce jour. Email envoyé et vérifié le 12/10 à talent@taliotalent.com sur le calendrier, le statut salarié/prestation, la rémunération et le télétravail depuis le Maroc. Suivi dans Réseau ; réponse à vérifier le 19/10.",
+      "fait": true,
+      "responsable": "agent",
+      "batch_id": "talio-suivi-2026-10-12"
+    }
+  ],
+  "maj": "2026-10-12T14:53:47.935Z"
+}
