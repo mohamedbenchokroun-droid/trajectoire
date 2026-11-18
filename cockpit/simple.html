@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f3fb">
+<title>Trajectoire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f3fb;
+    --paper: #ffffff;
+    --ink: #17152e;
+    --ink-2: #4a4766;
+    --muted: #6f6b8f;
+    --line: #e4e1f3;
+    --accent: #6c5ce7;
+    --accent-ink: #4b3dc9;
+    --accent-soft: #eeebff;
+    --go: #1d8a5c;
+    --go-soft: #dff5ea;
+    --hot: #c8433c;
+    --hot-soft: #fde6e4;
+    --warn: #9a6514;
+    --warn-soft: #fbf0dc;
+    --display: "Plus Jakarta Sans", system-ui, sans-serif;
+    --body: "Manrope", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 500 16px/1.5 var(--body);
+    font-variant-numeric: tabular-nums;
+  }
+  ::selection { background: var(--accent-soft); color: var(--accent-ink); }
+  a { color: var(--accent-ink); text-underline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 20px 16px 56px; }
+
+  header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 36px; }
+  .brand { font: 800 17px/1 var(--display); letter-spacing: -0.02em; }
+  .brand span { color: var(--accent); }
+  .stamp { font-size: 13px; color: var(--muted); }
+
+  h1 {
+    font: 800 clamp(30px, 7vw, 46px)/1.08 var(--display);
+    letter-spacing: -0.03em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub { margin: 0; color: var(--ink-2); font-size: 17px; }
+
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .steps li { background: var(--paper); border-radius: 12px; padding: 14px 14px 12px; position: relative; }
+  .steps li:first-child { border-radius: 14px 6px 6px 14px; }
+  .steps li:last-child { border-radius: 6px 14px 14px 6px; }
+  .steps b { display: block; font: 800 28px/1 var(--display); letter-spacing: -0.02em; }
+  .steps span { font-size: 13px; color: var(--muted); font-weight: 600; }
+  .steps .on { background: var(--accent); color: #fff; }
+  .steps .on span { color: #e3defd; }
+  .steps .won { background: var(--go); color: #fff; }
+  .steps .won span { color: #d6f3e5; }
+
+  section { margin-top: 44px; }
+  h2 { font: 800 21px/1.2 var(--display); letter-spacing: -0.02em; margin: 0 0 14px; }
+  h2 small { font: 600 14px var(--body); color: var(--muted); letter-spacing: 0; margin-left: 6px; }
+
+  .todo { list-style: none; margin: 0; padding: 0; background: var(--paper); border-radius: 14px; }
+  .todo li + li { border-top: 1px solid var(--line); }
+  .todo button {
+    all: unset; box-sizing: border-box; cursor: pointer; width: 100%;
+    display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start;
+    padding: 15px 16px;
+  }
+  .todo button:hover .box { border-color: var(--accent); }
+  .box { width: 22px; height: 22px; margin-top: 1px; border: 2px solid #c9c4e6; border-radius: 7px; display: grid; place-items: center; transition: background .2s, border-color .2s; }
+  .box svg { width: 14px; height: 14px; opacity: 0; transition: opacity .2s; }
+  .done .box { background: var(--go); border-color: var(--go); }
+  .done .box svg { opacity: 1; }
+  .done .txt { color: var(--muted); text-decoration: line-through; text-decoration-color: #b9b5d3; }
+  .txt { font-weight: 600; }
+  .why { margin: -8px 16px 14px 54px; font-size: 14px; color: var(--muted); }
+  .why summary { cursor: pointer; width: max-content; color: var(--accent-ink, #4b3dc9); font-weight: 600; list-style: none; }
+  .why summary::-webkit-details-marker { display: none; }
+  .why summary::after { content: " +"; }
+  .why[open] summary::after { content: " –"; }
+  .why p { margin: 6px 0 0; line-height: 1.5; }
+  .due { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; margin-right: 6px; vertical-align: 1px; }
+  .due.hot { background: var(--hot-soft); color: var(--hot); }
+  .due.warn { background: var(--warn-soft); color: var(--warn); }
+  .due.calm { background: var(--accent-soft); color: var(--accent-ink); }
+  .empty { background: var(--paper); border-radius: 14px; padding: 16px; color: var(--ink-2); margin: 0; }
+
+  .next { list-style: none; margin: 0; padding: 0; }
+  .next li { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .next li:first-child { border-top: 0; padding-top: 0; }
+  .when { font-weight: 700; font-size: 14px; color: var(--accent-ink); padding-top: 1px; }
+  .what { color: var(--ink-2); }
+  .what b { color: var(--ink); font-weight: 700; }
+
+  .sent { color: var(--ink-2); margin: 0; }
+  .sent b { color: var(--ink); }
+
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 14px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--muted); }
+
+  .skeleton { color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  @media (max-width: 420px) {
+    .next li { grid-template-columns: 1fr; gap: 2px; }
+    .steps b { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Trajectoire<span>.</span></div>
+    <div class="stamp" id="stamp">Chargement…</div>
+  </header>
+
+  <main>
+    <h1 id="headline" class="skeleton">On fait le point…</h1>
+    <p class="sub" id="sub"></p>
+    <ol class="steps" id="steps" aria-label="Où en sont les candidatures"></ol>
+
+    <section aria-labelledby="t-todo">
+      <h2 id="t-todo">À toi de jouer <small id="todo-count"></small></h2>
+      <div id="todo"></div>
+    </section>
+
+    <section aria-labelledby="t-next">
+      <h2 id="t-next">La suite</h2>
+      <ul class="next" id="next"></ul>
+    </section>
+
+    <section aria-labelledby="t-week">
+      <h2 id="t-week">Cette semaine</h2>
+      <p class="sent" id="week"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Claude travaille tous les jours, toutes les 2 h.</span>
+    <a href="/complet">Tout le détail →</a>
+  </footer>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const day = d => d.toISOString().slice(0, 10);
+  const today = new Date(); today.setHours(12, 0, 0, 0);
+  const T = day(today);
+  const addDays = (n) => { const d = new Date(today); d.setDate(d.getDate() + n); return day(d); };
+  const fmt = iso => new Date(iso + "T12:00:00").toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short" }).replace(".", "");
+  const rel = iso => {
+    if (iso <= T) return "Aujourd'hui";
+    if (iso === addDays(1)) return "Demain";
+    return fmt(iso).replace(/^./, c => c.toUpperCase());
+  };
+  const check = '<svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>';
+  const names = list => {
+    const uniq = [...new Set(list.map(o => (o.entreprise || "").split(/\s[–-]\s/)[0].trim()).filter(Boolean))];
+    return uniq.length <= 4 ? uniq.join(", ") : uniq.slice(0, 4).join(", ") + " et " + (uniq.length - 4) + " autres";
+  };
+
+  let taskDocId = null, tasks = [];
+
+  function render(state) {
+    const offres = Object.values(state.offres || {}).filter(Boolean);
+    const live = offres.filter(o => !["refus", "abandon"].includes(o.statut));
+    const waiting = live.filter(o => ["postule", "relance"].includes(o.statut));
+    const talks = live.filter(o => /entretien|test|rdv/i.test(o.statut || ""));
+    const offers = live.filter(o => /offre|propos|embauch/i.test(o.statut || ""));
+    const refus = offres.filter(o => o.statut === "refus").length;
+    const dropped = offres.filter(o => o.statut === "abandon").length;
+
+    // Headline: the one thing to know
+    let h;
+    if (offers.length) h = `<em>${offers.length} proposition${offers.length > 1 ? "s" : ""}</em> sur la table.`;
+    else if (talks.length) h = `<em>${talks.length} entretien${talks.length > 1 ? "s" : ""}</em> en cours.`;
+    else h = `<em>${waiting.length}</em> candidatures attendent une réponse.`;
+    $("headline").innerHTML = h;
+    $("headline").classList.remove("skeleton");
+    $("sub").textContent = talks.length || offers.length
+      ? `${waiting.length} autres candidatures en attente · ${refus} refus.`
+      : `Pas encore d'entretien. ${refus} refus, ${dropped} pistes mortes rangées.`;
+
+    const stage = offers.length ? 2 : talks.length ? 1 : 0;
+    $("steps").innerHTML = [
+      [waiting.length, "envoyées, en attente"],
+      [talks.length, "en entretien"],
+      [offers.length, "propositions"]
+    ].map(([n, l], i) => `<li class="${i === stage ? (i === 2 ? "won" : "on") : ""}"><b>${n}</b><span>${l}</span></li>`).join("");
+
+    // Tasks: latest daily list up to today
+    const ids = Object.keys(state.taches || {}).filter(id => /^\d{4}-\d{2}-\d{2}$/.test(id) && id <= T).sort();
+    taskDocId = ids.at(-1) || null;
+    tasks = taskDocId ? (state.taches[taskDocId].items || []) : [];
+    renderTodo();
+
+    // Next steps: grouped by date, 14 days ahead
+    const horizon = addDays(14);
+    const groups = new Map();
+    for (const o of live) {
+      if (!o.action_date || o.action_date > horizon) continue;
+      const k = o.action_date < T ? T : o.action_date;
+      const who = o.qui === "mohamed" ? "toi" : "claude";
+      const key = k + "|" + who;
+      if (!groups.has(key)) groups.set(key, { date: k, who, list: [] });
+      groups.get(key).list.push(o);
+    }
+    const rows = [...groups.values()].sort((a, b) => a.date.localeCompare(b.date) || a.who.localeCompare(b.who)).slice(0, 6);
+    $("next").innerHTML = rows.length ? rows.map(g => {
+      const verb = g.who === "toi" ? "<b>Toi</b> · à finaliser" : "<b>Claude</b> · relance ou classe";
+      return `<li><div class="when">${rel(g.date)}</div><div class="what">${verb} : ${esc(names(g.list))}</div></li>`;
+    }).join("") : `<li><div class="when">—</div><div class="what">Rien de planifié dans les 14 jours.</div></li>`;
+
+    // This week
+    const monday = new Date(today); monday.setDate(today.getDate() - ((today.getDay() + 6) % 7));
+    const M = day(monday);
+    const week = offres.filter(o => o.date_postule && o.date_postule >= M);
+    $("week").innerHTML = week.length
+      ? `<b>${week.length} candidatures envoyées</b> depuis lundi : ${esc(names(week))}.`
+      : "Aucune candidature envoyée depuis lundi pour l'instant.";
+
+    const stamps = offres.flatMap(o => (o.historique || []).map(h => h.le)).filter(Boolean).sort();
+    const last = stamps.at(-1);
+    $("stamp").textContent = last ? "Dernière action : " + rel(last).toLowerCase() : "";
+  }
+
+  function dueBadge(t) {
+    if (!t.echeance) return "";
+    const d = t.echeance.slice(0, 10);
+    const hour = t.echeance.length > 10 ? " " + t.echeance.slice(11, 13) + "h" : "";
+    const cls = d <= addDays(1) ? "hot" : d <= addDays(3) ? "warn" : "calm";
+    return `<span class="due ${cls}">${d < T ? "En retard" : rel(d) + hour}</span>`;
+  }
+
+  function renderTodo() {
+    const mine = tasks.map((t, i) => ({ t, i })).filter(({ t }) => t.responsable === "mohamed")
+      .sort((a, b) => (a.t.fait - b.t.fait) || (a.t.echeance || "9").localeCompare(b.t.echeance || "9"));
+    const open = mine.filter(x => !x.t.fait).length;
+    $("todo-count").textContent = open ? open + " à faire" : "";
+    if (!mine.length) { $("todo").innerHTML = '<p class="empty">Rien pour toi aujourd\'hui. Claude s\'occupe du reste.</p>'; return; }
+    $("todo").innerHTML = `<ul class="todo">${mine.map(({ t, i }) => `
+      <li class="${t.fait ? "done" : ""}"><button type="button" data-i="${i}" aria-pressed="${!!t.fait}">
+        <span class="box">${check}</span>
+        <span class="txt">${dueBadge(t)}${esc(t.titre || t.texte)}</span>
+      </button>${t.titre && t.texte && !t.fait ? `<details class="why"><summary>Comment faire</summary><p>${esc(t.texte)}</p></details>` : ""}</li>`).join("")}</ul>`;
+  }
+
+  $("todo").addEventListener("click", async e => {
+    const b = e.target.closest("button[data-i]");
+    if (!b || !taskDocId) return;
+    const i = +b.dataset.i;
+    const prev = tasks[i].fait;
+    tasks[i] = { ...tasks[i], fait: !prev };
+    renderTodo();
+    try {
+      const r = await fetch("/api/taches/" + taskDocId, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ items: tasks, maj: new Date().toISOString() }) });
+      if (!r.ok) throw new Error(r.status);
+    } catch {
+      tasks[i] = { ...tasks[i], fait: prev };
+      renderTodo();
+      $("stamp").textContent = "Enregistrement impossible, réessaie.";
+    }
+  });
+
+  async function load() {
+    try {
+      const r = await fetch("/api/state", { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status);
+      render(await r.json());
+    } catch {
+      $("headline").textContent = "Impossible de charger les données.";
+      $("stamp").textContent = "Réessaie dans un instant.";
+    }
+  }
+  load();
+  setInterval(load, 120000);
+})();
+</script>
+</body>
+</html>

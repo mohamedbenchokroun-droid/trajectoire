@@ -156,6 +156,9 @@ async function handle(req, res) {
     return res.end(archive);
   }
   if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html")) {
+    return respond(res, 200, await fs.readFile(path.join(root, "cockpit", "simple.html")), "text/html; charset=utf-8");
+  }
+  if (req.method === "GET" && url.pathname === "/complet") {
     return respond(res, 200, await fs.readFile(path.join(root, "cockpit", "trajectoire.html")), "text/html; charset=utf-8");
   }
   if (req.method === "GET" && ["/db-adapter.js", "/suivi.js"].includes(url.pathname)) {
