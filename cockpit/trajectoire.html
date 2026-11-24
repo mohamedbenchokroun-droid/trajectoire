@@ -524,6 +524,9 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 .act.done > div { opacity: .5; }
 .act .b.undo-b { border-style: dashed; color: var(--muted); border-color: var(--line); }
 .act .b.undo-b:hover { color: var(--a-ink); border-color: var(--a2); }
+.fx-list { margin: 6px 0 0; padding-left: 18px; line-height: 1.55; }
+.fx-list li + li { margin-top: 4px; }
+.fx-size { margin: 0 0 6px; }
 </style>
 </head>
 <body>
@@ -1006,8 +1009,13 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
         <div class="fx-grid">
           <main class="fx-main">
             ${missions.length ? `<section class="fx-sec"><h4>Le poste en bref</h4><ol class="fx-miss">${missions.map(t => `<li>${esc(t)}</li>`).join("")}</ol></section>` : ""}
-            ${x.entreprise_info ? `<section class="fx-sec"><h4>L'entreprise</h4><p>${esc(x.entreprise_info)}</p></section>` : ""}
+            ${x.entreprise_info || x.taille ? `<section class="fx-sec"><h4>L'entreprise</h4>${x.taille ? `<p class="fx-size"><b>${esc(x.taille)}</b></p>` : ""}${x.entreprise_info ? `<p>${esc(x.entreprise_info)}</p>` : ""}</section>` : ""}
+            ${(x.qualifications || []).length ? `<section class="fx-sec"><h4>Profil demandé</h4><ul class="fx-list">${x.qualifications.map(t => `<li>${esc(t)}</li>`).join("")}</ul></section>` : ""}
             ${x.pourquoi ? `<section class="fx-sec fx-why"><h4>Pourquoi ça matche</h4><p>${esc(x.pourquoi)}</p></section>` : ""}
+            ${(x.recommandations || []).length ? `<section class="fx-sec fx-why"><h4>Nos recommandations</h4><ul class="fx-list">${x.recommandations.map(t => `<li>${esc(t)}</li>`).join("")}</ul></section>` : ""}
+            ${(x.questions_entretien || []).length ? `<details class="fx-acc" open><summary>${ico("cal")} Guide d'entretien</summary><ul class="fx-list">${x.questions_entretien.map(t => `<li>${esc(t)}</li>`).join("")}</ul></details>` : ""}
+            ${(x.reponses_suggerees || []).length ? `<details class="fx-acc"><summary>${ico("send")} Réponses suggérées</summary><ul class="fx-list">${x.reponses_suggerees.map(t => `<li>${esc(t)}</li>`).join("")}</ul></details>` : ""}
+            ${(x.actions_suggerees || []).length ? `<section class="fx-sec"><h4>Actions à faire</h4><ol class="fx-list">${x.actions_suggerees.map(t => `<li>${esc(t)}</li>`).join("")}</ol></section>` : ""}
             ${x.risques ? `<details class="fx-acc"><summary>${ico("cal")} Points à préparer pour l'entretien</summary><p>${esc(x.risques)}</p></details>` : ""}
             ${x.message ? `<details class="fx-acc"><summary>${ico("send")} Message ${["pret", "a_postuler"].includes(x.statut) ? "qui sera envoyé" : "envoyé"}</summary><p style="white-space:pre-line">${esc(x.message)}</p></details>` : ""}
             ${(x.contacts || []).length ? `<details class="fx-acc"><summary>${ico("users")} Contacts</summary>${x.contacts.map(c => `<p><b>${esc(c.nom)}</b> · ${esc(c.role || "")} ${c.email ? `<span class="fx-mono">${esc(c.email)}</span>` : ""}</p>`).join("")}</details>` : ""}
