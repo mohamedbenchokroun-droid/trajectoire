@@ -550,8 +550,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     <span class="rim" aria-hidden="true"></span><span class="sheen" aria-hidden="true"></span>
     <div class="brand"><span class="g"><svg class="i"><use href="#i-gem"/></svg></span>Trajectoire</div>
     <nav class="seg glass" aria-label="Sections">
-      <button data-tab="jour" aria-current="page"><svg class="i"><use href="#i-home"/></svg>Aujourd'hui</button>
-      <button data-tab="cands"><svg class="i"><use href="#i-brief"/></svg>Candidatures <span class="n" id="nC">–</span></button>
+      <button data-tab="cands" aria-current="page"><svg class="i"><use href="#i-brief"/></svg>Candidatures <span class="n" id="nC">–</span></button>
+      <button data-tab="jour"><svg class="i"><use href="#i-home"/></svg>Tâches</button>
       <button data-tab="reseau"><svg class="i"><use href="#i-users"/></svg>Réseau <span class="n" id="nR">–</span></button>
       <button data-tab="cv"><svg class="i"><use href="#i-doc"/></svg>Mes CV</button>
     </nav>
@@ -559,7 +559,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   </header>
 
   <!-- ================= AUJOURD'HUI ================= -->
-  <section class="panel on" id="p-jour">
+  <section class="panel" id="p-jour">
     <article class="glass hero">
       <svg class="pano" viewBox="0 0 1400 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <defs>
@@ -667,7 +667,7 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
   </section>
 
   <!-- ================= CANDIDATURES ================= -->
-  <section class="panel" id="p-cands">
+  <section class="panel on" id="p-cands">
     <div class="head" style="margin:8px 0 0;flex-wrap:wrap">
       <div><span class="label">Candidatures</span><h2 class="big" style="margin-top:8px" id="candTitle">Toutes vos pistes</h2></div>
       <div class="chips" id="fC">
@@ -713,8 +713,8 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
 </div>
 
 <nav class="glass dock" aria-label="Navigation">
-  <button data-tab="jour" aria-current="page" aria-label="Aujourd'hui"><svg class="i"><use href="#i-home"/></svg></button>
-  <button data-tab="cands" aria-label="Candidatures"><svg class="i"><use href="#i-brief"/></svg></button>
+  <button data-tab="cands" aria-current="page" aria-label="Candidatures"><svg class="i"><use href="#i-brief"/></svg></button>
+  <button data-tab="jour" aria-label="Tâches"><svg class="i"><use href="#i-home"/></svg></button>
   <button class="center" data-spot aria-label="Prochaine action"><svg class="i" style="width:26px;height:26px"><use href="#i-gem"/></svg></button>
   <button data-tab="reseau" aria-label="Réseau"><svg class="i"><use href="#i-users"/></svg></button>
   <button data-tab="cv" aria-label="Mes CV"><svg class="i"><use href="#i-doc"/></svg></button>
@@ -760,7 +760,6 @@ form.pf { padding: 22px; display: grid; gap: 12px; }
     const s = e.target.closest("[data-stage]"); if (s) { setFilter(s.dataset.stage); show("cands"); }
     if (e.target.closest("[data-spot]")) { show("jour"); $("#spot").scrollIntoView({ behavior: "smooth", block: "center" }); }
   });
-  try { const t = localStorage.getItem("cc4-tab"); if (t && $("#p-" + t)) show(t); } catch (e) {}
 
   let db = null, offres = [], cibles = [], taches = {}, profil = {}, fC = "all", openId = null, duplicateMap = new Map();
 
